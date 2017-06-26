@@ -1,0 +1,8 @@
+CS contactFindAllByUserAndSyubetuLike: 連絡先曖昧検索(ユーザー＆種別＆検索文字列)
+ 連絡先取得(tosi,家族親戚,%山%):連絡先一覧 -------------- :logAllContact
+:Address(自宅:313)[ 1234444, 東京都, 千代田区, , , ] :lambda$1
+先:Address(勤務先:312)[ 1235555, 東京都, 港区, , , ] :lambda$1
+:Mail (自宅:314)[mail=h.yamada@x男.com] :lambda$2
+:Phone (自宅:315)[telno=08011112222] :lambda$3
+------------------------- :lambda$0
+------------------------- :lambda$0

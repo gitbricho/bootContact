@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+  <!-- pager_row ############################### -->
+  <div th:fragment="pager_tool">  
+    <div class="row">
+      <!-- _syubetu_buttons -->
+      <div class="col-md-6">
+        <div class="btn-group" role="group" aria-label="...">
+          <a th:each="syu: ${contactSyubetuItems}" type="button" class="btn btn-default" href="#"
+            th:href="@{/contact/syubetu/__${syu}__}" th:classappend="${syu}==${curSyubetu} ? active"
+            th:text="${syu}">text</a>
+        </div>
+      </div>
+      <!-- pager -->
+      <div th:if="${pageCount > 1}" class="col-md-6">
+        <div class="btn-group" role="group" aria-label="...">
+          <a href="#" th:href="@{/contact/prevPage}" type="button" class="btn btn-warning">前へ</a> <a
+            href="#" th:text="${curPageNo+1+' / '+pageCount}" type="button" class="btn btn-default">1</a>
+          <a href="#" th:href="@{/contact/nextPage}" type="button" class="btn btn-warning">次へ</a>
+        </div>
+      </div>
+    </div>    
+  </div>
+
+  <!-- search_tool ############################### -->
+  <div th:fragment="search_tool">
+    <!-- _search_input -->
+    <div class="input-group">
+      <input type="text" class="form-control" style="margin-top: 0.4em;" placeholder="連絡先の検索" />
+        <span class="input-group-btn">
+        <!-- 検索 -->
+        <a type="button" class="btn btn-primary" style="margin-top: 0.4em;"
+          href="#"> <span class="glyphicon glyphicon-search"></span></a>
+        <img th:src="@{/img/spacer.gif}" width="5" height="10" border="0" />
+        <!-- 削除ボタン -->
+        <a type="button" class="btn btn-danger" style="margin-top: 0.4em;"
+          href="#" th:href="@{/contact/delete}"> <span class="glyphicon glyphicon-minus"></span></a>
+        <img th:src="@{/img/spacer.gif}" width="4" height="10" border="0" />
+        <!-- 追加ボタン -->
+        <button type="button" class="btn btn-success" id="btnAdd" style="margin-top: 0.4em;">
+          <span class="glyphicon glyphicon-plus"></span>
+        </button> <img th:src="@{/img/spacer.gif}" width="4" height="10" border="0" />
+      </span>
+    </div>
+  </div>
+
+  <!-- form_tool ############################### -->
+  <div th:fragment="form_tool">
+    <!-- _form_buttons -->
+    <div class="input-group">
+      <span class="input-group-btn">
+        <!-- 編集ボタン -->
+        <button type="button" class="btn btn-success" id="btnEdit" style="margin-top: 0.4em;">
+          <span class="glyphicon glyphicon-edit"></span>
+        </button>
+        <!-- 保存ボタン -->
+        <button type="button" class="btn btn-info" id="btnSave"
+          style="float: right; margin-top: 0.4em;">
+          <span class="glyphicon glyphicon-save"></span>
+        </button>
+      </span>
+    </div>
+  </div>
+
+</body>
+</html>

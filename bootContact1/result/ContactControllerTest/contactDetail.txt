@@ -1,0 +1,47 @@
+##### contactDetail
+## >>>>> サンプルインターセプター::preHandle :preHandle
+## $$$$$ Contact(85:1)[村田健一, むらたけんいち, 様, 男, 1981/02/02, syumi=, 友人知人, , , , User(1:1)[tosi,null, ADMIN, 家族知人]] :showContactDetail
+## >>>>> サンプルインターセプター::postHandle :postHandle
+## >>>>> サンプルインターセプター::preHandle :afterCompletion
+## MockHttpServletRequest:
+  HTTP Method = GET
+  Request URI = /contact/select/85
+  Parameters = {}
+  Headers = {}
+## Handler:
+  Type = bootcontact.controller.ContactController
+  Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.showContactDetail(bootcontact.model.Contact)
+
+## Resolved Exception:
+  Type = null
+## ModelAndView:
+  View name = views/contact_detail
+  View = null
+  Attribute = loginUser
+  value = null
+  Attribute = curSyubetu
+  value = 家族親戚
+  Attribute = contactSyubetuItems
+  value = [家族親戚, 同僚, 仕事, 顧客, 友人知人, 生活, その他]
+  Attribute = seibetuItems
+  value = [男, 女]
+  Attribute = syumiItems
+  value = [読書, スポーツ, 音楽, ゲーム, その他]
+  Attribute = contact
+  value = Contact(85:1)[村田健一, むらたけんいち, 様, 男, 1981/02/02, syumi=, 友人知人, , , , User(1:1)[tosi,
+    null, ADMIN, 家族知人]]
+
+  errors = []
+## FlashMap:
+  Attributes = null
+## MockHttpServletResponse:
+  Status = 200
+  Error message = null
+  Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache,
+     no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY],
+     Content-Type=[text/html;charset=UTF-8]}
+
+  Content type = text/html;charset=UTF-8
+  Body = <!DOCTYPE html>
+  Forwarded URL = null
+  Redirected URL = null

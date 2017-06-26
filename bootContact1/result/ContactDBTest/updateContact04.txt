@@ -1,0 +1,12 @@
+CU updateContact04: 連絡先の住所(自宅)の削除
+ 連絡先更新前(tosi,家族親戚,山田花子:連絡先一覧 -------------- :logAllContact
+:Address(自宅:262)[ 1234444, 東京都, 千代田区, , , ] :lambda$1
+先:Address(勤務先:261)[ 1235555, 東京都, 港区, , , ] :lambda$1
+:Mail (自宅:263)[mail=h.yamada@x男.com] :lambda$2
+:Phone (自宅:264)[telno=08011112222] :lambda$3
+------------------------- :lambda$0
+ 連絡先更新後:連絡先一覧 -------------- :logAllContact
+先:Address(勤務先:261)[ 1235555, 東京都, 港区, , , ] :lambda$1
+:Mail (自宅:263)[mail=h.yamada@x男.com] :lambda$2
+:Phone (自宅:264)[telno=08011112222] :lambda$3
+------------------------- :lambda$0

@@ -1,0 +1,7 @@
+CA saveContact: yumi ユーザーに連絡先を新規追加
+ 連絡先保存(yumi,家族親戚,新規追加:連絡先一覧 -------------- :logAllContact
+:Address(自宅:346)[ 1234444, 東京都, 千代田区, , , ] :lambda$1
+:Mail (自宅:348)[mail=t.sinki@xmail.com] :lambda$2
+:Mail (携帯:347)[mail=t.sinki@xxx.xx.com] :lambda$2
+:Phone (携帯:349)[telno=09011112222] :lambda$3
+------------------------- :lambda$0

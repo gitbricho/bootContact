@@ -1,0 +1,7 @@
+CU updateContact02: 連絡先の住所(自宅)、メール(自宅)の追加
+ 連絡先更新前(yumi,友人知人,岡本太郎):連絡先一覧 -------------- :logAllContact
+------------------------- :lambda$0
+ 連絡先更新後:連絡先一覧 -------------- :logAllContact
+:Address(自宅:241)[ 3335555, 東京都, 大田区, , , ] :lambda$1
+:Mail (自宅:242)[mail=t.sinki@ssmail.com] :lambda$2
+------------------------- :lambda$0

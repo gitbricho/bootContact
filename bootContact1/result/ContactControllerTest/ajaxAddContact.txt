@@ -1,0 +1,38 @@
+##### ajaxAddContact
+## Initializing Spring FrameworkServlet '' :log
+## FrameworkServlet '': initialization started :initServletBean
+## FrameworkServlet '': initialization completed in 5 ms :initServletBean
+## >>>>> サンプルインターセプター::preHandle :preHandle
+## $$$$$ Contact(null:0)[新規追加, しんきついか, 様, 女, 1980/01/01, syumi=, 家族親戚, , , , User(1:1)[tosi,[ADMIN], ADMIN, 家族知人]] :ajaxSaveContact
+## >>>>> サンプルインターセプター::postHandle :postHandle
+## >>>>> サンプルインターセプター::preHandle :afterCompletion
+## MockHttpServletRequest:
+  HTTP Method = POST
+  Request URI = /contact/ajaxsave
+  Parameters = {}
+  Headers = {Content-Type=[application/json]}
+## Handler:
+  Type = bootcontact.controller.ContactController
+  Method = public bootcontact.model.ContactCmd bootcontact.controller.ContactController.ajaxSaveContact(bootcontact.model.Contact,
+    org.springframework.validation.BindingResult,java.util.Locale)
+
+## Resolved Exception:
+  Type = null
+## ModelAndView:
+  View name = null
+  View = null
+  Model = null
+## FlashMap:
+  Attributes = null
+## MockHttpServletResponse:
+  Status = 200
+  Error message = null
+  Headers = {Content-Type=[application/json;charset=UTF-8]}
+  Content type = application/json;charset=UTF-8
+  Body = {"id":null,"version":1,"simei":null,"yomi":null,"keisyo":null,"seibetu":null,
+    "seinenGappi":null,"memo":null,"picture":null,"syumi":null,"syumiList":null,"syubetu":null,
+    "kaisya":null,"syozoku":null,"yakusyoku":null,"syokusyu":null,"user":null,"googleid":null,
+    "status":11,"message":"連絡先の作成に成功しました!!","fldErrors":null}
+
+  Forwarded URL = null
+  Redirected URL = null

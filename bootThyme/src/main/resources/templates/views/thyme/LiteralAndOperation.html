@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8" />
+<title>Thymeleaf Test</title>
+</head>
+<body>
+  <header>
+    <h3 layout:fragment="custom-header">3:リテラル(値定数)と演算</h3>
+  </header>
+  <section layout:fragment="content">
+  
+    <!-- th:text コンテンツ -->
+    <table class="table">
+     <tr><th>式</th><th>結果</th><th>説明</th></tr>
+     <tr><td>th:text="|趣味は${syumiItems[0]}です。|"</td>
+   　 <td id='01' th:text="|趣味は${syumiItems[0]}です。|"></td>
+      <td>リテラル置換</td></tr>
+     <tr><td>th:text="'文字列1' + '-' + '文字列2'"</td>
+      <td id='02' th:text="'文字列1' + '-' + '文字列2'"></td>
+      <td>文字列リテラルの結合</td></tr>
+     <tr><td>th:text="'23 + 25 = ' +(23 + 25)"</td>
+      <td id='03' th:text="'23 + 25 = ' +(23 + 25)"></td>
+      <td>数値演算と文字列リテラルの結合</td></tr>
+     <tr><td>th:text="true ? '真' : '偽'"</td>
+      <td id='04' th:text="true ? '真' : '偽'"></td>
+      <td>ブール値:true, 比較演算</td></tr>
+     <tr><td>th:text="false ? '真' : '偽'"</td>
+      <td id='05' th:text="false ? '真' : '偽'"></td>
+      <td>ブール値:false, 比較演算</td></tr>
+     <tr><td>th:text="${session.user}!=null ? 'o' : 'x'"
+      <td id='06' th:text="${session.user}!=null ? 'o' : 'x'"></td>
+      <td>null値, 比較演算</td></td></tr>
+     <tr><td>th:text="20*2 eq 40"</td>
+      <td id='07' th:text="20 * 2 eq 40"></td>
+      <td>演算子: *, eq</td></tr>
+     <tr><td>th:text="40 - 5 gt 30"</td>
+      <td id='08' th:text="40 - 5 gt 30"></td>
+      <td>演算子: -, gt</td></tr>
+     <tr><td>th:text="50 / 5 lt 5"</td>
+      <td id='09' th:text="50 / 5 lt 5"></td>
+      <td>演算子: /, lt</td></tr>
+    </table>
+  </section>
+</body>
+</html>

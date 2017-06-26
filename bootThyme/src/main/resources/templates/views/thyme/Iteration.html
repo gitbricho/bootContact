@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8" />
+<title>Thymeleaf Test</title>
+</head>
+<body>
+  <header>
+    <h3 layout:fragment="custom-header">5：繰り返し</h3>
+  </header>
+  <section layout:fragment="content">
+    <h4>配列の要素： String[]</h4>
+    th:each="elm, stat: ${array1}
+    <table class="table">
+      <tr>
+        <td th:each="elm, stat: ${array1}">
+          ${stat.index}= [[${stat.index}]], ${elm} = [[${elm}]]</td>
+      </tr>
+    </table>
+    <h4>リストの要素： List&lt;String&gt;</h4>
+    ${syumiItems} = [[${syumiItems}]]</br>
+    th:each="syumi, stat: ${syumiItems}"
+    <ul>
+      <li th:each="syumi, stat: ${syumiItems}">
+       ${stat.index+1}=[[${stat.index+1}]]:${syumi}=[[${syumi}]]</li>
+    </ul>
+    <h4>マップのキーと値(1)： Map&lt;String, String&gt;</h4>
+    ${map1} = [[${map1}]]</br>
+    th:each="m1: ${map1}" ${m1.key},${m1.value}
+    <table class="table">
+      <tr th:each="m1: ${map1}" >
+        <td>${m1.key}=[[${m1.key}]] , ${m1.value}=[[${m1.value}]]</td>
+      </tr>
+    </table>
+    <h4>マップのキーと値(2)： Map&lt;String, Phone&gt;</h4>
+    ${map2} = [[${map2}]]</br>
+    th:each="m2: ${map2}" ${m2.key},${m2.value.telno}
+    <table class="table">
+      <tr th:each="m2: ${map2}" th:id="${m2.key}">
+        <td>${m2.key}=[[${m2.key}]] , ${m2.value.telno}=[[${m2.value.telno}]]</td>
+      </tr>
+    </table>
+
+  </section>
+</body>
+</html>

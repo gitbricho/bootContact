@@ -1,0 +1,39 @@
+##### updContact
+## Initializing Spring FrameworkServlet '' :log
+## FrameworkServlet '': initialization started :initServletBean
+## FrameworkServlet '': initialization completed in 5 ms :initServletBean
+## >>>>> サンプルインターセプター::preHandle :preHandle
+## $$$$$ Contact(33:1)[山田花子XX, やまだはなこXX, 様, 男, 1990/09/09, syumi=, 友人知人, , , , User(1:0)[null,null, null, null]] :saveContact
+## >>>>> サンプルインターセプター::postHandle :postHandle
+## >>>>> サンプルインターセプター::preHandle :afterCompletion
+## MockHttpServletRequest:
+  HTTP Method = POST
+  Request URI = /contact/save
+  Parameters = {id=[33], version=[1], simei=[山田花子XX], yomi=[やまだはなこXX], seibetu=[男],
+     seinenGappi=[1990/09/09], syubetu=[友人知人], user.id=[1]}
+
+  Headers = {}
+## Handler:
+  Type = bootcontact.controller.ContactController
+  Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.saveContact(bootcontact.model.Contact,
+    org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes,
+    java.util.Locale)
+
+## Resolved Exception:
+  Type = null
+## ModelAndView:
+  View name = redirect:/contact/select/{contact.id}
+  View = null
+  Attribute = contact.id
+  value = 33
+## FlashMap:
+  Attribute = globalMessage
+  value = 山田花子XX:保存に成功しました!!
+## MockHttpServletResponse:
+  Status = 302
+  Error message = null
+  Headers = {Location=[/contact/select/33]}
+  Content type = null
+  Body =
+  Forwarded URL = null
+  Redirected URL = /contact/select/33

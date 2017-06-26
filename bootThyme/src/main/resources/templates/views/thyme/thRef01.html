@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Thymeleaf Test</title>
+<script th:src="@{/os/js/jquery.min.js}"></script>
+<script th:src="@{/os/js/bootstrap.min.js}"></script>
+</head>
+<body th:object="${meisai}">
+<h4>リクエストパラメータのテスト</h4>
+<ul>
+<!-- '/bootApp/thyme/jutyu/meisai?meisaiId=3'を生成 -->
+<li><a href="#" th:href="@{/thyme/jutyu/meisai/(meisaiId=${meisai.id})}"></a>
+<!-- '/bootApp/thyme/jutyu/meisai?tanka=100&kosu=3'を生成 -->
+<li><a href="#" th:href="@{/thyme/jutyu/meisai/(tanka=${meisai.tanka},kosu=${meisai.kosu})}"></a>
+</ul>
+<h4></h4>
+<ul>
+<li>
+</ul>
+</body>
+</html>

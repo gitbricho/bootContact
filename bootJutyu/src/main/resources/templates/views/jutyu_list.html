@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+ layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8" />
+<title>受注一覧</title>
+</head>
+<body>
+ <header>
+  <h3 layout:fragment="custom-header">受注一覧</h3>
+ </header>
+ <section layout:fragment="content">
+ 
+ <div class="row">
+  <div class="col-md-12">    
+ 
+
+  <!-- jutyu_list コンテンツ -->
+  <table class="table table-bordered table-condensed">
+   <thead>
+    <tr>
+     <th class="col-md-1 text-right">NO</th>
+     <th class="col-md-1">[[#{jutyu.jutyubi}]]</th>
+     <th class="col-md-2">[[#{jutyu.nohinsaki}]]</th>
+     <th class="col-md-1 text-right">[[#{jutyu.jutyugaku}]]</th>
+     <th class="col-md-7">[[#{jutyu.meisai}]]</th>
+    </tr>
+   </thead>
+
+   <tbody>
+    <tr th:if="${jutyuList.empty}">
+     <td colspan="3">受注データはありません</td>
+    </tr>
+    <tr th:each="j, sts : ${jutyuList}">
+     <td class="text-right">[[${{sts.count}}]]</td>
+     <td>[[${{j.jutyuBi}}]]</td>
+     <td>[[${j.nohinSaki}]]</td>
+     <td class="text-right">[[${'¥'+ #numbers.formatDecimal(
+       j.jutyuGaku,3,'COMMA',0,'POINT')}]]</td>
+     <!-- td class="text-right" th:text="${#aggregates.sum(j.meisaiList.{tanka * suryo})}">受注額</td -->
+     <td class="text-right">
+      <table width="70%">
+       <tbody>
+        <tr th:each="m,rowStat : ${j.meisaiList}">
+         <td class="col-md-1">[[${rowStat.count}]]</td>
+         <td class="col-md-3 text-left">[[${m.syohin}]]</td>
+         <td class="col-md-1">[[${'¥' + m.tanka}]]</td>
+         <td class="col-md-1">[[${m.suryo}]]</td>
+         <td class="col-md-1">[[${'¥'+#numbers.formatDecimal(
+           m.tanka * m.suryo,3,'COMMA',0,'POINT')}]]</td>
+         <td class="col-md=1"></td>
+        </tr>
+       </tbody>
+      </table>
+     </td>
+    </tr>
+    <tr><td></td><td></td><td class="text-right">受注額合計：</td>
+     <td class="text-right" >[[${'¥'+#numbers.formatDecimal(
+      #aggregates.sum(jutyuList.![jutyuGaku])
+      ,3,'COMMA',0,'POINT')}]]</td><td></td></tr>
+   </tbody>
+  </table>
+  
+  </div>
+ </div>
+  <!-- jutyu_list コンテンツ -->
+
+ </section>
+</body>
+</html>

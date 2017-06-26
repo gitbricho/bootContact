@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+  <div th:fragment="contact_detail">
+    <table class="table table-condensed" id="form-table">
+      <tbody>
+        <!-- ID -->
+        <tr>
+          <td class="td-label">ID:</td>
+          <td th:text="*{id}" id="_id"></td>
+        </tr>
+        <!-- 氏名 / よみ-->
+        <tr>
+          <td class="td-label">氏名/よみ:</td>
+          <td th:text="*{simei}" id="_simei"></td>
+          <td th:text="*{yomi}" id="_yomi"></td>
+        </tr>
+        <!-- 敬称 / 性別 -->
+        <tr>
+          <td class="td-label">敬称/性別:</td>
+          <td th:text="*{keisyo}" id="_keisyo"></td>
+          <td th:text="*{seibetu}" id="_seibetu"></td>
+        </tr>
+        <!-- 生年月日 -->
+        <tr>
+          <td class="td-label">生年月日:</td>
+          <td th:text="*{seinenGappi}" id="_seinenGappi"></td>
+        </tr>
+        <!-- メモ -->
+        <tr>
+          <td class="td-label">メモ:</td>
+          <td th:text="*{memo}" id="_memo"></td>
+        </tr>
+        <!-- 会社 -->
+        <tr>
+          <td class="td-label">会社:</td>
+          <td th:text="*{kaisya}" id="_kaisya"></td>
+        </tr>
+        <!-- 所属 -->
+        <tr>
+          <td class="td-label">所属:</td>
+          <td th:text="*{syozoku}" id="_syozoku"></td>
+        </tr>
+        <!-- 役職 -->
+        <tr>
+          <td class="td-label">役職:</td>
+          <td th:text="*{yakusyoku}" id="_yakusyoku"></td>
+        </tr>
+        <!-- 職種 -->
+        <tr>
+          <td class="td-label">職種:</td>
+          <td th:text="*{syokusyu}" id="_syokusyu"></td>
+        </tr>
+        <!-- 趣味 -->
+        <tr>
+          <td class="td-label">趣味:</td>
+          <td th:text="*{syumi}" id="_syumi"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

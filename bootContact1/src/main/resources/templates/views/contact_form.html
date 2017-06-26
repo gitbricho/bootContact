@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/contact_layout}">
+<head>
+<meta charset="utf-8" />
+<title>連絡先編集</title>
+</head>
+<body>
+  <header>
+    <h3 layout:fragment="custom-header">連絡先編集</h3>
+  </header>
+  <section layout:fragment="content">
+
+  <!-- SSSSS: contact_form コンテンツ -->
+  <!-- フォーム -->
+  <form role="form" id="contactForm" th:action="@{/contact/save}"
+   th:object="${contact}" action="#" style="padding: 10px;" method="post">
+    <P th:each="e : ${#fields.detailedErrors()}" th:class="${e.global}? globalerr : fielderr">
+        <span th:text="${e.message}">The error message</span>
+      ( <span th:text="${e.global}? '*' : ${e.fieldName}">The field name</span> )
+   </P>
+   <!-- 入力フィールド -->
+   <fieldset>
+   
+    <div class="row">
+     <div class="col-md-12">    
+
+      <input type="hidden" th:field="*{id}" /> <input type="hidden"
+       th:field="*{version}" /> <input type="hidden" th:field="*{syubetu}" />
+      <input type="hidden" th:field="*{user.id}" />
+
+      <table class="table table-condensed">
+       <tbody>
+
+        <!-- add buttons -->
+        <tr><td>
+          <span class="col-md-offset-2 col-md-1">
+          <button type="button" id="btnAddPhone" class="btn btn-success">
+           <span class="glyphicon glyphicon-plus"></span>
+           <span class="glyphicon glyphicon-phone"></span>
+          </button></span>
+          <span class="col-md-1">
+          <button type="button" id="btnAddMail" class="btn btn-success">
+           <span class="glyphicon glyphicon-plus"></span>
+           <span class="glyphicon glyphicon-envelope"></span>
+          </button></span>
+          <span class="col-md-1">
+          <button type="button" id="btnAddJusyo" class="btn btn-success">
+           <span class="glyphicon glyphicon-plus"></span>
+           <span class="glyphicon glyphicon-home"></span>
+          </button></span>
+        </td></tr>
+        </tbody>
+        <!-- phones -->
+        <tbody id="tbodyPhone">
+        <tr th:each="e,row : *{phones}"><td>
+          <label for="telno" class="Label col-md-1"> 
+          <span style="float: right">電話:</span></label>
+          <select th:field="*{phones[__${row.index}__].phoneType}"
+           class="col-md-1">
+           <option th:each="item: ${phoneSyubetuItems}"
+            th:value="${item}" th:text="${item}">自宅</option>
+          </select>
+          <input type="text" th:field="*{phones[__${row.index}__].telno}" 
+           class="col-md-2" th:placeholder="電話番号" th:maxlength="13"
+            th:errorclass="fieldError" />
+          <span><button type="button" id="delRow"
+           class="btn btn-danger col-md-offset-4">
+           <span class="glyphicon glyphicon-minus"></span>
+           <span class="glyphicon glyphicon-phone"></span>
+          </button></span>
+        </td></tr>
+        </tbody>
+        <!-- mails -->
+        <tbody id="tbodyMail">
+        <tr th:each="e,row : *{mails}"><td>
+          <label for="mail" class="Label col-md-1"> 
+           <span style="float: right">メール:</span></label>
+          <select th:field="*{mails[__${row.index}__].mailType}"
+           class="col-md-1">
+           <option th:each="item : ${mailSyubetuItems}" 
+            th:value="${item}" th:text="${item}">自宅</option>
+          </select>
+          <input type="text" th:field="*{mails[__${row.index}__].mail}"
+           class="col-md-2" th:placeholder="メール" th:maxlength="30"
+            th:errorclass="fieldError" />
+          <span><button type="button" id="delRow"
+           class="btn btn-danger col-md-offset-4">
+           <span class="glyphicon glyphicon-minus"></span>
+           <span class="glyphicon glyphicon-envelope"></span>
+          </button></span>
+        </td></tr>
+        </tbody>
+        <!-- addresses -->
+        <tbody id="tbodyJusyo">
+        <tr th:each="e,row : *{addresses}"><td>
+          <label for="telno" class="Label col-md-1"> 
+           <span style="float: right">住所:</span></label>
+          <select th:field="*{addresses[__${row.index}__].addressType}"
+           class="col-md-1">
+           <option th:each="item : ${jusyoSyubetuItems}" 
+            th:value="${item}" th:text="${item}">自宅</option>
+          </select>
+          <input type="text" th:field="*{addresses[__${row.index}__].yubin}"
+            class="col-md-2" th:placeholder="郵便番号"
+            th:maxlength="30" th:errorclass="fieldError" />
+          <span><button type="button" id="delRow"
+           class="btn btn-danger col-md-offset-4">
+           <span class="glyphicon glyphicon-minus"></span>
+           <span class="glyphicon glyphicon-home"></span>
+          </button></span>
+          <input type="text" th:field="*{addresses[__${row.index}__].todofuken}"
+            class="col-md-offset-2 col-md-2" th:placeholder="都道府県"
+            th:maxlength="10" th:errorclass="fieldError" />
+          <input type="text" th:field="*{addresses[__${row.index}__].sikuchoson}"
+            class="col-md-2" th:placeholder="市区町村"
+            th:maxlength="30" th:errorclass="fieldError" />
+          <input type="text" th:field="*{addresses[__${row.index}__].banchi}"
+           class="col-md-2" th:placeholder="番地"
+           th:maxlength="30" th:errorclass="fieldError" />
+          <input type="text" th:field="*{addresses[__${row.index}__].banchi2}"
+           class="col-md-2" th:placeholder="建物"
+            th:maxlength="30" th:errorclass="fieldError" />
+        </td></tr>
+        </tbody>
+        
+        <!-- 氏名 -->
+        <tbody>
+        <tr><td>
+         <label for="simeiSei" class="Label col-md-2">
+          <span style="float: right">氏名:</span></label>
+         <input type="text" th:field="*{simeiSei}" class="col-md-2"
+          th:placeholder="姓" th:maxlength="20"
+            th:errorclass="fieldError" />
+         <input type="text" th:field="*{simeiMei}" class="col-md-2"
+          th:placeholder="名" th:maxlength="20" th:errorclass="fieldError" />
+        </td></tr>
+        <!-- よみ -->
+        <tr><td>
+         <label for="yomiSei" class="Label col-md-2"> 
+          <span style="float: right">よみ:</span></label>
+         <input type="text" th:field="*{yomiSei}" class="col-md-2"
+          th:placeholder="せい" th:maxlength="12" th:errorclass="fieldError" />
+         <input type="text" th:field="*{yomiMei}" class="col-md-2"
+          th:placeholder="めい" th:maxlength="12" th:errorclass="fieldError" />
+        </td></tr>
+        <!-- 性別, 生年月日 -->
+        <tr><td>
+         <label for="seibetu" class="Label col-md-2">
+          <span style="float: right">性別/誕生日:</span></label>
+         <div class="col-md-2" th:id="seibetu">
+          <label th:each="item : ${seibetuItems}" class="radio-inline">
+           <input type="radio" th:field="*{seibetu}"
+            th:value="${item}" th:text="${item}" />
+          </label>
+         </div>
+         <input type="text" th:field="*{seinenGappi}" class="col-md-2"
+          th:placeholder="誕生日
+          " th:maxlength="10" th:errorclass="fieldError" />          
+        </td></tr>
+        <tr><td>
+         <!-- メモ -->
+         <div th:include="fragment/fragField01 :: textFormGroup"
+           th:with="fgLabel='メモ', fgId='memo', fgLCol='col-md-2',
+                     fgICol='col-md-9', fgType='text', fgLen='50'"></div>
+        </td></tr>
+        <tr><td>
+         <!-- 会社 -->
+         <div th:include="fragment/fragField01 :: textFormGroup"
+          th:with="fgLabel='会社', fgId='kaisya', fgLCol='col-md-2',
+                     fgICol='col-md-9', fgType='text', fgLen='30'"></div>
+        </td></tr>
+        <tr><td>
+         <!-- 趣味 -->
+         <div th:include="fragment/fragField01 :: checkboxFormGroup"
+           th:with="fgLabel='趣味', fgId='syumi', selItems=${syumiItems}, 
+                     fgLCol='col-md-2', fgList='syumiList'"></div>
+        </td></tr>
+       </tbody>
+      </table>
+      
+     </div>
+    </div>
+
+    <div class="form-actions">
+     <button type="submit" class="btn btn-primary col-md-1 col-md-offset-2">
+      <span class="glyphicon glyphicon-save"></span>
+     </button>
+   </div>
+   </fieldset>
+  </form>
+
+  <hr />
+  <!-- EEEEE: contact_form コンテンツ -->
+  
+<!-- script -->
+<script>
+$(document).ready(function(){
+ //--- 要素作成関数
+ let mobileOpts = ["自宅","携帯","会社","その他"];
+ let jusyoOpts = ["自宅","会社","その他"]; 
+ function getTr(_content) {
+   return "<tr><td>" + _content + "</td></tr>";
+ }
+ function getLabel(_for, _col, _label) {
+   return "<label for='" + _for + "' class='Label " + _col + "'>"
+    + "<span style='float: right'>" + _label + "</span></label>";
+ }
+ function getSelect(_col, _syu, _rno, _fld, _opts) {
+   var $r1="<select class='" + _col + "' id='" + iid() 
+    + "' name='" + inam() + "'>"
+    + "<option value='*' selected='selected'>*</option>";
+    for (let $opt of _opts) {
+    	$r1 += "<option value='" + $opt + "'>" + $opt + "</option>";
+    }
+    return $r1 + "</select>";
+ }
+ function getInput(_col, _ph, _max, _syu, _rno, _fld) {
+   return "<input type='text' class='" + _col + "' placeholder='" + _ph + "'"
+    + "maxlength='" + _max + "' id='" + iid() + "' name='" + inam() + "' value=''/>";
+ }
+ function iid(_syu,_rno,_fld) { return _syu + _rno + _fld; }
+ function inam(_syu,_rno,_fld) { return _syu + "[" + _rno + "]." + _fld; }
+ function getDelBtn(_col, _gicon) {
+  return $r1="<span><button id='delRow' type='button'"
+        + "class='btn btn-danger " + _col + "'>"
+        + "<span class='glyphicon glyphicon-minus'></span> "
+        + "<span class='glyphicon glyphicon-"
+        + _gicon + "'></span></button></span>";
+ }
+ //--- 追加ボタンクリック
+ $("#btnAddPhone").click(function(){
+	var $rno = $("#tbodyPhone > tr").size();
+	$("#tbodyPhone").append(
+	  getTr(getLabel("telno","col-md-1","電話:")
+		  + getSelect("col-md-1","phones", $rno, "phoneType", mobileOpts)
+			+ getInput("col-md-2","電話番号","13", "phones", $rno, "telno")
+			+ getDelBtn("col-md-offset-4", "phone")
+		)
+  );
+ });
+ $("#btnAddMail").click(function(){
+  var $rno = $("#tbodyMail > tr").size();
+	$("#tbodyMail").append(
+   getTr(getLabel("mail","col-md-1","メール:")
+	  + getSelect("col-md-1","mails", $rno, "mailType", mobileOpts)
+	  + getInput("col-md-2","メール","40", "mails", $rno, "mail")
+	  + getDelBtn("col-md-offset-4", "envelope")
+	 )
+  );
+ });
+ $("#btnAddJusyo").click(function(){
+	var $rno = $("#tbodyJusyo > tr").size();
+	$("#tbodyJusyo").append(
+	 getTr(getLabel("address","col-md-1","住所:")
+		+ getSelect("col-md-1","addresses", $rno,"addressType", jusyoOpts)
+	  + getInput("col-md-2","郵便番号","7", "addresses", $rno, "yubin")
+	  + getDelBtn("col-md-offset-4", "home")
+	  + getInput("col-md-offset-2 col-md-2","都道府県","10",
+			 "addresses", $rno, "todofuken")
+	  + getInput("col-md-2","市区町村","20", "addresses", $rno, "sikuchoson")
+    + getInput("col-md-2","番地","30", "addresses", $rno, "banchi")
+    + getInput("col-md-2","建物","30", "addresses", $rno,"banchi2")
+	 )
+	);
+ });
+ $("tbody").on("click", "button", function(){
+	if ($(this).attr("id")=="delRow") {
+	 //alert($(this).attr("id"));
+	 $(this).parents("tr").remove();
+  }
+ });
+
+});
+</script>
+  
+ </section>
+</body>
+</html>

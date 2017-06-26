@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <!-- ########################################
+       フォーム・グループ
+        fgLabel : 見出し/プレースフォルダー文字列
+        fgId : input の id
+        fgTYpe : input タイプ 'text','number', ..
+        fgLCol : ラベル列幅 col-md-4, col-md-2, ...
+        fgICol : input列幅 col-md-4, col-md-2, ...
+        fgLen : input の文字数
+       ######################################## -->
+    <span th:fragment="textFormGroup" class="form-group">
+      <label class="control-label" th:classappend="${fgLCol}" th:for="${fgId}">
+       <span style="float: right" th:text="${fgLabel+':'}">ラベル</span></label>
+       <input th:type="${fgType}" th:field="*{__${fgId}__}" th:placeholder="${fgLabel}"
+          th:maxlength="${fgLen}" th:classappend="${fgICol}"/> 
+    </span>
+
+  <!-- ########################################
+       フォーム・グループ（セレクト）
+        fgLabel : 見出し/プレースフォルダー文字列
+        fgId : input の id
+        fgLCol : ラベル列幅 col-md-4, col-md-2, ...
+        fgICol : input列幅 col-md-4, col-md-2, ...
+        selItems : 選択項目のリスト
+       ######################################## -->
+  <div th:fragment="selectFormGroup">
+    <div class="form-group">
+      <label class="control-label" th:classappend="${fgLCol}" th:for="${fgId}">
+       <span style="float: right" th:text="${fgLabel}">セレクト</span></label>
+      <div th:classappend="${fgICol}">
+        <select th:field="*{__${fgId}__}" class="form-control">
+          <option th:each="item : ${selItems}"
+            th:selected="*{__${fgId}__}==item"
+            th:value="${item}"
+            th:text="${item}">hoge</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- ########################################
+       フォーム・グループ（ラジオ）
+        fgLabel : 見出し/プレースフォルダー文字列
+        fgId : input の id
+        fgLCol : ラベル列幅 col-md-4, col-md-2, ...
+        fgICol : input列幅 col-md-4, col-md-2, ...
+        selItems : 選択項目のリスト
+       ######################################## -->
+  <div th:fragment="radioFormGroup">
+    <div class="form-group">
+      <label class="control-label" th:classappend="${fgLCol}" th:for="${fgId}">
+       <span style="float: right" th:text="${fgLabel}">ラジオボタン</span></label>
+      <div th:classappend="${fgICol}" th:id="${fgId}">&emsp;
+        <label th:each="item : ${selItems}" class="radio-inline">
+        <input type="radio" th:field="*{__${fgId}__}" th:value="${item}" th:text="${item}" />
+        </label>
+      </div>
+    </div>
+  </div>
+  <span th:fragment="radio" th:classappend="${fgICol}" th:id="${fgId}">
+        <label th:each="item : ${selItems}" class="radio-inline">
+        <input type="radio" th:field="*{__${fgId}__}" th:value="${item}" th:text="${item}" />
+        </label>
+  </span>
+  
+
+  <!-- ########################################
+       フォーム・グループ（チェックボックス）
+        fgLabel : 見出し/プレースフォルダー文字列
+        fgId : input の 親の div のid
+        fgList : input の id
+        fgLCol : ラベル列幅 col-md-4, col-md-2, ...
+        fgICol : input列幅 col-md-4, col-md-2, ...
+        selItems : 選択項目のリスト
+       ######################################## -->
+  <div th:fragment="checkboxFormGroup">
+    <div class="form-group">
+      <label class="control-label" th:classappend="${fgLCol}" th:for="${fgId}">
+       <span style="float: right" th:text="${fgLabel}">チェックボックス</span></label>
+      <div th:classappend="${fgICol}" th:id="${fgId}">&emsp;
+        <label th:each="item : ${selItems}" class="checkbox-inline">
+        <input type="checkbox" th:field="*{__${fgList}__}" th:value="${item}" th:text="${item}" />
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <span th:fragment="addButton">
+   <a href="#" type="button" th:href="@{__${btnHref}__}"
+    class="btn btn-success" th:classappend="${btnCol}">
+    <span class="glyphicon glyphicon-plus"></span>
+    <span class="glyphicon" th:classappend="${gicon}"></span></a>
+ </span>
+  <span th:fragment="delButton">
+   <a href="#" type="button" th:href="@{__${btnHref}__}"
+    class="btn btn-danger" th:classappend="${btnCol}">
+    <span class="glyphicon glyphicon-minus"></span>
+    <span class="glyphicon" th:classappend="${gicon}"></span></a>
+ </span>
+ <span th:fragment="actionSelect">
+  <select class="form-control" id="${actId}">
+   <option value="" >メッセージ</option>
+   <option value="" >Skype</option>
+   <option value="" >FaceTime</option>
+  </select>
+ </span>
+</body>
+</html>

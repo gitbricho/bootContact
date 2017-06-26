@@ -1,0 +1,2 @@
+US userFindByName: ユーザー(tosi)取得
+er(1:1)[tosi,null, ADMIN, 家族知人] :lambda$1

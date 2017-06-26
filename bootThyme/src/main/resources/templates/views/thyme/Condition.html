@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8" />
+<title>Thymeleaf Test</title>
+</head>
+<body>
+  <header>
+    <h3 layout:fragment="custom-header">6：条件分岐</h3>
+  </header>
+  <section layout:fragment="content">
+    <h4>th:switch="${syumi}"</h4>
+    <ul>
+      <li th:each="syumi, stat: ${syumiItems}" th:id="${stat.index}" th:switch="${syumi}">
+        <p th:case="'その他'" style="color:red;">[[${syumi}]]
+          ( th:case="'その他'" style="color:red;" )</p>
+        <p th:case="${syumiItems[0]}" style="color:yellow;">[[${syumi}]]
+          ( th:case="${syumiItems[0]}" style="color:yellow;" )</p>
+        <p th:case="*">[[${syumi}]] ( th:case="*" )</p>
+      </li>
+    </ul>
+
+    <h4>th:if, th:unless</h4>
+    <table th:object="${contact}" class="table">
+      <tr><th>条件式</th><th>説明</th><th>式の値</th><th>条件式の評価結果</th></tr>
+      <tr><td>th:if="${#lists.size(syumiItems)}"</td>
+        <td>syumiItems のサイズが1以上か調べる</td>
+        <td>[[${#lists.size(syumiItems)}]]</td>
+        <td th:if="${#lists.size(syumiItems)}">真(1)</tr>
+      <tr><td>th:if="${not #lists.isEmpty(syumiItems)}"</td>
+        <td>syumiItems が空でないか調べる</td>
+        <td>[[${not #lists.isEmpty(syumiItems)}]]</td>
+        <td th:if="${not #lists.isEmpty(syumiItems)}" id='1'>真(2)</td></tr>
+      <tr><td>th:if="*{#lists.size(phones)}"</td>
+        <td>contact.phones のサイズが1以上か調べる</td>
+        <td>[[*{#lists.size(phones)}]]</td>
+        <td th:if="*{#lists.size(phones)}">真(3)</tr>
+      <tr><td>th:if="*{seibetu=='男'}"</td>
+        <td>contact.seibetu が'男'か調べる</td>
+        <td>[[*{seibetu=='男'}]] ([[*{seibetu}]])</td>
+        <td th:if="*{seibetu=='男'}">真(4)</td></tr>
+      <tr><td>th:unless="*{seibetu=='女'}"</td>
+        <td>contact.seibetu が'女'でないか調べる</td>
+        <td>[[*{seibetu=='女'}]] ([[*{seibetu}]])</td>
+        <td th:unless="*{seibetu=='女'}">真(5)</td></tr>
+      <tr><td>th:if="*{#strings.isEmpty(kaisya)}"</td>
+        <td>contact.kaisya が空であることを調べる</td>
+        <td>[[*{#strings.isEmpty(kaisya)}]] ([[*{kaisya}]])</td>
+        <td th:if="*{#strings.isEmpty(kaisya)}">真(6)</td></tr>
+      <tr><td>th:if="*{#strings.contains(syumi,'スポーツ')}"</td>
+        <td>contact.syumi が'スポーツ'を含むか調べる</td>
+        <td>[[*{#strings.contains(syumi,'スポーツ')}]] ([[*{syumi}]])</td>
+        <td th:if="*{#strings.contains(syumi,'スポーツ')}">真(7)</td></tr>
+      <tr><td>th:if="*{seinenGappi &gt; '1970/01/01'}"</td>
+        <td>contact.seinenGappi が'1970/01/01'より大きい(より後)か調べる</td>
+        <td>[[*{seinenGappi &gt; '1970/01/01'}]] ([[*{seinenGappi}]])</td>
+        <td th:if="*{seinenGappi &gt; '1970/01/01'}">真(8)</td></tr>
+    </table>
+
+  </section>
+</body>
+</html>

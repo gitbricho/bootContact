@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8" />
+<title>Thymeleaf Test</title>
+</head>
+<body>
+  <header>
+    <h3 layout:fragment="custom-header">1:Thymeleafの式</h3>
+  </header>
+  <section layout:fragment="content">
+    <p>HTML の要素 (h1, div, input, td, ...など) とインライン構文 (<code>[[</code>
+      <code>]]</code>) または、th:xxx (xxx は text, id, value, field, ...など様々)
+      で式(${...}, *{...}, #{...}, @{...} など)を使って Spring コンテナのオブジェクトやメッセージプロパティにアクセスします。</p>
+     <p>使用例：</p>
+<pre>&lt;td th:text="#{home.welcome}" &gt;&lt;/td&gt;
+&lt;form th:object="${contact} ...&gt;
+&lt;input th:field="*{id}" .../&gt;</pre>
+  
+    <!-- コンテンツ -->
+    <h4>メッセージ式 #{...}</h4>
+Thymeleaf テンプレートから以下のようなメッセージプロパティにアクセスするのに使用します。
+<pre># エスケープの有無をテストするためのメッセージの例
+home.welcome=これは &lt;b&gt;Spring Boot Demo アプリケーション!&lt;/b&gt; です。
+# パラメータを持つメッセージの例
+thyme.welcome= {0} さん、今日の日付は {1} です。</pre>
+    <table class="table">
+     <tr><th>式</th><th>式の結果</th><th>説明</th></tr>
+     <tr><td>th:text="#{home.welcome}"</td>
+       <td id='01' th:text="#{home.welcome}"></td>
+       <td>メッセージ式 </td></tr>
+     <tr><td>th:utext="#{home.welcome}"</td>
+       <td id='02' th:utext="#{home.welcome}"></td>
+       <td>メッセージ式（エスケープなし）</td></tr>
+     <tr><td>${#messages.msg('thyme.welcome', '太田', '2017/05/01')}</td>
+      <td id='03'>[[${#messages.msg('thyme.welcome', '太田', '2017/05/01')}]]</td>
+      <td>メッセージ式（パラメータ）</td></tr>
+    </table>
+    <h4>変数式 ${...}</h4>
+    <p>コンテナに登録されたビーンや java オブジェクトにアクセスします。
+    <table class="table">
+     <tr><th>式</th><th>式の結果</th><th>説明</th></tr>
+     <tr><td>コントローラでモデルに登録されたオブジェクト：</td><td></td><td></td></tr>
+     <tr><td>${contact.seinenGappi}</td>
+      <td id='04'>[[${contact.seinenGappi}]]</td>
+      <td>Contact オブジェクトの seinennGappi</td></tr>
+     <tr><td>${contact.phones.empty} ? '電話番号は未登録'</td>
+      <td id='04'>[[${contact.phones.empty} ? '電話番号は未登録']]</td>
+      <td>Contact オブジェクトの phones</td></tr>
+     <tr><td>${noExistVar}</td>
+      <td id='04'>[[${noExistVar}]]</td>
+      <td>存在しない（未登録）属性名</td></tr>
+     <tr><td>${var1} ?: '変数var1はNULL'</td>
+      <td id='04'>[[${var1} ?: '変数var1はNULL']]</td>
+      <td>エルビス式</td></tr>
+     <tr><td>ビーン：</td><td></td><td></td></tr>
+     <tr><td>${@itemsProps.getSeibetu()}</td>
+      <td id='05'>[[${@itemsProps.getSeibetu()}]]</td>
+      <td>ビーン(itemsProps)にアクセス</td></tr>
+     <tr><td>${@itemsProps.getSeibetu()[0]}</td>
+      <td id='06'>[[${@itemsProps.getSeibetu()[0]}]]</td>
+      <td>ビーン(itemsProps)にアクセス</td></tr>
+     <tr><td>${@environment.getProperty('multipart.maxFileSize')}</td>
+      <td id='07'>[[${@environment.getProperty('multipart.maxFileSize')}]]</td>
+      <td>ビーン(@environment)にアクセス</td></tr>
+     <tr><td>java オブジェクト：</td><td></td><td></td></tr>
+     <tr><td>${T(bootapp.AppConst).MSG_SAVE_OK}</td>
+      <td id='08' th:text="${T(bootapp.AppConst).MSG_SAVE_OK}"></td>
+      <td>java オブジェクト(AppConst)にアクセス</td></tr>
+     <tr><td>#{__${T(bootapp.AppConst).MSG_SAVE_OK}__}</td>
+      <td id='09'>[[#{__${T(bootapp.AppConst).MSG_SAVE_OK}__}]]></td>
+      <td>プリプロセッシング -&gt; #{contact.save.ok}</td></tr>
+     <tr th:if="${session.loginUser} neq null">
+      <td>${session.loginUser.name}</td>
+      <td id='10'>[[${session.loginUser.name}]]</td>
+      <td>sessionに登録されたユーザー名</td></tr>
+     <tr><td>パラメータ：</td><td></td><td></td></tr>
+     <tr><td>${param.size()}</td>
+      <td id='11'>[[${param.size()}]]</td>
+      <td>パラメータのサイズ</td></tr>
+     <tr><td>${param.param1}, ${param.param2}</td>
+      <td id='12'>[[${param.param1}]], [[${param.param2}]]</td>
+      <td>パラメータにアクセス</td></tr>
+     <tr><td>Thymeleaf ユーティリティと組み合わせる：</td><td></td><td></td></tr>
+     <tr><td>${#execInfo.templateName}</td>
+      <td id='13'>[[${#execInfo.templateName}]]</td>
+      <td>ユーティリティ</td></tr>
+     <tr><td>${#dates.format(date20160102_203040, 'yyyy/MM/dd')</td>
+      <td id='14'>[[${#dates.format(date20160102_203040, 'yyyy/MM/dd')}]]</td>
+      <td>#dates ユーティリティ</td></tr>
+     <tr><td>${#numbers.formatDecimal(012345.67,3,'COMMA',1,'POINT')}</td>
+      <td id='15'>[[${#numbers.formatDecimal(012345.67,3,'COMMA',1,'POINT')}]]</td>
+      <td>#numbers ユーティリティ</td></tr>
+     <tr><td>${#strings.contains(syumiItems,'スポーツ')}}</td>
+      <td id='16'>[[${#strings.contains(syumiItems,'スポーツ')}]]
+        ([[${syumiItems}]])</td>
+      <td>#strings ユーティリティ</td></tr>
+     <tr><td>${#strings.startsWith(contact.yomiSei,'や')}}</td>
+      <td id='17'>[[${#strings.startsWith(contact.yomiSei,'や')}]]
+        ([[${contact.yomiSei}]])</td>
+      <td>#strings ユーティリティ</td></tr>
+    </table>
+    <h4>選択変数式 *{...}</h4>
+    &lttable th:object="${contact}"&gt; や&lt;form th:object="${contact}"&gt;
+    のように、ある要素で contact オブジェクトを参照するとき、
+    そのスコープ内で、*{id} のようにして contact のプロパティにアクセスできます。
+    <table class="table" th:object="${contact}">
+     <tr><th>式</th><th>式の結果</th><th>説明</th></tr>
+     <tr><td>*{simeiSei + simeiMei}</td>
+      <td id='18'>[[*{simeiSei + simeiMei}]]</td>
+      <td>${contact.simeiSei + contact.simeiMei} と同じ</td></tr>
+     <tr><td>*{user.name}</td>
+      <td id='19'>[[*{user.name}]]</td>
+      <td>User の name プロパティにアクセス</td></tr>
+    </table>
+    <h4>リンク URL 式 @{...}</h4>
+    <table class="table">
+     <tr><th>式</th><th>式の結果</th><th>説明</th></tr>
+     <tr><td>@{/os/css/bootstrap_paper.min.css}</td>
+      <td id='20'>[[@{/os/css/bootstrap_paper.min.css}]]</td>
+      <td>User の name プロパティにアクセス</td></tr>
+    </table>
+  </section>
+</body>
+</html>

@@ -1,0 +1,260 @@
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+:%%%%%%%%%% :finished
+$$$$$$ テストの初期処理： ユーザー(2件), 連絡先(9件)を作成 :logSetup
+Initializing Spring FrameworkServlet '' :log
+FrameworkServlet '': initialization started :initServletBean
+FrameworkServlet '': initialization completed in 7 ms :initServletBean
+:&&&&&&&&&&&&&&&  ajaxUpdContact:  :testStart
+Initializing Spring FrameworkServlet '' :log
+FrameworkServlet '': initialization started :initServletBean
+FrameworkServlet '': initialization completed in 6 ms :initServletBean
+>>>>> サンプルインターセプター::preHandle :preHandle
+$$$$$ Contact(188:1)[山田花子XX, やまだはなこXX, 様, 男, 1990/09/09, syumi=, 友人知人, , , , User(1:1)[tosi,[ADMIN], ADMIN, 家族知人]] :ajaxSaveContact
+>>>>> サンプルインターセプター::postHandle :postHandle
+>>>>> サンプルインターセプター::preHandle :afterCompletion
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /contact/ajaxsave
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+Handler:
+             Type = bootcontact.controller.ContactController
+           Method = public bootcontact.model.ContactCmd bootcontact.controller.ContactController.ajaxSaveContact(bootcontact.model.Contact,org.springframework.validation.BindingResult,java.util.Locale)
+Async:
+    Async started = false
+     Async result = null
+Resolved Exception:
+             Type = null
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+FlashMap:
+       Attributes = null
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/json;charset=UTF-8]}
+     Content type = application/json;charset=UTF-8
+             Body = {"id":null,"version":2,"simei":null,"yomi":null,"keisyo":null,"seibetu":null,"seinenGappi":null,"memo":null,"picture":null,"syumi":null,"syumiList":null,"syubetu":null,"kaisya":null,"syozoku":null,"yakusyoku":null,"syokusyu":null,"user":null,"googleid":null,"status":12,"message":"連絡先の更新に成功しました!!","fldErrors":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+:%%%%%%%%%% :finished
+$$$$$$ テストの初期処理： ユーザー(2件), 連絡先(9件)を作成 :logSetup
+Initializing Spring FrameworkServlet '' :log
+FrameworkServlet '': initialization started :initServletBean
+FrameworkServlet '': initialization completed in 5 ms :initServletBean
+:&&&&&&&&&&&&&&&  contactFormUpdate:  :testStart
+>>>>> サンプルインターセプター::preHandle :preHandle
+$$$$$ Contact(205:1)[村田健一, むらたけんいち, 様, 男, 1981/02/02, syumi=, 友人知人, , , , User(1:1)[tosi,null, ADMIN, 家族知人]] :updateContact
+>>>>> サンプルインターセプター::postHandle :postHandle
+>>>>> サンプルインターセプター::preHandle :afterCompletion
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /contact/form/205
+       Parameters = {}
+          Headers = {}
+Handler:
+             Type = bootcontact.controller.ContactController
+           Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.updateContact(bootcontact.model.Contact)
+Async:
+    Async started = false
+     Async result = null
+Resolved Exception:
+             Type = null
+ModelAndView:
+        View name = views/contact_form
+             View = null
+        Attribute = loginUser
+            value = null
+        Attribute = curSyubetu
+            value = 家族親戚
+        Attribute = contactSyubetuItems
+            value = [家族親戚, 同僚, 仕事, 顧客, 友人知人, 生活, その他]
+        Attribute = seibetuItems
+            value = [男, 女]
+        Attribute = syumiItems
+            value = [読書, スポーツ, 音楽, ゲーム, その他]
+        Attribute = contact
+            value = Contact(205:1)[村田健一, むらたけんいち, 様, 男, 1981/02/02, syumi=, 友人知人, , , , User(1:1)[tosi,null, ADMIN, 家族知人]]
+           errors = []
+FlashMap:
+       Attributes = null
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache, no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY], Content-Type=[text/html;charset=UTF-8]}
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>連絡先管理 - 連絡先編集</title>
+  ... 省略：HTMLヘッダ
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        ... 省略：ナビゲーションバーフラグメント
+    </nav>
+  </div></div>
+        <br />
+        <header>
+          <h3>連絡先編集</h3>
+        </header>
+        <section>
+  <!--  contact_form コンテンツ -->
+  <div class="row">
+   <div class="col-md-9">
+    <!-- フォーム -->
+    <form role="form" id="contactForm" action="/contact/save" style="padding: 10px;" method="post"><input type="hidden" name="_csrf" value="7d0f1dc3-9fe2-4dc8-acbd-f9249e102d31"/>
+     <input type="hidden" id="id" name="id" value="205" /> <input type="hidden" id="version" name="version" value="1" /> <input type="hidden" id="syubetu" name="syubetu" value="友人知人" /> <input
+      type="hidden" id="user.id" name="user.id" value="1" />
+     <!-- 氏名 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="simei">氏名</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="氏名"
+          maxlength="18" class="form-control" id="simei" name="simei" value="村田健一" /> 
+      </div>
+    </div>
+  </div>
+     <!-- よみ -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="yomi">よみ</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="よみ"
+          maxlength="18" class="form-control" id="yomi" name="yomi" value="むらたけんいち" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 敬称 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="keisyo">敬称</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="敬称"
+          maxlength="4" class="form-control" id="keisyo" name="keisyo" value="様" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 性別 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="seibetu">性別</label>
+      <div id="seibetu">&emsp;
+        <label class="radio-inline">
+        <input type="radio" value="男" id="seibetu1" name="seibetu" checked="checked" >男</input>
+        </label><label class="radio-inline">
+        <input type="radio" value="女" id="seibetu2" name="seibetu" >女</input>
+        </label>
+      </div>
+    </div>
+  </div>
+     <!-- 生年月日 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="seinenGappi">生年月日</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="生年月日"
+          maxlength="10" class="form-control" id="seinenGappi" name="seinenGappi" value="1981/02/02" /> 
+      </div>
+    </div>
+  </div>
+     <!-- メモ -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="memo">メモ</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="メモ"
+          maxlength="50" class="form-control" id="memo" name="memo" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 会社 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="kaisya">会社</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="会社"
+          maxlength="30" class="form-control" id="kaisya" name="kaisya" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 所属 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="syozoku">所属</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="所属"
+          maxlength="30" class="form-control" id="syozoku" name="syozoku" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 役職 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="yakusyoku">役職</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="役職"
+          maxlength="20" class="form-control" id="yakusyoku" name="yakusyoku" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 職種 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="syokusyu">職種</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="職種"
+          maxlength="20" class="form-control" id="syokusyu" name="syokusyu" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 趣味 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="syumi">趣味</label>
+      <div id="syumi">&emsp;
+        <label class="checkbox-inline">
+        <input type="checkbox" value="読書" id="syumiList1" name="syumiList" >読書</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="スポーツ" id="syumiList2" name="syumiList" >スポーツ</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="音楽" id="syumiList3" name="syumiList" >音楽</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="ゲーム" id="syumiList4" name="syumiList" >ゲーム</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="その他" id="syumiList5" name="syumiList" >その他</input>
+        </label>
+      </div>
+    </div>
+  </div>
+     <div class="form-actions">
+      <input type="submit" value="保存" />
+     </div>
+    </form>
+    <div class="col-md-3"></div>
+   </div>
+  </div>
+  <hr />
+  <!--  contact_form コンテンツ -->
+ </section>
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>連絡先管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,2581 @@
+16:56:44.288 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class bootcontact.ContactControllerTest]
+16:56:44.299 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+16:56:44.308 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+16:56:44.323 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [bootcontact.ContactControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+16:56:44.335 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [bootcontact.ContactControllerTest], using SpringBootContextLoader
+16:56:44.339 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [bootcontact.ContactControllerTest]: class path resource [bootcontact/ContactControllerTest-context.xml] does not exist
+16:56:44.340 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [bootcontact.ContactControllerTest]: class path resource [bootcontact/ContactControllerTestContext.groovy] does not exist
+16:56:44.340 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [bootcontact.ContactControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:56:44.341 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [bootcontact.ContactControllerTest]: ContactControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:56:44.384 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [bootcontact.ContactControllerTest]
+16:56:44.395 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+16:56:44.396 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+16:56:44.396 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+16:56:44.408 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [bootcontact/] to resources [URL [file:/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/]]
+16:56:44.408 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact]
+16:56:44.409 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact] for files matching pattern [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/*.class]
+16:56:44.425 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:bootcontact/*.class] to resources [file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/App.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/AppConfig.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/AppConst.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/AppData.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/AppReadyEventListener.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/AppTest.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/ContactControllerTest$1.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/ContactControllerTest$2.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/ContactControllerTest$3.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/ContactControllerTest.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/ContactDBTest.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/CustomizeBean.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/DbConfig.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/HomeControllerTest.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/Item.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/LogRule.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/MockTpltTest.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/MyServiceA.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/PageInfo.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/RestClientTest.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/SampleIntercepter.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/SecConfig.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/Snippet.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/TestUtil.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/Thumbnail.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/UserControllerTest.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/VId.class], file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/Videos.class]]
+16:56:44.474 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/bootcontact/App.class]
+16:56:44.496 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration bootcontact.App for test class bootcontact.ContactControllerTest
+16:56:44.499 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [bootcontact.ContactControllerTest]: using defaults.
+16:56:44.506 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener]
+16:56:44.529 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2d2e5f00, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4c40b76e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2ea6137, org.springframework.test.context.support.DirtiesContextTestExecutionListener@41ee392b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1e67a849, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@57d5872c, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@667a738, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@36f0f1be, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@157632c9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6ee12bac, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@55040f2f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@64c87930, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@400cff1a]
+16:56:44.531 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [bootcontact.ContactControllerTest]
+16:56:44.531 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [bootcontact.ContactControllerTest]
+16:56:44.541 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [bootcontact.ContactControllerTest]
+16:56:44.542 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [bootcontact.ContactControllerTest]
+16:56:44.543 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [bootcontact.ContactControllerTest]
+16:56:44.543 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [bootcontact.ContactControllerTest]
+16:56:44.544 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [bootcontact.ContactControllerTest]
+16:56:44.544 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [bootcontact.ContactControllerTest]
+16:56:44.547 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@14a2f921 testClass = ContactControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3c87521 testClass = ContactControllerTest, locations = '{}', classes = '{class bootcontact.App}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@3cef309d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@49fc609f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@64729b1e], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [true] with mode [AFTER_CLASS].
+16:56:44.547 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [bootcontact.ContactControllerTest]
+16:56:44.548 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [bootcontact.ContactControllerTest]
+16:56:44.550 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@14a2f921 testClass = ContactControllerTest, testInstance = bootcontact.ContactControllerTest@17c1bced, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@3c87521 testClass = ContactControllerTest, locations = '{}', classes = '{class bootcontact.App}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@3cef309d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@49fc609f, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@64729b1e], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]].
+16:56:44.609 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+16:56:44.610 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+16:56:44.610 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+16:56:44.611 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+16:56:44.611 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+16:56:55 : o.h.validator.internal.util.Version     HV000001: Hibernate Validator 5.3.5.Final :<clinit>
+16:57:00 : bootcontact.ContactControllerTest       Starting ContactControllerTest on tt-mbp.local with PID 76160 (started by bri_tcho in /Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1) :logStarting
+16:57:00 : bootcontact.ContactControllerTest       Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE :logStarting
+16:57:00 : bootcontact.ContactControllerTest       No active profile set, falling back to default profiles: default :logStartupProfileInfo
+16:57:00 : ationConfigEmbeddedWebApplicationContextRefreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@420a85c4: startup date [Tue Jun 13 16:57:00 JST 2017]; root of context hierarchy :prepareRefresh
+16:57:01 : o.s.b.f.s.DefaultListableBeanFactory    Overriding bean definition for bean 'httpRequestHandlerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration; factoryMethodName=httpRequestHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration; factoryMethodName=httpRequestHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.class]] :registerBeanDefinition
+16:57:01 : o.s.b.f.s.DefaultListableBeanFactory    Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]] :registerBeanDefinition
+16:57:02 : trationDelegate$BeanPostProcessorCheckerBean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$adaffbcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) :postProcessAfterInitialization
+16:57:03 : s.b.c.e.t.TomcatEmbeddedServletContainerTomcat initialized with port(s): 0 (http) :initialize
+16:57:03 : o.apache.catalina.core.StandardService  Starting service Tomcat :log
+16:57:03 : org.apache.catalina.core.StandardEngine Starting Servlet Engine: Apache Tomcat/8.5.14 :log
+16:57:03 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring embedded WebApplicationContext :log
+16:57:03 : o.s.web.context.ContextLoader           Root WebApplicationContext: initialization completed in 2880 ms :prepareEmbeddedWebApplicationContext
+16:57:03 : o.s.b.w.servlet.FilterRegistrationBean  Mapping filter: 'metricsFilter' to: [/*] :configure
+16:57:03 : o.s.b.w.servlet.FilterRegistrationBean  Mapping filter: 'characterEncodingFilter' to: [/*] :configure
+16:57:03 : o.s.b.w.servlet.FilterRegistrationBean  Mapping filter: 'hiddenHttpMethodFilter' to: [/*] :configure
+16:57:03 : o.s.b.w.servlet.FilterRegistrationBean  Mapping filter: 'httpPutFormContentFilter' to: [/*] :configure
+16:57:03 : o.s.b.w.servlet.FilterRegistrationBean  Mapping filter: 'requestContextFilter' to: [/*] :configure
+16:57:03 : .s.DelegatingFilterProxyRegistrationBeanMapping filter: 'springSecurityFilterChain' to: [/*] :configure
+16:57:03 : o.s.b.w.servlet.FilterRegistrationBean  Mapping filter: 'webRequestLoggingFilter' to: [/*] :configure
+16:57:03 : o.s.b.w.servlet.FilterRegistrationBean  Mapping filter: 'applicationContextIdFilter' to: [/*] :configure
+16:57:03 : o.s.b.w.servlet.ServletRegistrationBean Mapping servlet: 'dispatcherServlet' to [/] :onStartup
+16:57:03 : o.s.j.d.DriverManagerDataSource         Loaded JDBC driver: org.h2.Driver :setDriverClassName
+16:57:03 : j.LocalContainerEntityManagerFactoryBeanBuilding JPA container EntityManagerFactory for persistence unit 'default' :createNativeEntityManagerFactory
+[EL Config]: metadata: 2017-06-13 16:57:04.487--ServerSession(1689718593)--The access type for the persistent class [class bootcontact.model.AbstractPersistentEntity] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 16:57:04.538--ServerSession(1689718593)--The access type for the persistent class [class bootcontact.model.Contact] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 16:57:04.555--ServerSession(1689718593)--The target entity (reference) class for the one to many mapping element [field addresses] is being defaulted to: class bootcontact.model.Address.
+[EL Config]: metadata: 2017-06-13 16:57:04.556--ServerSession(1689718593)--The target entity (reference) class for the one to many mapping element [field phones] is being defaulted to: class bootcontact.model.Phone.
+[EL Config]: metadata: 2017-06-13 16:57:04.556--ServerSession(1689718593)--The target entity (reference) class for the one to many mapping element [field mails] is being defaulted to: class bootcontact.model.Mail.
+[EL Config]: metadata: 2017-06-13 16:57:04.559--ServerSession(1689718593)--The target entity (reference) class for the many to one mapping element [field user] is being defaulted to: class bootcontact.model.User.
+[EL Config]: metadata: 2017-06-13 16:57:04.559--ServerSession(1689718593)--The access type for the persistent class [class bootcontact.model.Mail] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 16:57:04.559--ServerSession(1689718593)--The access type for the persistent class [class bootcontact.model.User] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 16:57:04.56--ServerSession(1689718593)--The access type for the persistent class [class bootcontact.model.Address] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 16:57:04.561--ServerSession(1689718593)--The access type for the persistent class [class bootcontact.model.Phone] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 16:57:04.587--ServerSession(1689718593)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.59--ServerSession(1689718593)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 16:57:04.592--ServerSession(1689718593)--The alias name for the entity class [class bootcontact.model.Contact] is being defaulted to: Contact.
+[EL Config]: metadata: 2017-06-13 16:57:04.593--ServerSession(1689718593)--The table name for entity [class bootcontact.model.Contact] is being defaulted to: CONTACT.
+[EL Config]: metadata: 2017-06-13 16:57:04.607--ServerSession(1689718593)--The column name for element [seibetu] is being defaulted to: SEIBETU.
+[EL Config]: metadata: 2017-06-13 16:57:04.607--ServerSession(1689718593)--The column name for element [googleid] is being defaulted to: GOOGLEID.
+[EL Config]: metadata: 2017-06-13 16:57:04.608--ServerSession(1689718593)--The column name for element [simeiMei] is being defaulted to: SIMEIMEI.
+[EL Config]: metadata: 2017-06-13 16:57:04.608--ServerSession(1689718593)--The column name for element [seinenGappi] is being defaulted to: SEINENGAPPI.
+[EL Config]: metadata: 2017-06-13 16:57:04.608--ServerSession(1689718593)--The column name for element [syumi] is being defaulted to: SYUMI.
+[EL Config]: metadata: 2017-06-13 16:57:04.609--ServerSession(1689718593)--The column name for element [simeiSei] is being defaulted to: SIMEISEI.
+[EL Config]: metadata: 2017-06-13 16:57:04.609--ServerSession(1689718593)--The column name for element [yomiSei] is being defaulted to: YOMISEI.
+[EL Config]: metadata: 2017-06-13 16:57:04.609--ServerSession(1689718593)--The column name for element [memo] is being defaulted to: MEMO.
+[EL Config]: metadata: 2017-06-13 16:57:04.61--ServerSession(1689718593)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 16:57:04.61--ServerSession(1689718593)--The column name for element [picture] is being defaulted to: PICTURE.
+[EL Config]: metadata: 2017-06-13 16:57:04.61--ServerSession(1689718593)--The column name for element [yomiMei] is being defaulted to: YOMIMEI.
+[EL Config]: metadata: 2017-06-13 16:57:04.61--ServerSession(1689718593)--The column name for element [syubetu] is being defaulted to: SYUBETU.
+[EL Config]: metadata: 2017-06-13 16:57:04.611--ServerSession(1689718593)--The column name for element [kaisya] is being defaulted to: KAISYA.
+[EL Config]: metadata: 2017-06-13 16:57:04.611--ServerSession(1689718593)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.611--ServerSession(1689718593)--The alias name for the entity class [class bootcontact.model.Mail] is being defaulted to: Mail.
+[EL Config]: metadata: 2017-06-13 16:57:04.612--ServerSession(1689718593)--The table name for entity [class bootcontact.model.Mail] is being defaulted to: MAIL.
+[EL Config]: metadata: 2017-06-13 16:57:04.612--ServerSession(1689718593)--The column name for element [mailType] is being defaulted to: MAILTYPE.
+[EL Config]: metadata: 2017-06-13 16:57:04.613--ServerSession(1689718593)--The column name for element [mail] is being defaulted to: MAIL.
+[EL Config]: metadata: 2017-06-13 16:57:04.613--ServerSession(1689718593)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.613--ServerSession(1689718593)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 16:57:04.613--ServerSession(1689718593)--The alias name for the entity class [class bootcontact.model.User] is being defaulted to: User.
+[EL Config]: metadata: 2017-06-13 16:57:04.614--ServerSession(1689718593)--The column name for element [encodePass] is being defaulted to: ENCODEPASS.
+[EL Config]: metadata: 2017-06-13 16:57:04.614--ServerSession(1689718593)--The column name for element [syubetu] is being defaulted to: SYUBETU.
+[EL Config]: metadata: 2017-06-13 16:57:04.614--ServerSession(1689718593)--The column name for element [roles] is being defaulted to: ROLES.
+[EL Config]: metadata: 2017-06-13 16:57:04.614--ServerSession(1689718593)--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2017-06-13 16:57:04.615--ServerSession(1689718593)--The column name for element [theme] is being defaulted to: THEME.
+[EL Config]: metadata: 2017-06-13 16:57:04.615--ServerSession(1689718593)--The column name for element [yomi] is being defaulted to: YOMI.
+[EL Config]: metadata: 2017-06-13 16:57:04.615--ServerSession(1689718593)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.616--ServerSession(1689718593)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 16:57:04.616--ServerSession(1689718593)--The column name for element [simei] is being defaulted to: SIMEI.
+[EL Config]: metadata: 2017-06-13 16:57:04.616--ServerSession(1689718593)--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2017-06-13 16:57:04.617--ServerSession(1689718593)--The alias name for the entity class [class bootcontact.model.Address] is being defaulted to: Address.
+[EL Config]: metadata: 2017-06-13 16:57:04.617--ServerSession(1689718593)--The table name for entity [class bootcontact.model.Address] is being defaulted to: ADDRESS.
+[EL Config]: metadata: 2017-06-13 16:57:04.617--ServerSession(1689718593)--The column name for element [banchi] is being defaulted to: BANCHI.
+[EL Config]: metadata: 2017-06-13 16:57:04.617--ServerSession(1689718593)--The column name for element [yubin] is being defaulted to: YUBIN.
+[EL Config]: metadata: 2017-06-13 16:57:04.617--ServerSession(1689718593)--The column name for element [addressType] is being defaulted to: ADDRESSTYPE.
+[EL Config]: metadata: 2017-06-13 16:57:04.618--ServerSession(1689718593)--The column name for element [banchi2] is being defaulted to: BANCHI2.
+[EL Config]: metadata: 2017-06-13 16:57:04.618--ServerSession(1689718593)--The column name for element [sikuchoson] is being defaulted to: SIKUCHOSON.
+[EL Config]: metadata: 2017-06-13 16:57:04.618--ServerSession(1689718593)--The column name for element [webpage] is being defaulted to: WEBPAGE.
+[EL Config]: metadata: 2017-06-13 16:57:04.618--ServerSession(1689718593)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.618--ServerSession(1689718593)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 16:57:04.619--ServerSession(1689718593)--The column name for element [todofuken] is being defaulted to: TODOFUKEN.
+[EL Config]: metadata: 2017-06-13 16:57:04.619--ServerSession(1689718593)--The alias name for the entity class [class bootcontact.model.Phone] is being defaulted to: Phone.
+[EL Config]: metadata: 2017-06-13 16:57:04.619--ServerSession(1689718593)--The table name for entity [class bootcontact.model.Phone] is being defaulted to: PHONE.
+[EL Config]: metadata: 2017-06-13 16:57:04.619--ServerSession(1689718593)--The column name for element [phoneType] is being defaulted to: PHONETYPE.
+[EL Config]: metadata: 2017-06-13 16:57:04.619--ServerSession(1689718593)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.62--ServerSession(1689718593)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 16:57:04.62--ServerSession(1689718593)--The column name for element [telno] is being defaulted to: TELNO.
+[EL Config]: metadata: 2017-06-13 16:57:04.651--ServerSession(1689718593)--The join table name for the many to many mapping [field addresses] is being defaulted to: CONTACT_ADDRESS.
+[EL Config]: metadata: 2017-06-13 16:57:04.653--ServerSession(1689718593)--The source primary key column name for the many to many mapping [field addresses] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.653--ServerSession(1689718593)--The source foreign key column name for the many to many mapping [addresses] is being defaulted to: Contact_ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.654--ServerSession(1689718593)--The target primary key column name for the many to many mapping [field addresses] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.654--ServerSession(1689718593)--The target foreign key column name for the many to many mapping [addresses] is being defaulted to: addresses_ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.654--ServerSession(1689718593)--The join table name for the many to many mapping [field phones] is being defaulted to: CONTACT_PHONE.
+[EL Config]: metadata: 2017-06-13 16:57:04.654--ServerSession(1689718593)--The source primary key column name for the many to many mapping [field phones] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.655--ServerSession(1689718593)--The source foreign key column name for the many to many mapping [phones] is being defaulted to: Contact_ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.655--ServerSession(1689718593)--The target primary key column name for the many to many mapping [field phones] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.655--ServerSession(1689718593)--The target foreign key column name for the many to many mapping [phones] is being defaulted to: phones_ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.655--ServerSession(1689718593)--The join table name for the many to many mapping [field mails] is being defaulted to: CONTACT_MAIL.
+[EL Config]: metadata: 2017-06-13 16:57:04.656--ServerSession(1689718593)--The source primary key column name for the many to many mapping [field mails] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.656--ServerSession(1689718593)--The source foreign key column name for the many to many mapping [mails] is being defaulted to: Contact_ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.656--ServerSession(1689718593)--The target primary key column name for the many to many mapping [field mails] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.656--ServerSession(1689718593)--The target foreign key column name for the many to many mapping [mails] is being defaulted to: mails_ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.669--ServerSession(1689718593)--The primary key column name for the mapping element [field user] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 16:57:04.669--ServerSession(1689718593)--The foreign key column name for the mapping element [user] is being defaulted to: USER_ID.
+[EL Info]: 2017-06-13 16:57:04.738--ServerSession(1689718593)--EclipseLink, version: Eclipse Persistence Services - 2.6.3.v20160428-59c81c5
+[EL Config]: connection: 2017-06-13 16:57:04.749--ServerSession(1689718593)--Connection(713765818)--connecting(DatabaseLogin(
+	platform=>H2Platform
+	user name=> ""
+	connector=>JNDIConnector datasource name=>null
+))
+[EL Config]: connection: 2017-06-13 16:57:04.997--ServerSession(1689718593)--Connection(2095225389)--Connected: jdbc:h2:~/_data/h2/contact
+	User: DEMO
+	Database: H2  Version: 1.4.194 (2017-03-10)
+	Driver: H2 JDBC Driver  Version: 1.4.194 (2017-03-10)
+[EL Config]: connection: 2017-06-13 16:57:05.0--ServerSession(1689718593)--Connection(1221274995)--connecting(DatabaseLogin(
+	platform=>H2Platform
+	user name=> ""
+	connector=>JNDIConnector datasource name=>null
+))
+[EL Config]: connection: 2017-06-13 16:57:05.019--ServerSession(1689718593)--Connection(1532989443)--Connected: jdbc:h2:~/_data/h2/contact
+	User: DEMO
+	Database: H2  Version: 1.4.194 (2017-03-10)
+	Driver: H2 JDBC Driver  Version: 1.4.194 (2017-03-10)
+[EL Info]: connection: 2017-06-13 16:57:05.098--ServerSession(1689718593)--/file:/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/_default login successful
+16:57:05 : j.LocalContainerEntityManagerFactoryBeanInitialized JPA EntityManagerFactory for persistence unit 'default' :buildNativeEntityManagerFactory
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerAdapterLooking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@420a85c4: startup date [Tue Jun 13 16:57:00 JST 2017]; root of context hierarchy :initControllerAdviceCache
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerAdapterDetected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice :initControllerAdviceCache
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/contact/delete/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.deleteContact(java.lang.Long) :register
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/contact/list/{syu}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.showContactList(java.lang.String) :register
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/contact/list],methods=[GET]}" onto public java.lang.String bootcontact.controller.ContactController.showContactList(org.springframework.ui.Model,java.util.Locale) :register
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/contact/theme/{theme}],methods=[GET]}" onto public java.lang.String bootcontact.controller.ContactController.changeTheme(java.lang.String,org.springframework.ui.Model) :register
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/contact/select/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.showContactDetail(bootcontact.model.Contact) :register
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/contact/form],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.createContact(bootcontact.model.Contact) :register
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/contact/form/{id}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.updateContact(bootcontact.model.Contact) :register
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/contact/save],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.saveContact(bootcontact.model.Contact,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes,java.util.Locale) :register
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/login],methods=[GET]}" onto public java.lang.String bootcontact.controller.HomeController.login() :register
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/ || /home],methods=[GET]}" onto public java.lang.String bootcontact.controller.HomeController.home(org.springframework.ui.Model) :register
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/user_list],methods=[GET]}" onto public java.lang.String bootcontact.controller.UserController.showUserList(org.springframework.ui.Model) :register
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) :register
+16:57:07 : s.w.s.m.m.a.RequestMappingHandlerMappingMapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) :register
+16:57:07 : o.s.w.s.handler.SimpleUrlHandlerMapping Mapped URL path [/error] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController] :registerHandler
+16:57:07 : o.s.w.s.handler.SimpleUrlHandlerMapping Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController] :registerHandler
+16:57:07 : o.s.w.s.handler.SimpleUrlHandlerMapping Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController] :registerHandler
+16:57:07 : o.s.w.s.handler.SimpleUrlHandlerMapping Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController] :registerHandler
+16:57:07 : o.s.w.s.handler.SimpleUrlHandlerMapping Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] :registerHandler
+16:57:07 : o.s.w.s.handler.SimpleUrlHandlerMapping Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] :registerHandler
+16:57:08 : .m.m.a.ExceptionHandlerExceptionResolverDetected @ExceptionHandler methods in repositoryRestExceptionHandler :initExceptionHandlerAdviceCache
+16:57:08 : .m.m.a.ExceptionHandlerExceptionResolverDetected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice :initExceptionHandlerAdviceCache
+16:57:08 : o.s.w.s.handler.SimpleUrlHandlerMapping Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] :registerHandler
+16:57:08 : org.thymeleaf.templatemode.TemplateMode [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead. :parse
+16:57:09 : o.s.s.web.DefaultSecurityFilterChain    Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], [] :<init>
+16:57:09 : o.s.s.web.DefaultSecurityFilterChain    Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67593f7b, org.springframework.security.web.context.SecurityContextPersistenceFilter@5e8bd498, org.springframework.security.web.header.HeaderWriterFilter@644b68ad, org.springframework.security.web.csrf.CsrfFilter@4c000cc4, org.springframework.security.web.authentication.logout.LogoutFilter@74619273, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40a7974, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59a2bed1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69d58731, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2773504f, org.springframework.security.web.session.SessionManagementFilter@e2c627e, org.springframework.security.web.access.ExceptionTranslationFilter@3d4818e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@54ca9420] :<init>
+16:57:09 : o.s.s.web.DefaultSecurityFilterChain    Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@6866e740, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cd5b19c, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c910acd, org.springframework.security.web.header.HeaderWriterFilter@2cf88901, org.springframework.security.web.authentication.logout.LogoutFilter@4e26987b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14993306, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@612ac38b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9f2fe2e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7109b603, org.springframework.security.web.session.SessionManagementFilter@4780341, org.springframework.security.web.access.ExceptionTranslationFilter@73a5d86c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66944c7c] :<init>
+16:57:09 : o.s.s.web.DefaultSecurityFilterChain    Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14ad42, org.springframework.security.web.context.SecurityContextPersistenceFilter@299786b1, org.springframework.security.web.header.HeaderWriterFilter@42066f0d, org.springframework.security.web.authentication.logout.LogoutFilter@1e23ee0e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@b144175, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75f8d9b0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f7ae05, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@608b906d, org.springframework.security.web.session.SessionManagementFilter@687e561b, org.springframework.security.web.access.ExceptionTranslationFilter@11f9b95a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29c80149] :<init>
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerAdapter  Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@420a85c4: startup date [Tue Jun 13 16:57:00 JST 2017]; root of context hierarchy :initControllerAdviceCache
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerAdapter  Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice :initControllerAdviceCache
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}],methods=[POST],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources<java.lang.Object>,java.io.Serializable,java.lang.String) throws java.lang.Exception :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpHeaders,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String) :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String) :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories() :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryController.headForRepositories() :register
+16:57:09 : o.s.d.r.w.RepositoryRestHandlerMapping  Mapped "{[/ || ],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories() :register
+16:57:09 : o.s.d.r.w.BasePathAwareHandlerMapping   Mapped "{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions() :register
+16:57:09 : o.s.d.r.w.BasePathAwareHandlerMapping   Mapped "{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}" onto org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RootResourceInformation> org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+16:57:09 : o.s.d.r.w.BasePathAwareHandlerMapping   Mapped "{[/profile],methods=[OPTIONS]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions() :register
+16:57:09 : o.s.d.r.w.BasePathAwareHandlerMapping   Mapped "{[/profile],methods=[GET]}" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata() :register
+16:57:09 : o.s.d.r.w.BasePathAwareHandlerMapping   Mapped "{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.json.JsonSchema> org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links() :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String) :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>) :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String) :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String) :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal) :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String) :register
+16:57:09 : o.s.b.a.e.mvc.EndpointHandlerMapping    Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+16:57:10 : o.a.coyote.http11.Http11NioProtocol     Initializing ProtocolHandler ["http-nio-auto-1"] :log
+16:57:10 : o.a.coyote.http11.Http11NioProtocol     Starting ProtocolHandler ["http-nio-auto-1"] :log
+16:57:10 : o.a.tomcat.util.net.NioSelectorPool     Using a shared selector for servlet write/read :log
+16:57:10 : s.b.c.e.t.TomcatEmbeddedServletContainerTomcat started on port(s): 58022 (http) :start
+>>>>>>>> create data
+16:57:11 : bootcontact.ContactControllerTest       Started ContactControllerTest in 26.533 seconds (JVM running for 27.508) :logStarted
+16:57:11 : bootcontact.TestUtil                    $$$$$$ テストの初期処理： ユーザー(2件), 連絡先(14件)を作成 :logSetup
+16:57:11 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:11 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:11 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 29 ms :initServletBean
+16:57:11 : bootcontact.LogRule                     :&&&&&&&&&&&&&&&  addContact:  :testStart
+16:57:11 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:11 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:11 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 5 ms :initServletBean
+16:57:11 : bootcontact.SampleIntercepter           >>>>> サンプルインターセプター :preHandle
+16:57:11 : b.controller.ContactController          $$$$$ Contact(null:0)[simei=新規追加, yomi=しんきついか, seibetu=女, seinenGappi=1980/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:0)[null,null, null, null], googleid=, phones=, mails=, addresses=] :saveContact
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /contact/save
+       Parameters = {seibetu=[女], simeiMei=[追加], yomiMei=[ついか], user.id=[1], seinenGappi=[1980/01/01], syubetu=[家族親戚], simeiSei=[新規], yomiSei=[しんき], version=[0]}
+          Headers = {Content-Type=[application/x-www-form-urlencoded;charset=UTF-8]}
+
+Handler:
+             Type = bootcontact.controller.ContactController
+           Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.saveContact(bootcontact.model.Contact,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes,java.util.Locale)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:/contact/select/{contact.id}
+             View = null
+        Attribute = contact.id
+            value = 3
+
+FlashMap:
+        Attribute = globalMessage
+            value = 新規:保存に成功しました!!
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = {Location=[/contact/select/3]}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /contact/select/3
+          Cookies = []
+16:57:11 : bootcontact.LogRule                     :%%%%%%%%%% :finished
+16:57:12 : bootcontact.TestUtil                    $$$$$$ テストの初期処理： ユーザー(2件), 連絡先(14件)を作成 :logSetup
+16:57:12 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:12 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:12 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 8 ms :initServletBean
+16:57:12 : bootcontact.LogRule                     :&&&&&&&&&&&&&&&  updContact:  :testStart
+16:57:12 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:12 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:12 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 5 ms :initServletBean
+16:57:12 : bootcontact.SampleIntercepter           >>>>> サンプルインターセプター :preHandle
+16:57:12 : b.controller.ContactController          $$$$$ Contact(100100:1)[simei=相田XX陽子, yomi=あいだXXようこ, seibetu=女, seinenGappi=1990/09/09, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:0)[null,null, null, null], googleid=, phones=Phone(100121:1)[telno=08011112222, phoneType=自宅], mails=Mail(100111:1)[mail=y.aida@xxx.com, mailType=自宅], addresses=Address(100101:1)[ 1234444, 東京都, 千代田区, , , , 自宅]] :saveContact
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /contact/save
+       Parameters = {addresses[0].id=[100101], simeiMei=[陽子], addresses[0].todofuken=[東京都], addresses[0].version=[1], simeiSei=[相田XX], addresses[0].addressType=[自宅], addresses[0].banchi2=[], yomiMei=[ようこ], mails[0].id=[100111], syubetu=[家族親戚], phones[0].version=[1], phones[0].phoneType=[自宅], id=[100100], seibetu=[女], addresses[0].banchi=[], addresses[0].yubin=[1234444], addresses[0].sikuchoson=[千代田区], user.id=[1], seinenGappi=[1990/09/09], phones[0].telno=[08011112222], yomiSei=[あいだXX], version=[1], mails[0].version=[1], phones[0].id=[100121], mails[0].mailType=[自宅], mails[0].mail=[y.aida@xxx.com]}
+          Headers = {Content-Type=[application/x-www-form-urlencoded;charset=UTF-8]}
+
+Handler:
+             Type = bootcontact.controller.ContactController
+           Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.saveContact(bootcontact.model.Contact,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes,java.util.Locale)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:/contact/select/{contact.id}
+             View = null
+        Attribute = contact.id
+            value = 100100
+
+FlashMap:
+        Attribute = globalMessage
+            value = 相田XX:保存に成功しました!!
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = {Location=[/contact/select/100100]}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /contact/select/100100
+          Cookies = []
+16:57:12 : bootcontact.LogRule                     :%%%%%%%%%% :finished
+16:57:12 : bootcontact.TestUtil                    $$$$$$ テストの初期処理： ユーザー(2件), 連絡先(14件)を作成 :logSetup
+16:57:12 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:12 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:12 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 5 ms :initServletBean
+16:57:12 : bootcontact.LogRule                     :&&&&&&&&&&&&&&&  addContactInvalid:  :testStart
+16:57:12 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:12 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:12 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 5 ms :initServletBean
+16:57:12 : bootcontact.SampleIntercepter           >>>>> サンプルインターセプター :preHandle
+16:57:12 : b.controller.ContactController          $$$$$ Contact(null:0)[simei=新規追加, yomi=しんきついか, seibetu=女, seinenGappi=1980/01/01, memo=, picture=, syumi=, syubetu=, kaisya=, user=User(1:0)[null,null, null, null], googleid=, phones=, mails=, addresses=] :saveContact
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /contact/save
+       Parameters = {seibetu=[女], simeiMei=[追加], yomiMei=[ついか], user.id=[1], seinenGappi=[1980/01/01], syubetu=[], simeiSei=[新規], yomiSei=[しんき], version=[0]}
+          Headers = {Content-Type=[application/x-www-form-urlencoded;charset=UTF-8]}
+
+Handler:
+             Type = bootcontact.controller.ContactController
+           Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.saveContact(bootcontact.model.Contact,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes,java.util.Locale)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = redirect:/contact/select/{contact.id}
+             View = null
+        Attribute = contact.id
+            value = 4
+
+FlashMap:
+        Attribute = globalMessage
+            value = 新規:保存に成功しました!!
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = {Location=[/contact/select/4]}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = /contact/select/4
+          Cookies = []
+16:57:12 : bootcontact.LogRule                     :%%%%%%%%%% :finished
+16:57:12 : bootcontact.TestUtil                    $$$$$$ テストの初期処理： ユーザー(2件), 連絡先(14件)を作成 :logSetup
+16:57:12 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:12 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:12 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 6 ms :initServletBean
+16:57:12 : bootcontact.LogRule                     :&&&&&&&&&&&&&&&  contactList:  :testStart
+16:57:12 : bootcontact.SampleIntercepter           >>>>> サンプルインターセプター :preHandle
+16:57:12 : b.controller.ContactController          ### size12 :showContactList
+16:57:12 : b.controller.ContactController          Contact(100100:1)[simei=相田陽子, yomi=あいだようこ, seibetu=女, seinenGappi=1980/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100121:1)[telno=08011112222, phoneType=自宅], mails=Mail(100111:1)[mail=y.aida@xxx.com, mailType=自宅], addresses=Address(100101:1)[ 1234444, 東京都, 千代田区, , , , 自宅]Address(100102:1)[ 1235555, 東京都, 港区, , , , 会社]] :lambda$0
+16:57:12 : b.controller.ContactController          Contact(100200:1)[simei=井上京子, yomi=いのうえきょうこ, seibetu=女, seinenGappi=1982/02/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100221:1)[telno=08011113333, phoneType=自宅], mails=Mail(100211:1)[mail=k.inoue@xxx.com, mailType=自宅], addresses=] :lambda$0
+16:57:12 : b.controller.ContactController          Contact(100300:1)[simei=加藤正雄, yomi=かとうまさお, seibetu=男, seinenGappi=1984/03/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100321:1)[telno=08011114444, phoneType=自宅], mails=Mail(100311:1)[mail=m.kato@yyy.com, mailType=自宅], addresses=] :lambda$0
+16:57:12 : b.controller.ContactController          Contact(100400:1)[simei=佐々木一郎, yomi=ささきいちろう, seibetu=男, seinenGappi=1986/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100421:1)[telno=08011115555, phoneType=自宅], mails=Mail(100411:1)[mail=i.sasaki@zzz.com, mailType=自宅], addresses=] :lambda$0
+16:57:12 : b.controller.ContactController          Contact(100500:1)[simei=清水昌美, yomi=しみずまさみ, seibetu=女, seinenGappi=1988/05/05, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100521:1)[telno=08011116666, phoneType=自宅], mails=Mail(100511:1)[mail=m.simizu@xxx.com, mailType=自宅], addresses=] :lambda$0
+16:57:12 : b.controller.ContactController          Contact(100600:1)[simei=鈴木伸二, yomi=すずきしんじ, seibetu=男, seinenGappi=1971/10/12, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100621:1)[telno=08011117777, phoneType=自宅], mails=Mail(100611:1)[mail=s.suzuki@yyy.com, mailType=自宅], addresses=] :lambda$0
+16:57:12 : b.controller.ContactController          Contact(100700:1)[simei=田村義和, yomi=たむらよしかず, seibetu=男, seinenGappi=1973/12/22, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100721:1)[telno=08011118888, phoneType=自宅], mails=Mail(100711:1)[mail=y.tamura@yyy.com, mailType=自宅], addresses=] :lambda$0
+16:57:12 : b.controller.ContactController          Contact(100800:1)[simei=中島由美子, yomi=なかしまゆみこ, seibetu=女, seinenGappi=1975/04/18, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100821:1)[telno=08011112222, phoneType=自宅], mails=Mail(100811:1)[mail=y.nakasima@yyy.com, mailType=自宅], addresses=] :lambda$0
+16:57:12 : b.controller.ContactController          Contact(100900:1)[simei=花村一雄, yomi=はなむらかずお, seibetu=男, seinenGappi=1977/06/23, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=] :lambda$0
+16:57:12 : b.controller.ContactController          Contact(101000:1)[simei=花岡優子, yomi=はなおかゆうこ, seibetu=女, seinenGappi=1979/07/15, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=] :lambda$0
+16:57:12 : b.controller.ContactController          Contact(101100:1)[simei=松岡三郎, yomi=まつおかさぶろう, seibetu=男, seinenGappi=1980/09/03, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=] :lambda$0
+16:57:12 : b.controller.ContactController          Contact(101200:1)[simei=山田花子, yomi=やまだはなこ, seibetu=女, seinenGappi=1980/09/15, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=] :lambda$0
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /contact/list
+       Parameters = {}
+          Headers = {}
+
+Handler:
+             Type = bootcontact.controller.ContactController
+           Method = public java.lang.String bootcontact.controller.ContactController.showContactList(org.springframework.ui.Model,java.util.Locale)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = views/contact_list
+             View = null
+        Attribute = loginUser
+            value = User(1:1)[tosi,null, ADMIN, 家族知人]
+           errors = []
+        Attribute = curSyubetu
+            value = 家族親戚
+        Attribute = contactSyubetuItems
+            value = [家族親戚, 同僚, 仕事, 顧客, 友人知人, 生活, その他]
+        Attribute = seibetuItems
+            value = [男, 女]
+        Attribute = syumiItems
+            value = [読書, スポーツ, 音楽, ゲーム, その他]
+        Attribute = phoneSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = mailSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = jusyoSyubetuItems
+            value = [*, 自宅, 会社, その他]
+        Attribute = contactList
+            value = [Contact(100100:1)[simei=相田陽子, yomi=あいだようこ, seibetu=女, seinenGappi=1980/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100121:1)[telno=08011112222, phoneType=自宅], mails=Mail(100111:1)[mail=y.aida@xxx.com, mailType=自宅], addresses=Address(100101:1)[ 1234444, 東京都, 千代田区, , , , 自宅]Address(100102:1)[ 1235555, 東京都, 港区, , , , 会社]], Contact(100200:1)[simei=井上京子, yomi=いのうえきょうこ, seibetu=女, seinenGappi=1982/02/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100221:1)[telno=08011113333, phoneType=自宅], mails=Mail(100211:1)[mail=k.inoue@xxx.com, mailType=自宅], addresses=], Contact(100300:1)[simei=加藤正雄, yomi=かとうまさお, seibetu=男, seinenGappi=1984/03/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100321:1)[telno=08011114444, phoneType=自宅], mails=Mail(100311:1)[mail=m.kato@yyy.com, mailType=自宅], addresses=], Contact(100400:1)[simei=佐々木一郎, yomi=ささきいちろう, seibetu=男, seinenGappi=1986/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100421:1)[telno=08011115555, phoneType=自宅], mails=Mail(100411:1)[mail=i.sasaki@zzz.com, mailType=自宅], addresses=], Contact(100500:1)[simei=清水昌美, yomi=しみずまさみ, seibetu=女, seinenGappi=1988/05/05, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100521:1)[telno=08011116666, phoneType=自宅], mails=Mail(100511:1)[mail=m.simizu@xxx.com, mailType=自宅], addresses=], Contact(100600:1)[simei=鈴木伸二, yomi=すずきしんじ, seibetu=男, seinenGappi=1971/10/12, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100621:1)[telno=08011117777, phoneType=自宅], mails=Mail(100611:1)[mail=s.suzuki@yyy.com, mailType=自宅], addresses=], Contact(100700:1)[simei=田村義和, yomi=たむらよしかず, seibetu=男, seinenGappi=1973/12/22, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100721:1)[telno=08011118888, phoneType=自宅], mails=Mail(100711:1)[mail=y.tamura@yyy.com, mailType=自宅], addresses=], Contact(100800:1)[simei=中島由美子, yomi=なかしまゆみこ, seibetu=女, seinenGappi=1975/04/18, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100821:1)[telno=08011112222, phoneType=自宅], mails=Mail(100811:1)[mail=y.nakasima@yyy.com, mailType=自宅], addresses=], Contact(100900:1)[simei=花村一雄, yomi=はなむらかずお, seibetu=男, seinenGappi=1977/06/23, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=], Contact(101000:1)[simei=花岡優子, yomi=はなおかゆうこ, seibetu=女, seinenGappi=1979/07/15, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=], Contact(101100:1)[simei=松岡三郎, yomi=まつおかさぶろう, seibetu=男, seinenGappi=1980/09/03, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=], Contact(101200:1)[simei=山田花子, yomi=やまだはなこ, seibetu=女, seinenGappi=1980/09/15, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=]]
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache, no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY], Content-Type=[text/html;charset=UTF-8]}
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>連絡先管理 - 連絡先一覧</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="/os/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/app_base.css" />
+<script src="/os/js/jquery.min.js"></script>
+<script src="/os/js/bootstrap.min.js"></script>
+<meta charset="utf-8" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"> <span>連絡先管理</span> <span>
+            : <small>tosi</small> <small>(管理者)</small>
+        </span>
+        </a>
+      </div>
+      <!-- menu -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              連絡先 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/list">連絡先一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              ユーザー管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/user_list">ユーザー一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu3 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              テーマ変更 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/theme/_slate">slate</a></li>
+              <li><a href="/contact/theme/_paper">paper</a></li>
+              <li><a href="/contact/theme/_flatly">flatly</a></li>
+              <li><a href="/contact/theme/_default">default</a></li>
+            </ul></li>
+          <!-- menu3 EEE -->
+        </ul>
+        <form action="/logout" method="post" class="navbar-form navbar-right"><input type="hidden" name="_csrf" value="bf08fca4-bd89-4b06-b19b-328b370b66c3"/>
+          <button type="submit" class="btn btn-default">ログアウト</button>
+        </form>
+      </div>
+    </nav>
+  </div></div>
+
+        <br />
+        <header>
+          <h3>連絡先一覧</h3>
+        </header>
+
+        <section>
+
+    <!-- contact_list コンテンツ -->
+    <table>
+      <tbody>
+        <tr>
+          <td> <span
+            style="color: red;">家族親戚</span>
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/同僚">同僚</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/仕事">仕事</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/顧客">顧客</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/友人知人">友人知人</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/生活">生活</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/その他">その他</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pull-right">
+      <a href="/contact/form">連絡先の作成</a>
+    </div>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>氏名</td>
+          <td>よみ</td>
+          <td>性別</td>
+          <td>生年月日</td>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>100100</td>
+          <td><a href="/contact/select/100100">
+            相田 陽子</a></td>
+          <td>あいだ ようこ</td>
+          <td>女</td>
+          <td>1980/01/01</td>
+        </tr>
+        <tr>
+          <td>100200</td>
+          <td><a href="/contact/select/100200">
+            井上 京子</a></td>
+          <td>いのうえ きょうこ</td>
+          <td>女</td>
+          <td>1982/02/01</td>
+        </tr>
+        <tr>
+          <td>100300</td>
+          <td><a href="/contact/select/100300">
+            加藤 正雄</a></td>
+          <td>かとう まさお</td>
+          <td>男</td>
+          <td>1984/03/01</td>
+        </tr>
+        <tr>
+          <td>100400</td>
+          <td><a href="/contact/select/100400">
+            佐々木 一郎</a></td>
+          <td>ささき いちろう</td>
+          <td>男</td>
+          <td>1986/01/01</td>
+        </tr>
+        <tr>
+          <td>100500</td>
+          <td><a href="/contact/select/100500">
+            清水 昌美</a></td>
+          <td>しみず まさみ</td>
+          <td>女</td>
+          <td>1988/05/05</td>
+        </tr>
+        <tr>
+          <td>100600</td>
+          <td><a href="/contact/select/100600">
+            鈴木 伸二</a></td>
+          <td>すずき しんじ</td>
+          <td>男</td>
+          <td>1971/10/12</td>
+        </tr>
+        <tr>
+          <td>100700</td>
+          <td><a href="/contact/select/100700">
+            田村 義和</a></td>
+          <td>たむら よしかず</td>
+          <td>男</td>
+          <td>1973/12/22</td>
+        </tr>
+        <tr>
+          <td>100800</td>
+          <td><a href="/contact/select/100800">
+            中島 由美子</a></td>
+          <td>なかしま ゆみこ</td>
+          <td>女</td>
+          <td>1975/04/18</td>
+        </tr>
+        <tr>
+          <td>100900</td>
+          <td><a href="/contact/select/100900">
+            花村 一雄</a></td>
+          <td>はなむら かずお</td>
+          <td>男</td>
+          <td>1977/06/23</td>
+        </tr>
+        <tr>
+          <td>101000</td>
+          <td><a href="/contact/select/101000">
+            花岡 優子</a></td>
+          <td>はなおか ゆうこ</td>
+          <td>女</td>
+          <td>1979/07/15</td>
+        </tr>
+        <tr>
+          <td>101100</td>
+          <td><a href="/contact/select/101100">
+            松岡 三郎</a></td>
+          <td>まつおか さぶろう</td>
+          <td>男</td>
+          <td>1980/09/03</td>
+        </tr>
+        <tr>
+          <td>101200</td>
+          <td><a href="/contact/select/101200">
+            山田 花子</a></td>
+          <td>やまだ はなこ</td>
+          <td>女</td>
+          <td>1980/09/15</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- contact_list コンテンツ -->
+
+  </section>
+
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>連絡先管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+16:57:13 : bootcontact.LogRule                     :%%%%%%%%%% :finished
+16:57:14 : bootcontact.TestUtil                    $$$$$$ テストの初期処理： ユーザー(2件), 連絡先(14件)を作成 :logSetup
+16:57:14 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:14 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:14 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 4 ms :initServletBean
+16:57:14 : bootcontact.LogRule                     :&&&&&&&&&&&&&&&  contactDetail:  :testStart
+16:57:14 : bootcontact.SampleIntercepter           >>>>> サンプルインターセプター :preHandle
+16:57:14 : b.controller.ContactController          $$$$$ Contact(100100:1)[simei=相田陽子, yomi=あいだようこ, seibetu=女, seinenGappi=1980/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100121:1)[telno=08011112222, phoneType=自宅], mails=Mail(100111:1)[mail=y.aida@xxx.com, mailType=自宅], addresses=Address(100101:1)[ 1234444, 東京都, 千代田区, , , , 自宅]Address(100102:1)[ 1235555, 東京都, 港区, , , , 会社]] :showContactDetail
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /contact/select/100100
+       Parameters = {}
+          Headers = {}
+
+Handler:
+             Type = bootcontact.controller.ContactController
+           Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.showContactDetail(bootcontact.model.Contact)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = views/contact_detail
+             View = null
+        Attribute = loginUser
+            value = null
+        Attribute = curSyubetu
+            value = 家族親戚
+        Attribute = contactSyubetuItems
+            value = [家族親戚, 同僚, 仕事, 顧客, 友人知人, 生活, その他]
+        Attribute = seibetuItems
+            value = [男, 女]
+        Attribute = syumiItems
+            value = [読書, スポーツ, 音楽, ゲーム, その他]
+        Attribute = phoneSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = mailSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = jusyoSyubetuItems
+            value = [*, 自宅, 会社, その他]
+        Attribute = contact
+            value = Contact(100100:1)[simei=相田陽子, yomi=あいだようこ, seibetu=女, seinenGappi=1980/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100121:1)[telno=08011112222, phoneType=自宅], mails=Mail(100111:1)[mail=y.aida@xxx.com, mailType=自宅], addresses=Address(100101:1)[ 1234444, 東京都, 千代田区, , , , 自宅]Address(100102:1)[ 1235555, 東京都, 港区, , , , 会社]]
+           errors = []
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache, no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY], Content-Type=[text/html;charset=UTF-8]}
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>連絡先管理 - 連絡先詳細</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="/os/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/app_base.css" />
+<script src="/os/js/jquery.min.js"></script>
+<script src="/os/js/bootstrap.min.js"></script>
+<meta charset="utf-8" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"> <span>連絡先管理</span> <span>
+            : <small>tosi</small> <small>(管理者)</small>
+        </span>
+        </a>
+      </div>
+      <!-- menu -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              連絡先 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/list">連絡先一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              ユーザー管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/user_list">ユーザー一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu3 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              テーマ変更 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/theme/_slate">slate</a></li>
+              <li><a href="/contact/theme/_paper">paper</a></li>
+              <li><a href="/contact/theme/_flatly">flatly</a></li>
+              <li><a href="/contact/theme/_default">default</a></li>
+            </ul></li>
+          <!-- menu3 EEE -->
+        </ul>
+        <form action="/logout" method="post" class="navbar-form navbar-right"><input type="hidden" name="_csrf" value="2482107b-2e33-4648-978a-699245a342e4"/>
+          <button type="submit" class="btn btn-default">ログアウト</button>
+        </form>
+      </div>
+    </nav>
+  </div></div>
+
+        <br />
+        <header>
+          <h3>連絡先詳細</h3>
+        </header>
+
+        <section>
+
+    <!--  contact_detail コンテンツ -->
+    
+
+    <div>
+      <table class="table table-condensed" id="detail-table">
+        <tbody>
+          <!-- ID -->
+          <tr>
+            <td class="td-label">ID:</td>
+            <td >100100</td>
+            <td ></td>
+          </tr>
+          <!-- 氏名,よみ -->
+          <tr>
+            <td class="td-label">氏名:</td>
+            <td width="480">相田 陽子 (あいだ ようこ)</td>
+            <td></td>
+          </tr>
+          <!-- 電話 -->
+          <tr>
+            <td class="td-label">自宅電話:</td>
+            <td>08011112222</td>
+            <td>
+             <select class="col-md-3">
+              <option value="" >処理選択..</option>
+              <option value="" >メッセージ</option>
+              <option value="" >Skype</option>
+              <option value="" >FaceTime</option>
+             </select>
+            </td>
+          </tr>
+          <!-- メール -->
+          <tr>
+            <td class="td-label">自宅メール:</td>
+            <td>y.aida@xxx.com</td>
+            <td>
+             <select class="col-md-3">
+              <option value="" >処理選択..</option>
+              <option value="" >メッセージ</option>
+              <option value="" >Skype</option>
+              <option value="" >FaceTime</option>
+             </select>
+            </td>
+          </tr>
+          <!-- 住所 -->
+          <tr>
+            <td class="td-label">自宅住所:</td>
+            <td>〒1234444 東京都<br/>千代田区</td>
+            <td>
+             <select class="col-md-3">
+              <option value="" >処理選択..</option>
+              <option value="" >マップ</option>
+             </select>
+            </td>
+
+          </tr>
+          <tr>
+            <td class="td-label">会社住所:</td>
+            <td>〒1235555 東京都<br/>港区</td>
+            <td>
+             <select class="col-md-3">
+              <option value="" >処理選択..</option>
+              <option value="" >マップ</option>
+             </select>
+            </td>
+
+          </tr>
+          <!-- 性別 -->
+          <tr>
+            <td class="td-label">性別:</td>
+            <td id="dSeibetu">女</td>
+            <td></td>
+          </tr>
+          <!-- 生年月日 -->
+          <tr>
+            <td class="td-label">生年月日:</td>
+            <td id="dSeinenGappi">1980/01/01</td>
+            <td></td>
+          </tr>
+          <!-- メモ -->
+          <tr style="display:none;">
+            <td class="td-label">メモ:</td>
+            <td id="dMemo"></td>
+            <td></td>
+          </tr>
+          <!-- 会社 -->
+          <tr style="display:none;">
+            <td class="td-label">会社:</td>
+            <td id="dKaisy"></td>
+            <td></td>
+          </tr>
+          <!-- 趣味 -->
+          <tr>
+            <td class="td-label">趣味:</td>
+            <td id="dSyumi"></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pull-left">
+      <a href="/contact/delete/100100"> 削除 </a> | <a href="/contact/form/100100"> 修正 </a>
+    </div>
+    <hr/>
+    <!--  contact_detail コンテンツ -->
+
+  </section>
+
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>連絡先管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+16:57:14 : bootcontact.LogRule                     :%%%%%%%%%% :finished
+16:57:14 : bootcontact.TestUtil                    $$$$$$ テストの初期処理： ユーザー(2件), 連絡先(14件)を作成 :logSetup
+16:57:14 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:14 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:14 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 5 ms :initServletBean
+16:57:14 : bootcontact.LogRule                     :&&&&&&&&&&&&&&&  contactListByKS:  :testStart
+16:57:14 : bootcontact.SampleIntercepter           >>>>> サンプルインターセプター :preHandle
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /contact/list/%E5%AE%B6%E6%97%8F%E8%A6%AA%E6%88%9A
+       Parameters = {}
+          Headers = {}
+
+Handler:
+             Type = bootcontact.controller.ContactController
+           Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.showContactList(java.lang.String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = views/contact_list
+             View = null
+        Attribute = loginUser
+            value = User(1:1)[tosi,null, ADMIN, 家族知人]
+           errors = []
+        Attribute = curSyubetu
+            value = 家族親戚
+        Attribute = contactSyubetuItems
+            value = [家族親戚, 同僚, 仕事, 顧客, 友人知人, 生活, その他]
+        Attribute = seibetuItems
+            value = [男, 女]
+        Attribute = syumiItems
+            value = [読書, スポーツ, 音楽, ゲーム, その他]
+        Attribute = phoneSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = mailSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = jusyoSyubetuItems
+            value = [*, 自宅, 会社, その他]
+        Attribute = contactList
+            value = [Contact(100100:1)[simei=相田陽子, yomi=あいだようこ, seibetu=女, seinenGappi=1980/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100121:1)[telno=08011112222, phoneType=自宅], mails=Mail(100111:1)[mail=y.aida@xxx.com, mailType=自宅], addresses=Address(100101:1)[ 1234444, 東京都, 千代田区, , , , 自宅]Address(100102:1)[ 1235555, 東京都, 港区, , , , 会社]], Contact(100200:1)[simei=井上京子, yomi=いのうえきょうこ, seibetu=女, seinenGappi=1982/02/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100221:1)[telno=08011113333, phoneType=自宅], mails=Mail(100211:1)[mail=k.inoue@xxx.com, mailType=自宅], addresses=], Contact(100300:1)[simei=加藤正雄, yomi=かとうまさお, seibetu=男, seinenGappi=1984/03/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100321:1)[telno=08011114444, phoneType=自宅], mails=Mail(100311:1)[mail=m.kato@yyy.com, mailType=自宅], addresses=], Contact(100400:1)[simei=佐々木一郎, yomi=ささきいちろう, seibetu=男, seinenGappi=1986/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100421:1)[telno=08011115555, phoneType=自宅], mails=Mail(100411:1)[mail=i.sasaki@zzz.com, mailType=自宅], addresses=], Contact(100500:1)[simei=清水昌美, yomi=しみずまさみ, seibetu=女, seinenGappi=1988/05/05, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100521:1)[telno=08011116666, phoneType=自宅], mails=Mail(100511:1)[mail=m.simizu@xxx.com, mailType=自宅], addresses=], Contact(100600:1)[simei=鈴木伸二, yomi=すずきしんじ, seibetu=男, seinenGappi=1971/10/12, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100621:1)[telno=08011117777, phoneType=自宅], mails=Mail(100611:1)[mail=s.suzuki@yyy.com, mailType=自宅], addresses=], Contact(100700:1)[simei=田村義和, yomi=たむらよしかず, seibetu=男, seinenGappi=1973/12/22, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100721:1)[telno=08011118888, phoneType=自宅], mails=Mail(100711:1)[mail=y.tamura@yyy.com, mailType=自宅], addresses=], Contact(100800:1)[simei=中島由美子, yomi=なかしまゆみこ, seibetu=女, seinenGappi=1975/04/18, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100821:1)[telno=08011112222, phoneType=自宅], mails=Mail(100811:1)[mail=y.nakasima@yyy.com, mailType=自宅], addresses=], Contact(100900:1)[simei=花村一雄, yomi=はなむらかずお, seibetu=男, seinenGappi=1977/06/23, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=], Contact(101000:1)[simei=花岡優子, yomi=はなおかゆうこ, seibetu=女, seinenGappi=1979/07/15, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=], Contact(101100:1)[simei=松岡三郎, yomi=まつおかさぶろう, seibetu=男, seinenGappi=1980/09/03, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=], Contact(101200:1)[simei=山田花子, yomi=やまだはなこ, seibetu=女, seinenGappi=1980/09/15, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=]]
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache, no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY], Content-Type=[text/html;charset=UTF-8]}
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>連絡先管理 - 連絡先一覧</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="/os/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/app_base.css" />
+<script src="/os/js/jquery.min.js"></script>
+<script src="/os/js/bootstrap.min.js"></script>
+<meta charset="utf-8" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"> <span>連絡先管理</span> <span>
+            : <small>tosi</small> <small>(管理者)</small>
+        </span>
+        </a>
+      </div>
+      <!-- menu -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              連絡先 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/list">連絡先一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              ユーザー管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/user_list">ユーザー一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu3 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              テーマ変更 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/theme/_slate">slate</a></li>
+              <li><a href="/contact/theme/_paper">paper</a></li>
+              <li><a href="/contact/theme/_flatly">flatly</a></li>
+              <li><a href="/contact/theme/_default">default</a></li>
+            </ul></li>
+          <!-- menu3 EEE -->
+        </ul>
+        <form action="/logout" method="post" class="navbar-form navbar-right"><input type="hidden" name="_csrf" value="a34df831-73ac-4a90-a4ef-6b02110af84e"/>
+          <button type="submit" class="btn btn-default">ログアウト</button>
+        </form>
+      </div>
+    </nav>
+  </div></div>
+
+        <br />
+        <header>
+          <h3>連絡先一覧</h3>
+        </header>
+
+        <section>
+
+    <!-- contact_list コンテンツ -->
+    <table>
+      <tbody>
+        <tr>
+          <td> <span
+            style="color: red;">家族親戚</span>
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/同僚">同僚</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/仕事">仕事</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/顧客">顧客</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/友人知人">友人知人</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/生活">生活</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/その他">その他</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pull-right">
+      <a href="/contact/form">連絡先の作成</a>
+    </div>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>氏名</td>
+          <td>よみ</td>
+          <td>性別</td>
+          <td>生年月日</td>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>100100</td>
+          <td><a href="/contact/select/100100">
+            相田 陽子</a></td>
+          <td>あいだ ようこ</td>
+          <td>女</td>
+          <td>1980/01/01</td>
+        </tr>
+        <tr>
+          <td>100200</td>
+          <td><a href="/contact/select/100200">
+            井上 京子</a></td>
+          <td>いのうえ きょうこ</td>
+          <td>女</td>
+          <td>1982/02/01</td>
+        </tr>
+        <tr>
+          <td>100300</td>
+          <td><a href="/contact/select/100300">
+            加藤 正雄</a></td>
+          <td>かとう まさお</td>
+          <td>男</td>
+          <td>1984/03/01</td>
+        </tr>
+        <tr>
+          <td>100400</td>
+          <td><a href="/contact/select/100400">
+            佐々木 一郎</a></td>
+          <td>ささき いちろう</td>
+          <td>男</td>
+          <td>1986/01/01</td>
+        </tr>
+        <tr>
+          <td>100500</td>
+          <td><a href="/contact/select/100500">
+            清水 昌美</a></td>
+          <td>しみず まさみ</td>
+          <td>女</td>
+          <td>1988/05/05</td>
+        </tr>
+        <tr>
+          <td>100600</td>
+          <td><a href="/contact/select/100600">
+            鈴木 伸二</a></td>
+          <td>すずき しんじ</td>
+          <td>男</td>
+          <td>1971/10/12</td>
+        </tr>
+        <tr>
+          <td>100700</td>
+          <td><a href="/contact/select/100700">
+            田村 義和</a></td>
+          <td>たむら よしかず</td>
+          <td>男</td>
+          <td>1973/12/22</td>
+        </tr>
+        <tr>
+          <td>100800</td>
+          <td><a href="/contact/select/100800">
+            中島 由美子</a></td>
+          <td>なかしま ゆみこ</td>
+          <td>女</td>
+          <td>1975/04/18</td>
+        </tr>
+        <tr>
+          <td>100900</td>
+          <td><a href="/contact/select/100900">
+            花村 一雄</a></td>
+          <td>はなむら かずお</td>
+          <td>男</td>
+          <td>1977/06/23</td>
+        </tr>
+        <tr>
+          <td>101000</td>
+          <td><a href="/contact/select/101000">
+            花岡 優子</a></td>
+          <td>はなおか ゆうこ</td>
+          <td>女</td>
+          <td>1979/07/15</td>
+        </tr>
+        <tr>
+          <td>101100</td>
+          <td><a href="/contact/select/101100">
+            松岡 三郎</a></td>
+          <td>まつおか さぶろう</td>
+          <td>男</td>
+          <td>1980/09/03</td>
+        </tr>
+        <tr>
+          <td>101200</td>
+          <td><a href="/contact/select/101200">
+            山田 花子</a></td>
+          <td>やまだ はなこ</td>
+          <td>女</td>
+          <td>1980/09/15</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- contact_list コンテンツ -->
+
+  </section>
+
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>連絡先管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+16:57:14 : bootcontact.LogRule                     :%%%%%%%%%% :finished
+16:57:14 : bootcontact.TestUtil                    $$$$$$ テストの初期処理： ユーザー(2件), 連絡先(14件)を作成 :logSetup
+16:57:14 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:14 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:14 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 6 ms :initServletBean
+16:57:14 : bootcontact.LogRule                     :&&&&&&&&&&&&&&&  contactListByYC:  :testStart
+16:57:14 : bootcontact.SampleIntercepter           >>>>> サンプルインターセプター :preHandle
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /contact/list/%E5%8F%8B%E4%BA%BA%E7%9F%A5%E4%BA%BA
+       Parameters = {}
+          Headers = {}
+
+Handler:
+             Type = bootcontact.controller.ContactController
+           Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.showContactList(java.lang.String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = views/contact_list
+             View = null
+        Attribute = loginUser
+            value = User(1:1)[tosi,null, ADMIN, 家族知人]
+           errors = []
+        Attribute = curSyubetu
+            value = 友人知人
+        Attribute = contactSyubetuItems
+            value = [家族親戚, 同僚, 仕事, 顧客, 友人知人, 生活, その他]
+        Attribute = seibetuItems
+            value = [男, 女]
+        Attribute = syumiItems
+            value = [読書, スポーツ, 音楽, ゲーム, その他]
+        Attribute = phoneSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = mailSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = jusyoSyubetuItems
+            value = [*, 自宅, 会社, その他]
+        Attribute = contactList
+            value = [Contact(110100:1)[simei=森祐一, yomi=もりゆういち, seibetu=男, seinenGappi=1981/02/01, memo=, picture=, syumi=, syubetu=友人知人, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=], Contact(110200:1)[simei=村田健一, yomi=むらたけんいち, seibetu=男, seinenGappi=1981/02/02, memo=, picture=, syumi=, syubetu=友人知人, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=]]
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache, no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY], Content-Type=[text/html;charset=UTF-8]}
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>連絡先管理 - 連絡先一覧</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="/os/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/app_base.css" />
+<script src="/os/js/jquery.min.js"></script>
+<script src="/os/js/bootstrap.min.js"></script>
+<meta charset="utf-8" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"> <span>連絡先管理</span> <span>
+            : <small>tosi</small> <small>(管理者)</small>
+        </span>
+        </a>
+      </div>
+      <!-- menu -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              連絡先 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/list">連絡先一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              ユーザー管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/user_list">ユーザー一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu3 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              テーマ変更 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/theme/_slate">slate</a></li>
+              <li><a href="/contact/theme/_paper">paper</a></li>
+              <li><a href="/contact/theme/_flatly">flatly</a></li>
+              <li><a href="/contact/theme/_default">default</a></li>
+            </ul></li>
+          <!-- menu3 EEE -->
+        </ul>
+        <form action="/logout" method="post" class="navbar-form navbar-right"><input type="hidden" name="_csrf" value="5ddd42af-fe0d-4bf8-b93e-17f1209d1bc1"/>
+          <button type="submit" class="btn btn-default">ログアウト</button>
+        </form>
+      </div>
+    </nav>
+  </div></div>
+
+        <br />
+        <header>
+          <h3>連絡先一覧</h3>
+        </header>
+
+        <section>
+
+    <!-- contact_list コンテンツ -->
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="/contact/list/家族親戚">家族親戚</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/同僚">同僚</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/仕事">仕事</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/顧客">顧客</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td> <span
+            style="color: red;">友人知人</span>
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/生活">生活</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/その他">その他</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pull-right">
+      <a href="/contact/form">連絡先の作成</a>
+    </div>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>氏名</td>
+          <td>よみ</td>
+          <td>性別</td>
+          <td>生年月日</td>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>110100</td>
+          <td><a href="/contact/select/110100">
+            森祐 一</a></td>
+          <td>もり ゆういち</td>
+          <td>男</td>
+          <td>1981/02/01</td>
+        </tr>
+        <tr>
+          <td>110200</td>
+          <td><a href="/contact/select/110200">
+            村田 健一</a></td>
+          <td>むらた けんいち</td>
+          <td>男</td>
+          <td>1981/02/02</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- contact_list コンテンツ -->
+
+  </section>
+
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>連絡先管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+16:57:14 : bootcontact.LogRule                     :%%%%%%%%%% :finished
+16:57:15 : bootcontact.TestUtil                    $$$$$$ テストの初期処理： ユーザー(2件), 連絡先(14件)を作成 :logSetup
+16:57:15 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:15 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:15 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 5 ms :initServletBean
+16:57:15 : bootcontact.LogRule                     :&&&&&&&&&&&&&&&  contactFormCreate:  :testStart
+16:57:15 : bootcontact.SampleIntercepter           >>>>> サンプルインターセプター :preHandle
+16:57:15 : b.controller.ContactController          $$$$$ Contact(null:0)[simei=, yomi=, seibetu=, seinenGappi=null, memo=, picture=, syumi=, syubetu=, kaisya=, user=null, googleid=, phones=, mails=, addresses=] :createContact
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /contact/form
+       Parameters = {}
+          Headers = {}
+
+Handler:
+             Type = bootcontact.controller.ContactController
+           Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.createContact(bootcontact.model.Contact)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = views/contact_form
+             View = null
+        Attribute = loginUser
+            value = null
+        Attribute = curSyubetu
+            value = 家族親戚
+        Attribute = contactSyubetuItems
+            value = [家族親戚, 同僚, 仕事, 顧客, 友人知人, 生活, その他]
+        Attribute = seibetuItems
+            value = [男, 女]
+        Attribute = syumiItems
+            value = [読書, スポーツ, 音楽, ゲーム, その他]
+        Attribute = phoneSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = mailSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = jusyoSyubetuItems
+            value = [*, 自宅, 会社, その他]
+        Attribute = contact
+            value = Contact(null:0)[simei=, yomi=, seibetu=, seinenGappi=null, memo=, picture=, syumi=, syubetu=, kaisya=, user=User(null:0)[null,null, null, null], googleid=, phones=, mails=, addresses=]
+           errors = []
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache, no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY], Content-Type=[text/html;charset=UTF-8]}
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ CSRF ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>連絡先管理 - 連絡先編集</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="_csrf" content="aa762de1-a6b8-4b23-9e26-d3e884de7adf"/>
+ <meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+
+<link rel="stylesheet" href="/os/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/app_base.css" />
+<script src="/os/js/jquery.min.js"></script>
+<script src="/os/js/bootstrap.min.js"></script>
+<script src="/js/bootContact1.js"></script>  
+<meta charset="utf-8" />  
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"> <span>連絡先管理</span> <span>
+            : <small>tosi</small> <small>(管理者)</small>
+        </span>
+        </a>
+      </div>
+      <!-- menu -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              連絡先 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/list">連絡先一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              ユーザー管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/user_list">ユーザー一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu3 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              テーマ変更 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/theme/_slate">slate</a></li>
+              <li><a href="/contact/theme/_paper">paper</a></li>
+              <li><a href="/contact/theme/_flatly">flatly</a></li>
+              <li><a href="/contact/theme/_default">default</a></li>
+            </ul></li>
+          <!-- menu3 EEE -->
+        </ul>
+        <form action="/logout" method="post" class="navbar-form navbar-right"><input type="hidden" name="_csrf" value="aa762de1-a6b8-4b23-9e26-d3e884de7adf"/>
+          <button type="submit" class="btn btn-default">ログアウト</button>
+        </form>
+      </div>
+    </nav>
+  </div></div>
+
+        <br />
+        <header>
+          <h3>連絡先編集</h3>
+        </header>
+
+        <section>
+
+  <!-- SSSSS: contact_form コンテンツ -->
+  <!-- フォーム -->
+  <form role="form" id="contactForm" action="/contact/save" style="padding: 10px;" method="post"><input type="hidden" name="_csrf" value="aa762de1-a6b8-4b23-9e26-d3e884de7adf"/>
+    
+   <!-- 入力フィールド -->
+   <fieldset>
+   
+    <div class="row">
+     <div class="col-md-12">    
+
+      <input type="hidden" id="id" name="id" value="" /> <input type="hidden" id="version" name="version" value="0" /> <input type="hidden" id="syubetu" name="syubetu" value="" />
+      <input type="hidden" id="user.id" name="user.id" value="" />
+
+      <table class="table table-condensed">
+       <tbody>
+
+        <!-- add buttons -->
+        <tr><td>
+          <span class="col-md-offset-2 col-md-1">
+          <button type="button" id="btnAddPhone" class="btn btn-success">
+           <span class="glyphicon glyphicon-plus"></span>
+           <span class="glyphicon glyphicon-phone"></span>
+          </button></span>
+          <span class="col-md-1">
+          <button type="button" id="btnAddMail" class="btn btn-success">
+           <span class="glyphicon glyphicon-plus"></span>
+           <span class="glyphicon glyphicon-envelope"></span>
+          </button></span>
+          <span class="col-md-1">
+          <button type="button" id="btnAddJusyo" class="btn btn-success">
+           <span class="glyphicon glyphicon-plus"></span>
+           <span class="glyphicon glyphicon-home"></span>
+          </button></span>
+        </td></tr>
+        </tbody>
+        <!-- phones -->
+        <tbody id="tbodyPhone">
+        
+        </tbody>
+        <!-- mails -->
+        <tbody id="tbodyMail">
+        
+        </tbody>
+        <!-- addresses -->
+        <tbody id="tbodyJusyo">
+        
+        </tbody>
+        
+        <!-- 氏名 -->
+        <tbody>
+        <tr><td>
+         <label for="simeiSei" class="Label col-md-2">
+          <span style="float: right">氏名:</span></label>
+         <input type="text" class="col-md-2"
+          placeholder="姓" maxlength="20"
+            id="simeiSei" name="simeiSei" value="" />
+         <input type="text" class="col-md-2"
+          placeholder="名" maxlength="20" id="simeiMei" name="simeiMei" value="" />
+        </td></tr>
+        <!-- よみ -->
+        <tr><td>
+         <label for="yomiSei" class="Label col-md-2"> 
+          <span style="float: right">よみ:</span></label>
+         <input type="text" class="col-md-2"
+          placeholder="せい" maxlength="12" id="yomiSei" name="yomiSei" value="" />
+         <input type="text" class="col-md-2"
+          placeholder="めい" maxlength="12" id="yomiMei" name="yomiMei" value="" />
+        </td></tr>
+        <!-- 性別, 生年月日 -->
+        <tr><td>
+         <label for="seibetu" class="Label col-md-2">
+          <span style="float: right">性別/誕生日:</span></label>
+         <div class="col-md-2" id="seibetu">
+          <label class="radio-inline">
+           <input type="radio" value="男" id="seibetu1" name="seibetu" >男</input>
+          </label><label class="radio-inline">
+           <input type="radio" value="女" id="seibetu2" name="seibetu" >女</input>
+          </label>
+         </div>
+         <input type="text" class="col-md-2"
+          placeholder="誕生日" maxlength="10" id="seinenGappi" name="seinenGappi" value="" />          
+        </td></tr>
+        <tr><td>
+         <!-- メモ -->
+         <div>
+      <label class="control-label col-md-2" for="memo">
+       <span style="float: right">メモ:</span></label>
+       <input type="text" placeholder="メモ"
+          maxlength="50" class="col-md-9" id="memo" name="memo" value=""/> 
+    </div>
+        </td></tr>
+        <tr><td>
+         <!-- 会社 -->
+         <div>
+      <label class="control-label col-md-2" for="kaisya">
+       <span style="float: right">会社:</span></label>
+       <input type="text" placeholder="会社"
+          maxlength="30" class="col-md-9" id="kaisya" name="kaisya" value=""/> 
+    </div>
+        </td></tr>
+        <tr><td>
+         <!-- 趣味 -->
+         <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="syumi">
+       <span style="float: right">趣味</span></label>
+      <div id="syumi">&emsp;
+        <label class="checkbox-inline">
+        <input type="checkbox" value="読書" id="syumiList1" name="syumiList" >読書</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="スポーツ" id="syumiList2" name="syumiList" >スポーツ</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="音楽" id="syumiList3" name="syumiList" >音楽</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="ゲーム" id="syumiList4" name="syumiList" >ゲーム</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="その他" id="syumiList5" name="syumiList" >その他</input>
+        </label>
+      </div>
+    </div>
+  </div>
+        </td></tr>
+       </tbody>
+      </table>
+      
+     </div>
+    </div>
+
+    <div class="form-actions">
+     <button type="submit" class="btn btn-primary col-md-1 col-md-offset-2">
+      <span class="glyphicon glyphicon-save"></span>
+     </button>
+   </div>
+   </fieldset>
+  </form>
+
+  <hr />
+  <!-- EEEEE: contact_form コンテンツ -->
+  
+<!-- script -->
+<script>
+$(document).ready(function(){
+ //--- 要素作成関数
+ let mobileOpts = ["自宅","携帯","会社","その他"];
+ let jusyoOpts = ["自宅","会社","その他"]; 
+ function getTr(_content) {
+   return "<tr><td>" + _content + "</td></tr>";
+ }
+ function getLabel(_for, _col, _label) {
+   return "<label for='" + _for + "' class='Label " + _col + "'>"
+    + "<span style='float: right'>" + _label + "</span></label>";
+ }
+ function getSelect(_col, _syu, _rno, _fld, _opts) {
+   var $r1="<select class='" + _col + "' id='" + iid() 
+    + "' name='" + inam() + "'>"
+    + "<option value='*' selected='selected'>*</option>";
+    for (let $opt of _opts) {
+    	$r1 += "<option value='" + $opt + "'>" + $opt + "</option>";
+    }
+    return $r1 + "</select>";
+ }
+ function getInput(_col, _ph, _max, _syu, _rno, _fld) {
+   return "<input type='text' class='" + _col + "' placeholder='" + _ph + "'"
+    + "maxlength='" + _max + "' id='" + iid() + "' name='" + inam() + "' value=''/>";
+ }
+ function iid(_syu,_rno,_fld) { return _syu + _rno + _fld; }
+ function inam(_syu,_rno,_fld) { return _syu + "[" + _rno + "]." + _fld; }
+ function getDelBtn(_col, _gicon) {
+  return $r1="<span><button id='delRow' type='button'"
+        + "class='btn btn-danger " + _col + "'>"
+        + "<span class='glyphicon glyphicon-minus'></span> "
+        + "<span class='glyphicon glyphicon-"
+        + _gicon + "'></span></button></span>";
+ }
+ //--- 追加ボタンクリック
+ $("#btnAddPhone").click(function(){
+	var $rno = $("#tbodyPhone > tr").size();
+	$("#tbodyPhone").append(
+	  getTr(getLabel("telno","col-md-1","電話:")
+		  + getSelect("col-md-1","phones", $rno, "phoneType", mobileOpts)
+			+ getInput("col-md-2","電話番号","13", "phones", $rno, "telno")
+			+ getDelBtn("col-md-offset-4", "phone")
+		)
+  );
+ });
+ $("#btnAddMail").click(function(){
+  var $rno = $("#tbodyMail > tr").size();
+	$("#tbodyMail").append(
+   getTr(getLabel("mail","col-md-1","メール:")
+	  + getSelect("col-md-1","mails", $rno, "mailType", mobileOpts)
+	  + getInput("col-md-2","メール","40", "mails", $rno, "mail")
+	  + getDelBtn("col-md-offset-4", "envelope")
+	 )
+  );
+ });
+ $("#btnAddJusyo").click(function(){
+	var $rno = $("#tbodyJusyo > tr").size();
+	$("#tbodyJusyo").append(
+	 getTr(getLabel("address","col-md-1","住所:")
+		+ getSelect("col-md-1","addresses", $rno,"addressType", jusyoOpts)
+	  + getInput("col-md-2","郵便番号","7", "addresses", $rno, "yubin")
+	  + getDelBtn("col-md-offset-4", "home")
+	  + getInput("col-md-offset-2 col-md-2","都道府県","10",
+			 "addresses", $rno, "todofuken")
+	  + getInput("col-md-2","市区町村","20", "addresses", $rno, "sikuchoson")
+    + getInput("col-md-2","番地","30", "addresses", $rno, "banchi")
+    + getInput("col-md-2","建物","30", "addresses", $rno,"banchi2")
+	 )
+	);
+ });
+ $("tbody").on("click", "button", function(){
+	if ($(this).attr("id")=="delRow") {
+	 //alert($(this).attr("id"));
+	 $(this).parents("tr").remove();
+  }
+ });
+
+});
+</script>
+  
+ </section>
+
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>連絡先管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+16:57:15 : bootcontact.LogRule                     :%%%%%%%%%% :finished
+16:57:15 : bootcontact.TestUtil                    $$$$$$ テストの初期処理： ユーザー(2件), 連絡先(14件)を作成 :logSetup
+16:57:15 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:15 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:15 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 4 ms :initServletBean
+16:57:15 : bootcontact.LogRule                     :&&&&&&&&&&&&&&&  deleteContact:  :testStart
+16:57:15 : bootcontact.SampleIntercepter           >>>>> サンプルインターセプター :preHandle
+16:57:15 : b.controller.ContactController          $$$$$ 削除する id=100100 :deleteContact
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /contact/delete/100100
+       Parameters = {}
+          Headers = {}
+
+Handler:
+             Type = bootcontact.controller.ContactController
+           Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.deleteContact(java.lang.Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = views/contact_list
+             View = null
+        Attribute = loginUser
+            value = User(1:1)[tosi,null, ADMIN, 家族知人]
+           errors = []
+        Attribute = curSyubetu
+            value = 家族親戚
+        Attribute = contactSyubetuItems
+            value = [家族親戚, 同僚, 仕事, 顧客, 友人知人, 生活, その他]
+        Attribute = seibetuItems
+            value = [男, 女]
+        Attribute = syumiItems
+            value = [読書, スポーツ, 音楽, ゲーム, その他]
+        Attribute = phoneSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = mailSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = jusyoSyubetuItems
+            value = [*, 自宅, 会社, その他]
+        Attribute = contactList
+            value = [Contact(100200:1)[simei=井上京子, yomi=いのうえきょうこ, seibetu=女, seinenGappi=1982/02/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100221:1)[telno=08011113333, phoneType=自宅], mails=Mail(100211:1)[mail=k.inoue@xxx.com, mailType=自宅], addresses=], Contact(100300:1)[simei=加藤正雄, yomi=かとうまさお, seibetu=男, seinenGappi=1984/03/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100321:1)[telno=08011114444, phoneType=自宅], mails=Mail(100311:1)[mail=m.kato@yyy.com, mailType=自宅], addresses=], Contact(100400:1)[simei=佐々木一郎, yomi=ささきいちろう, seibetu=男, seinenGappi=1986/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100421:1)[telno=08011115555, phoneType=自宅], mails=Mail(100411:1)[mail=i.sasaki@zzz.com, mailType=自宅], addresses=], Contact(100500:1)[simei=清水昌美, yomi=しみずまさみ, seibetu=女, seinenGappi=1988/05/05, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100521:1)[telno=08011116666, phoneType=自宅], mails=Mail(100511:1)[mail=m.simizu@xxx.com, mailType=自宅], addresses=], Contact(100600:1)[simei=鈴木伸二, yomi=すずきしんじ, seibetu=男, seinenGappi=1971/10/12, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100621:1)[telno=08011117777, phoneType=自宅], mails=Mail(100611:1)[mail=s.suzuki@yyy.com, mailType=自宅], addresses=], Contact(100700:1)[simei=田村義和, yomi=たむらよしかず, seibetu=男, seinenGappi=1973/12/22, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100721:1)[telno=08011118888, phoneType=自宅], mails=Mail(100711:1)[mail=y.tamura@yyy.com, mailType=自宅], addresses=], Contact(100800:1)[simei=中島由美子, yomi=なかしまゆみこ, seibetu=女, seinenGappi=1975/04/18, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100821:1)[telno=08011112222, phoneType=自宅], mails=Mail(100811:1)[mail=y.nakasima@yyy.com, mailType=自宅], addresses=], Contact(100900:1)[simei=花村一雄, yomi=はなむらかずお, seibetu=男, seinenGappi=1977/06/23, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=], Contact(101000:1)[simei=花岡優子, yomi=はなおかゆうこ, seibetu=女, seinenGappi=1979/07/15, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=], Contact(101100:1)[simei=松岡三郎, yomi=まつおかさぶろう, seibetu=男, seinenGappi=1980/09/03, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=], Contact(101200:1)[simei=山田花子, yomi=やまだはなこ, seibetu=女, seinenGappi=1980/09/15, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=, mails=, addresses=]]
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache, no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY], Content-Type=[text/html;charset=UTF-8]}
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>連絡先管理 - 連絡先一覧</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="/os/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/app_base.css" />
+<script src="/os/js/jquery.min.js"></script>
+<script src="/os/js/bootstrap.min.js"></script>
+<meta charset="utf-8" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"> <span>連絡先管理</span> <span>
+            : <small>tosi</small> <small>(管理者)</small>
+        </span>
+        </a>
+      </div>
+      <!-- menu -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              連絡先 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/list">連絡先一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              ユーザー管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/user_list">ユーザー一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu3 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              テーマ変更 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/theme/_slate">slate</a></li>
+              <li><a href="/contact/theme/_paper">paper</a></li>
+              <li><a href="/contact/theme/_flatly">flatly</a></li>
+              <li><a href="/contact/theme/_default">default</a></li>
+            </ul></li>
+          <!-- menu3 EEE -->
+        </ul>
+        <form action="/logout" method="post" class="navbar-form navbar-right"><input type="hidden" name="_csrf" value="c3ab4fde-3ce7-4778-95b4-81e87d0a371d"/>
+          <button type="submit" class="btn btn-default">ログアウト</button>
+        </form>
+      </div>
+    </nav>
+  </div></div>
+
+        <br />
+        <header>
+          <h3>連絡先一覧</h3>
+        </header>
+
+        <section>
+
+    <!-- contact_list コンテンツ -->
+    <table>
+      <tbody>
+        <tr>
+          <td> <span
+            style="color: red;">家族親戚</span>
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/同僚">同僚</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/仕事">仕事</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/顧客">顧客</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/友人知人">友人知人</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/生活">生活</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/その他">その他</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pull-right">
+      <a href="/contact/form">連絡先の作成</a>
+    </div>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>氏名</td>
+          <td>よみ</td>
+          <td>性別</td>
+          <td>生年月日</td>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>100200</td>
+          <td><a href="/contact/select/100200">
+            井上 京子</a></td>
+          <td>いのうえ きょうこ</td>
+          <td>女</td>
+          <td>1982/02/01</td>
+        </tr>
+        <tr>
+          <td>100300</td>
+          <td><a href="/contact/select/100300">
+            加藤 正雄</a></td>
+          <td>かとう まさお</td>
+          <td>男</td>
+          <td>1984/03/01</td>
+        </tr>
+        <tr>
+          <td>100400</td>
+          <td><a href="/contact/select/100400">
+            佐々木 一郎</a></td>
+          <td>ささき いちろう</td>
+          <td>男</td>
+          <td>1986/01/01</td>
+        </tr>
+        <tr>
+          <td>100500</td>
+          <td><a href="/contact/select/100500">
+            清水 昌美</a></td>
+          <td>しみず まさみ</td>
+          <td>女</td>
+          <td>1988/05/05</td>
+        </tr>
+        <tr>
+          <td>100600</td>
+          <td><a href="/contact/select/100600">
+            鈴木 伸二</a></td>
+          <td>すずき しんじ</td>
+          <td>男</td>
+          <td>1971/10/12</td>
+        </tr>
+        <tr>
+          <td>100700</td>
+          <td><a href="/contact/select/100700">
+            田村 義和</a></td>
+          <td>たむら よしかず</td>
+          <td>男</td>
+          <td>1973/12/22</td>
+        </tr>
+        <tr>
+          <td>100800</td>
+          <td><a href="/contact/select/100800">
+            中島 由美子</a></td>
+          <td>なかしま ゆみこ</td>
+          <td>女</td>
+          <td>1975/04/18</td>
+        </tr>
+        <tr>
+          <td>100900</td>
+          <td><a href="/contact/select/100900">
+            花村 一雄</a></td>
+          <td>はなむら かずお</td>
+          <td>男</td>
+          <td>1977/06/23</td>
+        </tr>
+        <tr>
+          <td>101000</td>
+          <td><a href="/contact/select/101000">
+            花岡 優子</a></td>
+          <td>はなおか ゆうこ</td>
+          <td>女</td>
+          <td>1979/07/15</td>
+        </tr>
+        <tr>
+          <td>101100</td>
+          <td><a href="/contact/select/101100">
+            松岡 三郎</a></td>
+          <td>まつおか さぶろう</td>
+          <td>男</td>
+          <td>1980/09/03</td>
+        </tr>
+        <tr>
+          <td>101200</td>
+          <td><a href="/contact/select/101200">
+            山田 花子</a></td>
+          <td>やまだ はなこ</td>
+          <td>女</td>
+          <td>1980/09/15</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- contact_list コンテンツ -->
+
+  </section>
+
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>連絡先管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+16:57:15 : bootcontact.LogRule                     :%%%%%%%%%% :finished
+16:57:15 : bootcontact.TestUtil                    $$$$$$ テストの初期処理： ユーザー(2件), 連絡先(14件)を作成 :logSetup
+16:57:15 : o.a.c.c.C.[.[localhost].[/bootContact]  Initializing Spring FrameworkServlet '' :log
+16:57:15 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization started :initServletBean
+16:57:15 : o.s.t.web.servlet.TestDispatcherServlet FrameworkServlet '': initialization completed in 4 ms :initServletBean
+16:57:15 : bootcontact.LogRule                     :&&&&&&&&&&&&&&&  contactFormUpdate:  :testStart
+16:57:15 : bootcontact.SampleIntercepter           >>>>> サンプルインターセプター :preHandle
+16:57:15 : b.controller.ContactController          $$$$$ Contact(100100:1)[simei=相田陽子, yomi=あいだようこ, seibetu=女, seinenGappi=1980/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100121:1)[telno=08011112222, phoneType=自宅], mails=Mail(100111:1)[mail=y.aida@xxx.com, mailType=自宅], addresses=Address(100101:1)[ 1234444, 東京都, 千代田区, , , , 自宅]Address(100102:1)[ 1235555, 東京都, 港区, , , , 会社]] :updateContact
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /contact/form/100100
+       Parameters = {}
+          Headers = {}
+
+Handler:
+             Type = bootcontact.controller.ContactController
+           Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.updateContact(bootcontact.model.Contact)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = views/contact_form
+             View = null
+        Attribute = loginUser
+            value = null
+        Attribute = curSyubetu
+            value = 家族親戚
+        Attribute = contactSyubetuItems
+            value = [家族親戚, 同僚, 仕事, 顧客, 友人知人, 生活, その他]
+        Attribute = seibetuItems
+            value = [男, 女]
+        Attribute = syumiItems
+            value = [読書, スポーツ, 音楽, ゲーム, その他]
+        Attribute = phoneSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = mailSyubetuItems
+            value = [*, 自宅, 携帯, 会社, その他]
+        Attribute = jusyoSyubetuItems
+            value = [*, 自宅, 会社, その他]
+        Attribute = contact
+            value = Contact(100100:1)[simei=相田陽子, yomi=あいだようこ, seibetu=女, seinenGappi=1980/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100121:1)[telno=08011112222, phoneType=自宅], mails=Mail(100111:1)[mail=y.aida@xxx.com, mailType=自宅], addresses=Address(100101:1)[ 1234444, 東京都, 千代田区, , , , 自宅]Address(100102:1)[ 1235555, 東京都, 港区, , , , 会社]]
+           errors = []
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache, no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY], Content-Type=[text/html;charset=UTF-8]}
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ CSRF ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>連絡先管理 - 連絡先編集</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="_csrf" content="e910456a-976b-4e8c-b521-9184a0e78eac"/>
+ <meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+
+<link rel="stylesheet" href="/os/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/app_base.css" />
+<script src="/os/js/jquery.min.js"></script>
+<script src="/os/js/bootstrap.min.js"></script>
+<script src="/js/bootContact1.js"></script>  
+<meta charset="utf-8" />  
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"> <span>連絡先管理</span> <span>
+            : <small>tosi</small> <small>(管理者)</small>
+        </span>
+        </a>
+      </div>
+      <!-- menu -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              連絡先 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/list">連絡先一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              ユーザー管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/user_list">ユーザー一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu3 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              テーマ変更 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/contact/theme/_slate">slate</a></li>
+              <li><a href="/contact/theme/_paper">paper</a></li>
+              <li><a href="/contact/theme/_flatly">flatly</a></li>
+              <li><a href="/contact/theme/_default">default</a></li>
+            </ul></li>
+          <!-- menu3 EEE -->
+        </ul>
+        <form action="/logout" method="post" class="navbar-form navbar-right"><input type="hidden" name="_csrf" value="e910456a-976b-4e8c-b521-9184a0e78eac"/>
+          <button type="submit" class="btn btn-default">ログアウト</button>
+        </form>
+      </div>
+    </nav>
+  </div></div>
+
+        <br />
+        <header>
+          <h3>連絡先編集</h3>
+        </header>
+
+        <section>
+
+  <!-- SSSSS: contact_form コンテンツ -->
+  <!-- フォーム -->
+  <form role="form" id="contactForm" action="/contact/save" style="padding: 10px;" method="post"><input type="hidden" name="_csrf" value="e910456a-976b-4e8c-b521-9184a0e78eac"/>
+    
+   <!-- 入力フィールド -->
+   <fieldset>
+   
+    <div class="row">
+     <div class="col-md-12">    
+
+      <input type="hidden" id="id" name="id" value="100100" /> <input type="hidden" id="version" name="version" value="1" /> <input type="hidden" id="syubetu" name="syubetu" value="家族親戚" />
+      <input type="hidden" id="user.id" name="user.id" value="1" />
+
+      <table class="table table-condensed">
+       <tbody>
+
+        <!-- add buttons -->
+        <tr><td>
+          <span class="col-md-offset-2 col-md-1">
+          <button type="button" id="btnAddPhone" class="btn btn-success">
+           <span class="glyphicon glyphicon-plus"></span>
+           <span class="glyphicon glyphicon-phone"></span>
+          </button></span>
+          <span class="col-md-1">
+          <button type="button" id="btnAddMail" class="btn btn-success">
+           <span class="glyphicon glyphicon-plus"></span>
+           <span class="glyphicon glyphicon-envelope"></span>
+          </button></span>
+          <span class="col-md-1">
+          <button type="button" id="btnAddJusyo" class="btn btn-success">
+           <span class="glyphicon glyphicon-plus"></span>
+           <span class="glyphicon glyphicon-home"></span>
+          </button></span>
+        </td></tr>
+        </tbody>
+        <!-- phones -->
+        <tbody id="tbodyPhone">
+        <tr><td>
+          <label for="telno" class="Label col-md-1"> 
+          <span style="float: right">電話:</span></label>
+          <select class="col-md-1" id="phones0.phoneType" name="phones[0].phoneType">
+           <option value="*">*</option>
+           <option value="自宅" selected="selected">自宅</option>
+           <option value="携帯">携帯</option>
+           <option value="会社">会社</option>
+           <option value="その他">その他</option>
+          </select>
+          <input type="text" class="col-md-2" placeholder="電話番号" maxlength="13"
+            id="phones0.telno" name="phones[0].telno" value="08011112222" />
+          <span><button type="button" id="delRow"
+           class="btn btn-danger col-md-offset-4">
+           <span class="glyphicon glyphicon-minus"></span>
+           <span class="glyphicon glyphicon-phone"></span>
+          </button></span>
+        </td></tr>
+        </tbody>
+        <!-- mails -->
+        <tbody id="tbodyMail">
+        <tr><td>
+          <label for="mail" class="Label col-md-1"> 
+           <span style="float: right">メール:</span></label>
+          <select class="col-md-1" id="mails0.mailType" name="mails[0].mailType">
+           <option value="*">*</option>
+           <option value="自宅" selected="selected">自宅</option>
+           <option value="携帯">携帯</option>
+           <option value="会社">会社</option>
+           <option value="その他">その他</option>
+          </select>
+          <input type="text" class="col-md-2" placeholder="メール" maxlength="30"
+            id="mails0.mail" name="mails[0].mail" value="y.aida@xxx.com" />
+          <span><button type="button" id="delRow"
+           class="btn btn-danger col-md-offset-4">
+           <span class="glyphicon glyphicon-minus"></span>
+           <span class="glyphicon glyphicon-envelope"></span>
+          </button></span>
+        </td></tr>
+        </tbody>
+        <!-- addresses -->
+        <tbody id="tbodyJusyo">
+        <tr><td>
+          <label for="telno" class="Label col-md-1"> 
+           <span style="float: right">住所:</span></label>
+          <select class="col-md-1" id="addresses0.addressType" name="addresses[0].addressType">
+           <option value="*">*</option>
+           <option value="自宅" selected="selected">自宅</option>
+           <option value="会社">会社</option>
+           <option value="その他">その他</option>
+          </select>
+          <input type="text" class="col-md-2" placeholder="郵便番号"
+            maxlength="30" id="addresses0.yubin" name="addresses[0].yubin" value="1234444" />
+          <span><button type="button" id="delRow"
+           class="btn btn-danger col-md-offset-4">
+           <span class="glyphicon glyphicon-minus"></span>
+           <span class="glyphicon glyphicon-home"></span>
+          </button></span>
+          <input type="text" class="col-md-offset-2 col-md-2" placeholder="都道府県"
+            maxlength="10" id="addresses0.todofuken" name="addresses[0].todofuken" value="東京都" />
+          <input type="text" class="col-md-2" placeholder="市区町村"
+            maxlength="30" id="addresses0.sikuchoson" name="addresses[0].sikuchoson" value="千代田区" />
+          <input type="text" class="col-md-2" placeholder="番地"
+           maxlength="30" id="addresses0.banchi" name="addresses[0].banchi" value="" />
+          <input type="text" class="col-md-2" placeholder="建物"
+            maxlength="30" id="addresses0.banchi2" name="addresses[0].banchi2" value="" />
+        </td></tr>
+        <tr><td>
+          <label for="telno" class="Label col-md-1"> 
+           <span style="float: right">住所:</span></label>
+          <select class="col-md-1" id="addresses1.addressType" name="addresses[1].addressType">
+           <option value="*">*</option>
+           <option value="自宅">自宅</option>
+           <option value="会社" selected="selected">会社</option>
+           <option value="その他">その他</option>
+          </select>
+          <input type="text" class="col-md-2" placeholder="郵便番号"
+            maxlength="30" id="addresses1.yubin" name="addresses[1].yubin" value="1235555" />
+          <span><button type="button" id="delRow"
+           class="btn btn-danger col-md-offset-4">
+           <span class="glyphicon glyphicon-minus"></span>
+           <span class="glyphicon glyphicon-home"></span>
+          </button></span>
+          <input type="text" class="col-md-offset-2 col-md-2" placeholder="都道府県"
+            maxlength="10" id="addresses1.todofuken" name="addresses[1].todofuken" value="東京都" />
+          <input type="text" class="col-md-2" placeholder="市区町村"
+            maxlength="30" id="addresses1.sikuchoson" name="addresses[1].sikuchoson" value="港区" />
+          <input type="text" class="col-md-2" placeholder="番地"
+           maxlength="30" id="addresses1.banchi" name="addresses[1].banchi" value="" />
+          <input type="text" class="col-md-2" placeholder="建物"
+            maxlength="30" id="addresses1.banchi2" name="addresses[1].banchi2" value="" />
+        </td></tr>
+        </tbody>
+        
+        <!-- 氏名 -->
+        <tbody>
+        <tr><td>
+         <label for="simeiSei" class="Label col-md-2">
+          <span style="float: right">氏名:</span></label>
+         <input type="text" class="col-md-2"
+          placeholder="姓" maxlength="20"
+            id="simeiSei" name="simeiSei" value="相田" />
+         <input type="text" class="col-md-2"
+          placeholder="名" maxlength="20" id="simeiMei" name="simeiMei" value="陽子" />
+        </td></tr>
+        <!-- よみ -->
+        <tr><td>
+         <label for="yomiSei" class="Label col-md-2"> 
+          <span style="float: right">よみ:</span></label>
+         <input type="text" class="col-md-2"
+          placeholder="せい" maxlength="12" id="yomiSei" name="yomiSei" value="あいだ" />
+         <input type="text" class="col-md-2"
+          placeholder="めい" maxlength="12" id="yomiMei" name="yomiMei" value="ようこ" />
+        </td></tr>
+        <!-- 性別, 生年月日 -->
+        <tr><td>
+         <label for="seibetu" class="Label col-md-2">
+          <span style="float: right">性別/誕生日:</span></label>
+         <div class="col-md-2" id="seibetu">
+          <label class="radio-inline">
+           <input type="radio" value="男" id="seibetu1" name="seibetu" >男</input>
+          </label><label class="radio-inline">
+           <input type="radio" value="女" id="seibetu2" name="seibetu" checked="checked" >女</input>
+          </label>
+         </div>
+         <input type="text" class="col-md-2"
+          placeholder="誕生日" maxlength="10" id="seinenGappi" name="seinenGappi" value="1980/01/01" />          
+        </td></tr>
+        <tr><td>
+         <!-- メモ -->
+         <div>
+      <label class="control-label col-md-2" for="memo">
+       <span style="float: right">メモ:</span></label>
+       <input type="text" placeholder="メモ"
+          maxlength="50" class="col-md-9" id="memo" name="memo" value=""/> 
+    </div>
+        </td></tr>
+        <tr><td>
+         <!-- 会社 -->
+         <div>
+      <label class="control-label col-md-2" for="kaisya">
+       <span style="float: right">会社:</span></label>
+       <input type="text" placeholder="会社"
+          maxlength="30" class="col-md-9" id="kaisya" name="kaisya" value=""/> 
+    </div>
+        </td></tr>
+        <tr><td>
+         <!-- 趣味 -->
+         <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="syumi">
+       <span style="float: right">趣味</span></label>
+      <div id="syumi">&emsp;
+        <label class="checkbox-inline">
+        <input type="checkbox" value="読書" id="syumiList1" name="syumiList" >読書</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="スポーツ" id="syumiList2" name="syumiList" >スポーツ</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="音楽" id="syumiList3" name="syumiList" >音楽</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="ゲーム" id="syumiList4" name="syumiList" >ゲーム</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="その他" id="syumiList5" name="syumiList" >その他</input>
+        </label>
+      </div>
+    </div>
+  </div>
+        </td></tr>
+       </tbody>
+      </table>
+      
+     </div>
+    </div>
+
+    <div class="form-actions">
+     <button type="submit" class="btn btn-primary col-md-1 col-md-offset-2">
+      <span class="glyphicon glyphicon-save"></span>
+     </button>
+   </div>
+   </fieldset>
+  </form>
+
+  <hr />
+  <!-- EEEEE: contact_form コンテンツ -->
+  
+<!-- script -->
+<script>
+$(document).ready(function(){
+ //--- 要素作成関数
+ let mobileOpts = ["自宅","携帯","会社","その他"];
+ let jusyoOpts = ["自宅","会社","その他"]; 
+ function getTr(_content) {
+   return "<tr><td>" + _content + "</td></tr>";
+ }
+ function getLabel(_for, _col, _label) {
+   return "<label for='" + _for + "' class='Label " + _col + "'>"
+    + "<span style='float: right'>" + _label + "</span></label>";
+ }
+ function getSelect(_col, _syu, _rno, _fld, _opts) {
+   var $r1="<select class='" + _col + "' id='" + iid() 
+    + "' name='" + inam() + "'>"
+    + "<option value='*' selected='selected'>*</option>";
+    for (let $opt of _opts) {
+    	$r1 += "<option value='" + $opt + "'>" + $opt + "</option>";
+    }
+    return $r1 + "</select>";
+ }
+ function getInput(_col, _ph, _max, _syu, _rno, _fld) {
+   return "<input type='text' class='" + _col + "' placeholder='" + _ph + "'"
+    + "maxlength='" + _max + "' id='" + iid() + "' name='" + inam() + "' value=''/>";
+ }
+ function iid(_syu,_rno,_fld) { return _syu + _rno + _fld; }
+ function inam(_syu,_rno,_fld) { return _syu + "[" + _rno + "]." + _fld; }
+ function getDelBtn(_col, _gicon) {
+  return $r1="<span><button id='delRow' type='button'"
+        + "class='btn btn-danger " + _col + "'>"
+        + "<span class='glyphicon glyphicon-minus'></span> "
+        + "<span class='glyphicon glyphicon-"
+        + _gicon + "'></span></button></span>";
+ }
+ //--- 追加ボタンクリック
+ $("#btnAddPhone").click(function(){
+	var $rno = $("#tbodyPhone > tr").size();
+	$("#tbodyPhone").append(
+	  getTr(getLabel("telno","col-md-1","電話:")
+		  + getSelect("col-md-1","phones", $rno, "phoneType", mobileOpts)
+			+ getInput("col-md-2","電話番号","13", "phones", $rno, "telno")
+			+ getDelBtn("col-md-offset-4", "phone")
+		)
+  );
+ });
+ $("#btnAddMail").click(function(){
+  var $rno = $("#tbodyMail > tr").size();
+	$("#tbodyMail").append(
+   getTr(getLabel("mail","col-md-1","メール:")
+	  + getSelect("col-md-1","mails", $rno, "mailType", mobileOpts)
+	  + getInput("col-md-2","メール","40", "mails", $rno, "mail")
+	  + getDelBtn("col-md-offset-4", "envelope")
+	 )
+  );
+ });
+ $("#btnAddJusyo").click(function(){
+	var $rno = $("#tbodyJusyo > tr").size();
+	$("#tbodyJusyo").append(
+	 getTr(getLabel("address","col-md-1","住所:")
+		+ getSelect("col-md-1","addresses", $rno,"addressType", jusyoOpts)
+	  + getInput("col-md-2","郵便番号","7", "addresses", $rno, "yubin")
+	  + getDelBtn("col-md-offset-4", "home")
+	  + getInput("col-md-offset-2 col-md-2","都道府県","10",
+			 "addresses", $rno, "todofuken")
+	  + getInput("col-md-2","市区町村","20", "addresses", $rno, "sikuchoson")
+    + getInput("col-md-2","番地","30", "addresses", $rno, "banchi")
+    + getInput("col-md-2","建物","30", "addresses", $rno,"banchi2")
+	 )
+	);
+ });
+ $("tbody").on("click", "button", function(){
+	if ($(this).attr("id")=="delRow") {
+	 //alert($(this).attr("id"));
+	 $(this).parents("tr").remove();
+  }
+ });
+
+});
+</script>
+  
+ </section>
+
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>連絡先管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+16:57:15 : bootcontact.ContactControllerTest       Contact(100100:1)[simei=相田陽子, yomi=あいだようこ, seibetu=女, seinenGappi=1980/01/01, memo=, picture=, syumi=, syubetu=家族親戚, kaisya=, user=User(1:1)[tosi,null, ADMIN, 家族知人], googleid=, phones=Phone(100121:1)[telno=08011112222, phoneType=自宅], mails=Mail(100111:1)[mail=y.aida@xxx.com, mailType=自宅], addresses=Address(100101:1)[ 1234444, 東京都, 千代田区, , , , 自宅]Address(100102:1)[ 1235555, 東京都, 港区, , , , 会社]] :contactFormUpdate
+16:57:15 : bootcontact.LogRule                     :%%%%%%%%%% :finished
+16:57:15 : ationConfigEmbeddedWebApplicationContextClosing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@420a85c4: startup date [Tue Jun 13 16:57:00 JST 2017]; root of context hierarchy :doClose
+16:57:15 : j.LocalContainerEntityManagerFactoryBeanClosing JPA EntityManagerFactory for persistence unit 'default' :destroy
+[EL Config]: connection: 2017-06-13 16:57:15.972--ServerSession(1689718593)--Connection(2003652822)--disconnect
+[EL Info]: connection: 2017-06-13 16:57:15.972--ServerSession(1689718593)--/file:/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootContact1/bin/_default logout successful

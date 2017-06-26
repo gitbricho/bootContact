@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+  <!-- layout へ挿入 -->
+  <div th:fragment="navbar">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" th:href="@{/}"> <span th:text="#{app.title}">(title)</span> <span>
+            : <small sec:authentication="name">User</small> <small
+            sec:authorize="hasRole('ROLE_ADMIN')">(管理者)</small>
+        </span>
+        </a>
+      </div>
+      <!-- menu -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              ドロップダウン <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">メニュー1</a></li>
+              <li><a href="#">メニュー2</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              ユーザー管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#" th:href="@{/user_list}">ユーザー一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+        </ul>
+        <form th:action="@{/logout}" method="post" class="navbar-form navbar-right">
+          <button type="submit" class="btn btn-default">ログアウト</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+</body>
+</html>

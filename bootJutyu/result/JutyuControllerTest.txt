@@ -1,0 +1,652 @@
+: Neither @ContextConfiguration nor @ContextHierarchy found for test class [bootapp.JutyuControllerTest], using SpringBootContextLoader :buildDefaultMergedContextConfiguration
+: Could not detect default resource locations for test class [bootapp.JutyuControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}. :generateDefaultLocations
+: Could not detect default configuration classes for test class [bootapp.JutyuControllerTest]: JutyuControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration. :detectDefaultConfigurationClasses
+: Found @SpringBootConfiguration bootapp.App for test class bootapp.JutyuControllerTest :getOrFindConfigurationClasses
+: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener] :getDefaultTestExecutionListenerClassNames
+: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3cc2931c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@20d28811, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3967e60c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@60d8c9b7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@48aaecc3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c0c77c7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7adda9cc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5cee5251, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@433d61fb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5c909414, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4b14c583, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@65466a6a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4ddced80] :getTestExecutionListeners
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+: HV000001: Hibernate Validator 5.3.5.Final :<clinit>
+: Starting JutyuControllerTest on tt-mbp.local with PID 76462 (started by bri_tcho in /Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootJutyu) :logStarting
+: Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE :logStarting
+: No active profile set, falling back to default profiles: default :logStartupProfileInfo
+: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7068e664: startup date [Tue Jun 13 17:31:32 JST 2017]; root of context hierarchy :prepareRefresh
+: Overriding bean definition for bean 'meisaiRepo' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] :registerBeanDefinition
+: Overriding bean definition for bean 'kokyakuRepo' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] :registerBeanDefinition
+: Overriding bean definition for bean 'userRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] :registerBeanDefinition
+: Overriding bean definition for bean 'jutyuRepo' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] :registerBeanDefinition
+: Overriding bean definition for bean 'httpRequestHandlerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration; factoryMethodName=httpRequestHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration; factoryMethodName=httpRequestHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.class]] :registerBeanDefinition
+: Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]] :registerBeanDefinition
+: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$56c2853a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) :postProcessAfterInitialization
+: Tomcat initialized with port(s): 0 (http) :initialize
+: Starting service Tomcat :log
+: Starting Servlet Engine: Apache Tomcat/8.5.14 :log
+: Initializing Spring embedded WebApplicationContext :log
+: Root WebApplicationContext: initialization completed in 2797 ms :prepareEmbeddedWebApplicationContext
+: Mapping filter: 'metricsFilter' to: [/*] :configure
+: Mapping filter: 'characterEncodingFilter' to: [/*] :configure
+: Mapping filter: 'hiddenHttpMethodFilter' to: [/*] :configure
+: Mapping filter: 'httpPutFormContentFilter' to: [/*] :configure
+: Mapping filter: 'requestContextFilter' to: [/*] :configure
+: Mapping filter: 'springSecurityFilterChain' to: [/*] :configure
+: Mapping filter: 'webRequestLoggingFilter' to: [/*] :configure
+: Mapping filter: 'applicationContextIdFilter' to: [/*] :configure
+: Mapping servlet: 'dispatcherServlet' to [/] :onStartup
+: Loaded JDBC driver: org.h2.Driver :setDriverClassName
+: Building JPA container EntityManagerFactory for persistence unit 'default' :createNativeEntityManagerFactory
+[EL Config]: metadata: 2017-06-13 17:31:36.306--ServerSession(1549005458)--The access type for the persistent class [class bootapp.model.AbstractPersistentEntity] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 17:31:36.342--ServerSession(1549005458)--The access type for the persistent class [class bootapp.model.Jutyu] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 17:31:36.368--ServerSession(1549005458)--The target entity (reference) class for the one to many mapping element [field meisaiList] is being defaulted to: class bootapp.model.Meisai.
+[EL Config]: metadata: 2017-06-13 17:31:36.369--ServerSession(1549005458)--The access type for the persistent class [class bootapp.model.Meisai] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 17:31:36.371--ServerSession(1549005458)--The target entity (reference) class for the many to one mapping element [field jutyu] is being defaulted to: class bootapp.model.Jutyu.
+[EL Config]: metadata: 2017-06-13 17:31:36.371--ServerSession(1549005458)--The access type for the persistent class [class bootapp.model.Kokyaku] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 17:31:36.372--ServerSession(1549005458)--The access type for the persistent class [class bootapp.model.User] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 17:31:36.38--ServerSession(1549005458)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:31:36.382--ServerSession(1549005458)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 17:31:36.384--ServerSession(1549005458)--The alias name for the entity class [class bootapp.model.Jutyu] is being defaulted to: Jutyu.
+[EL Config]: metadata: 2017-06-13 17:31:36.384--ServerSession(1549005458)--The table name for entity [class bootapp.model.Jutyu] is being defaulted to: JUTYU.
+[EL Config]: metadata: 2017-06-13 17:31:36.394--ServerSession(1549005458)--The column name for element [jutyuGaku] is being defaulted to: JUTYUGAKU.
+[EL Config]: metadata: 2017-06-13 17:31:36.394--ServerSession(1549005458)--The column name for element [jutyuBi] is being defaulted to: JUTYUBI.
+[EL Config]: metadata: 2017-06-13 17:31:36.394--ServerSession(1549005458)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:31:36.394--ServerSession(1549005458)--The column name for element [nohinSaki] is being defaulted to: NOHINSAKI.
+[EL Config]: metadata: 2017-06-13 17:31:36.395--ServerSession(1549005458)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 17:31:36.395--ServerSession(1549005458)--The alias name for the entity class [class bootapp.model.Meisai] is being defaulted to: Meisai.
+[EL Config]: metadata: 2017-06-13 17:31:36.395--ServerSession(1549005458)--The table name for entity [class bootapp.model.Meisai] is being defaulted to: MEISAI.
+[EL Config]: metadata: 2017-06-13 17:31:36.396--ServerSession(1549005458)--The column name for element [tanka] is being defaulted to: TANKA.
+[EL Config]: metadata: 2017-06-13 17:31:36.396--ServerSession(1549005458)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:31:36.396--ServerSession(1549005458)--The column name for element [suryo] is being defaulted to: SURYO.
+[EL Config]: metadata: 2017-06-13 17:31:36.396--ServerSession(1549005458)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 17:31:36.396--ServerSession(1549005458)--The column name for element [syohin] is being defaulted to: SYOHIN.
+[EL Config]: metadata: 2017-06-13 17:31:36.397--ServerSession(1549005458)--The alias name for the entity class [class bootapp.model.Kokyaku] is being defaulted to: Kokyaku.
+[EL Config]: metadata: 2017-06-13 17:31:36.397--ServerSession(1549005458)--The table name for entity [class bootapp.model.Kokyaku] is being defaulted to: KOKYAKU.
+[EL Config]: metadata: 2017-06-13 17:31:36.397--ServerSession(1549005458)--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2017-06-13 17:31:36.397--ServerSession(1549005458)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:31:36.398--ServerSession(1549005458)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 17:31:36.398--ServerSession(1549005458)--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2017-06-13 17:31:36.398--ServerSession(1549005458)--The column name for element [jutyuKaisu] is being defaulted to: JUTYUKAISU.
+[EL Config]: metadata: 2017-06-13 17:31:36.398--ServerSession(1549005458)--The alias name for the entity class [class bootapp.model.User] is being defaulted to: User.
+[EL Config]: metadata: 2017-06-13 17:31:36.399--ServerSession(1549005458)--The column name for element [encodePass] is being defaulted to: ENCODEPASS.
+[EL Config]: metadata: 2017-06-13 17:31:36.399--ServerSession(1549005458)--The column name for element [syubetu] is being defaulted to: SYUBETU.
+[EL Config]: metadata: 2017-06-13 17:31:36.399--ServerSession(1549005458)--The column name for element [roles] is being defaulted to: ROLES.
+[EL Config]: metadata: 2017-06-13 17:31:36.399--ServerSession(1549005458)--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2017-06-13 17:31:36.4--ServerSession(1549005458)--The column name for element [theme] is being defaulted to: THEME.
+[EL Config]: metadata: 2017-06-13 17:31:36.4--ServerSession(1549005458)--The column name for element [yomi] is being defaulted to: YOMI.
+[EL Config]: metadata: 2017-06-13 17:31:36.4--ServerSession(1549005458)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:31:36.4--ServerSession(1549005458)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 17:31:36.4--ServerSession(1549005458)--The column name for element [simei] is being defaulted to: SIMEI.
+[EL Config]: metadata: 2017-06-13 17:31:36.401--ServerSession(1549005458)--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2017-06-13 17:31:36.423--ServerSession(1549005458)--The join table name for the many to many mapping [field meisaiList] is being defaulted to: JUTYU_MEISAI.
+[EL Config]: metadata: 2017-06-13 17:31:36.424--ServerSession(1549005458)--The source primary key column name for the many to many mapping [field meisaiList] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:31:36.425--ServerSession(1549005458)--The source foreign key column name for the many to many mapping [meisaiList] is being defaulted to: Jutyu_ID.
+[EL Config]: metadata: 2017-06-13 17:31:36.425--ServerSession(1549005458)--The target primary key column name for the many to many mapping [field meisaiList] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:31:36.425--ServerSession(1549005458)--The target foreign key column name for the many to many mapping [meisaiList] is being defaulted to: meisaiList_ID.
+[EL Config]: metadata: 2017-06-13 17:31:36.432--ServerSession(1549005458)--The primary key column name for the mapping element [field jutyu] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:31:36.433--ServerSession(1549005458)--The foreign key column name for the mapping element [jutyu] is being defaulted to: JUTYU_ID.
+[EL Info]: 2017-06-13 17:31:36.641--ServerSession(1549005458)--EclipseLink, version: Eclipse Persistence Services - 2.6.3.v20160428-59c81c5
+[EL Config]: connection: 2017-06-13 17:31:36.648--ServerSession(1549005458)--Connection(1482986993)--connecting(DatabaseLogin(
+	platform=>H2Platform
+	user name=> ""
+	connector=>JNDIConnector datasource name=>null
+))
+[EL Config]: connection: 2017-06-13 17:31:36.853--ServerSession(1549005458)--Connection(1244394767)--Connected: jdbc:h2:~/_data/h2/contact
+	User: DEMO
+	Database: H2  Version: 1.4.194 (2017-03-10)
+	Driver: H2 JDBC Driver  Version: 1.4.194 (2017-03-10)
+[EL Config]: connection: 2017-06-13 17:31:36.855--ServerSession(1549005458)--Connection(1683617002)--connecting(DatabaseLogin(
+	platform=>H2Platform
+	user name=> ""
+	connector=>JNDIConnector datasource name=>null
+))
+[EL Config]: connection: 2017-06-13 17:31:36.875--ServerSession(1549005458)--Connection(1802555899)--Connected: jdbc:h2:~/_data/h2/contact
+	User: DEMO
+	Database: H2  Version: 1.4.194 (2017-03-10)
+	Driver: H2 JDBC Driver  Version: 1.4.194 (2017-03-10)
+[EL Info]: connection: 2017-06-13 17:31:37.001--ServerSession(1549005458)--/file:/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootJutyu/bin/_default login successful
+: Initialized JPA EntityManagerFactory for persistence unit 'default' :buildNativeEntityManagerFactory
+: Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7068e664: startup date [Tue Jun 13 17:31:32 JST 2017]; root of context hierarchy :initControllerAdviceCache
+: Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice :initControllerAdviceCache
+: Mapped "{[/login],methods=[GET]}" onto public java.lang.String bootapp.controller.HomeController.login() :register
+: Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String bootapp.controller.HomeController.home(org.springframework.ui.Model) :register
+: Mapped "{[/jutyu_list],methods=[GET]}" onto public java.lang.String bootapp.controller.JutyuController.showJutyuList() :register
+: Mapped "{[/jutyu/meisai/{meisaiId}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.getJutyuMeisai(java.lang.Long) :register
+: Mapped "{[/jutyu/syohin/{tanka}/{kosu}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.getSyohin(int,int) :register
+: Mapped "{[/kokyaku/{key}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.getKokyaku(bootapp.model.Kokyaku) :register
+: Mapped "{[/kokyaku],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.getKokyaku(java.lang.String,java.lang.String) :register
+: Mapped "{[/kokyaku/search/{str}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.searchKokyaku(java.util.List<bootapp.model.Kokyaku>) :register
+: Mapped "{[/user_list],methods=[GET]}" onto public java.lang.String bootapp.controller.UserController.showUserList(org.springframework.ui.Model) :register
+: Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) :register
+: Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) :register
+: Mapped URL path [/error] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController] :registerHandler
+: Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController] :registerHandler
+: Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController] :registerHandler
+: Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController] :registerHandler
+: Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] :registerHandler
+: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] :registerHandler
+: Detected @ExceptionHandler methods in repositoryRestExceptionHandler :initExceptionHandlerAdviceCache
+: Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice :initExceptionHandlerAdviceCache
+: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] :registerHandler
+: [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead. :parse
+: Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], [] :<init>
+: Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3eb0fd88, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c97f5e9, org.springframework.security.web.header.HeaderWriterFilter@4654e373, org.springframework.security.web.csrf.CsrfFilter@4cc89246, org.springframework.security.web.authentication.logout.LogoutFilter@48aa0813, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1f3361e9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4583b617, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2419fe6f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@adc3344, org.springframework.security.web.session.SessionManagementFilter@2864d34d, org.springframework.security.web.access.ExceptionTranslationFilter@7672960e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5dce5c03] :<init>
+: Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@5cd71ee2, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3dad535f, org.springframework.security.web.context.SecurityContextPersistenceFilter@fa11fda, org.springframework.security.web.header.HeaderWriterFilter@199806aa, org.springframework.security.web.authentication.logout.LogoutFilter@34695b23, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2548fc01, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24e1e90a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d95166a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f67181f, org.springframework.security.web.session.SessionManagementFilter@300aa927, org.springframework.security.web.access.ExceptionTranslationFilter@598e5cb8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41f40dfa] :<init>
+: Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d9d8e46, org.springframework.security.web.context.SecurityContextPersistenceFilter@63d0e8d, org.springframework.security.web.header.HeaderWriterFilter@65d23aa3, org.springframework.security.web.authentication.logout.LogoutFilter@2aafa84f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@448892f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69a76b74, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1dd443c1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d0a14c2, org.springframework.security.web.session.SessionManagementFilter@52eca410, org.springframework.security.web.access.ExceptionTranslationFilter@48f4f03e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ef60c02] :<init>
+: Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7068e664: startup date [Tue Jun 13 17:31:32 JST 2017]; root of context hierarchy :initControllerAdviceCache
+: Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice :initControllerAdviceCache
+: Mapped "{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}],methods=[POST],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException :register
+: Mapped "{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception :register
+: Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception :register
+: Mapped "{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception :register
+: Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception :register
+: Mapped "{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources<java.lang.Object>,java.io.Serializable,java.lang.String) throws java.lang.Exception :register
+: Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception :register
+: Mapped "{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) :register
+: Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpHeaders,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) :register
+: Mapped "{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String) :register
+: Mapped "{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String) :register
+: Mapped "{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories() :register
+: Mapped "{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryController.headForRepositories() :register
+: Mapped "{[/ || ],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories() :register
+: Mapped "{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}" onto org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RootResourceInformation> org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions() :register
+: Mapped "{[/profile],methods=[OPTIONS]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions() :register
+: Mapped "{[/profile],methods=[GET]}" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata() :register
+: Mapped "{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.json.JsonSchema> org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException :register
+: Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException :register
+: Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links() :register
+: Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal) :register
+: Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String) :register
+: Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String) :register
+: Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String) :register
+: Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String) :register
+: Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>) :register
+: Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Initializing ProtocolHandler ["http-nio-auto-1"] :log
+: Starting ProtocolHandler ["http-nio-auto-1"] :log
+: Using a shared selector for servlet write/read :log
+: Tomcat started on port(s): 58118 (http) :start
+Create Test Data
+: Started JutyuControllerTest in 25.38 seconds (JVM running for 26.265) :logStarted
+: Initializing Spring FrameworkServlet '' :log
+: FrameworkServlet '': initialization started :initServletBean
+: FrameworkServlet '': initialization completed in 20 ms :initServletBean
+: &&&&&&&&&&&&&&& GetJutyuMeisai :  :logTestHeader
+: >>>>> サンプルインターセプター::preHandle :preHandle
+: >>>>> サンプルインターセプター::postHandle :postHandle
+: >>>>> サンプルインターセプター::preHandle :afterCompletion
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /jutyu/meisai/301
+       Parameters = {}
+          Headers = {}
+
+Handler:
+             Type = bootapp.controller.JutyuController
+           Method = public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.getJutyuMeisai(java.lang.Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = views/kekka
+             View = null
+        Attribute = syohinMeiValues
+            value = [商品001, 商品002, 商品003, 商品004, 商品005]
+        Attribute = kokyakuList
+            value = [Kokyaku(10)[name=納品先01, email=k01@xxx.com, jutyuKaisu=0], Kokyaku(20)[name=納品先02, email=k02@xxx.com, jutyuKaisu=0], Kokyaku(30)[name=納品先03, email=k03@xxx.com, jutyuKaisu=0], Kokyaku(40)[name=納品先04, email=k04@xxx.com, jutyuKaisu=0]]
+        Attribute = jutyuList
+            value = [Jutyu(100)[2015/09/01, 納品先01, 受注額=600], Jutyu(200)[2015/09/01, 納品先02, 受注額=1100], Jutyu(300)[2015/09/02, 納品先03, 受注額=3500], Jutyu(400)[2015/09/03, 納品先02, 受注額=2300]]
+        Attribute = kekkaList
+            value = [meeisaiId = 301]
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[text/html;charset=UTF-8]}
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>受注管理 - 受注テスト：結果</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="/os/css/bootstrap_paper.min.css" />
+<link rel="stylesheet" href="/css/app_base.css" />
+<script src="/os/js/jquery.min.js"></script>
+<script src="/os/js/bootstrap.min.js"></script>
+<meta charset="utf-8" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"> <span>受注管理</span> <span>
+            : <small>User</small> 
+        </span>
+        </a>
+      </div>
+      <!-- menu -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              受注管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/jutyu_list">受注一覧</a></li>
+              <li><a href="#" >売上一覧</a></li>
+              <li><a href="/jutyu/meisai/301">明細取得(id=301)</a></li>
+              <li><a href="/jutyu/syohin/100/5">商品取得(単価:100,数量:5)</a></li>
+              <li><a href="/kokyaku?id=10&amp;name=納品先01">顧客取得(id=10,name=納品先01)</a></li>
+              <li><a href="/kokyaku/id:20">顧客取得(id=20)</a></li>
+              <li><a href="/kokyaku/email:k03@xxx">顧客取得(email=k03@xxx)</a></li>
+              <li><a href="/kokyaku/search/name:納品先">顧客取得(name=納品先)</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              顧客管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/customer">GET /customer</a></li>
+              <li><a href="/customer/10">GET /customer/10</a></li>
+              <li><a href="/customer/20">GET /customer/20</a></li>
+            </ul></li>
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              ユーザー管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/user_list">ユーザー一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+        </ul>
+        <form action="/logout" method="post" class="navbar-form navbar-right">
+          <button type="submit" class="btn btn-default">ログアウト</button>
+        </form>
+      </div>
+    </nav>
+  </div></div>
+
+        <br />
+        <header>
+          <h3></h3>
+        </header>
+
+        <section>
+  
+  　<!-- kekka コンテンツ -->
+    <table class="table table-bordered table-striped">
+      <tbody>
+        <tr>
+          <td>meeisaiId = 301</td>
+        </tr>
+      </tbody>
+    </table>
+  　<!-- kekka コンテンツ -->
+  
+  </section>
+
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>受注管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+: Initializing Spring FrameworkServlet '' :log
+: FrameworkServlet '': initialization started :initServletBean
+: FrameworkServlet '': initialization completed in 6 ms :initServletBean
+: &&&&&&&&&&&&&&& GetJutyuSyohin :  :logTestHeader
+: >>>>> サンプルインターセプター::preHandle :preHandle
+: >>>>> サンプルインターセプター::postHandle :postHandle
+: >>>>> サンプルインターセプター::preHandle :afterCompletion
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /jutyu/syohin/100/15
+       Parameters = {}
+          Headers = {}
+
+Handler:
+             Type = bootapp.controller.JutyuController
+           Method = public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.getSyohin(int,int)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = views/kekka
+             View = null
+        Attribute = syohinMeiValues
+            value = [商品001, 商品002, 商品003, 商品004, 商品005]
+        Attribute = kokyakuList
+            value = [Kokyaku(10)[name=納品先01, email=k01@xxx.com, jutyuKaisu=0], Kokyaku(20)[name=納品先02, email=k02@xxx.com, jutyuKaisu=0], Kokyaku(30)[name=納品先03, email=k03@xxx.com, jutyuKaisu=0], Kokyaku(40)[name=納品先04, email=k04@xxx.com, jutyuKaisu=0]]
+        Attribute = jutyuList
+            value = [Jutyu(100)[2015/09/01, 納品先01, 受注額=600], Jutyu(200)[2015/09/01, 納品先02, 受注額=1100], Jutyu(300)[2015/09/02, 納品先03, 受注額=3500], Jutyu(400)[2015/09/03, 納品先02, 受注額=2300]]
+        Attribute = kekkaList
+            value = [tanka = 100, kosu = 15]
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[text/html;charset=UTF-8]}
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>受注管理 - 受注テスト：結果</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="/os/css/bootstrap_paper.min.css" />
+<link rel="stylesheet" href="/css/app_base.css" />
+<script src="/os/js/jquery.min.js"></script>
+<script src="/os/js/bootstrap.min.js"></script>
+<meta charset="utf-8" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"> <span>受注管理</span> <span>
+            : <small>User</small> 
+        </span>
+        </a>
+      </div>
+      <!-- menu -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              受注管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/jutyu_list">受注一覧</a></li>
+              <li><a href="#" >売上一覧</a></li>
+              <li><a href="/jutyu/meisai/301">明細取得(id=301)</a></li>
+              <li><a href="/jutyu/syohin/100/5">商品取得(単価:100,数量:5)</a></li>
+              <li><a href="/kokyaku?id=10&amp;name=納品先01">顧客取得(id=10,name=納品先01)</a></li>
+              <li><a href="/kokyaku/id:20">顧客取得(id=20)</a></li>
+              <li><a href="/kokyaku/email:k03@xxx">顧客取得(email=k03@xxx)</a></li>
+              <li><a href="/kokyaku/search/name:納品先">顧客取得(name=納品先)</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              顧客管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/customer">GET /customer</a></li>
+              <li><a href="/customer/10">GET /customer/10</a></li>
+              <li><a href="/customer/20">GET /customer/20</a></li>
+            </ul></li>
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              ユーザー管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/user_list">ユーザー一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+        </ul>
+        <form action="/logout" method="post" class="navbar-form navbar-right">
+          <button type="submit" class="btn btn-default">ログアウト</button>
+        </form>
+      </div>
+    </nav>
+  </div></div>
+
+        <br />
+        <header>
+          <h3></h3>
+        </header>
+
+        <section>
+  
+  　<!-- kekka コンテンツ -->
+    <table class="table table-bordered table-striped">
+      <tbody>
+        <tr>
+          <td>tanka = 100</td>
+        </tr>
+        <tr>
+          <td>kosu = 15</td>
+        </tr>
+      </tbody>
+    </table>
+  　<!-- kekka コンテンツ -->
+  
+  </section>
+
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>受注管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+: Initializing Spring FrameworkServlet '' :log
+: FrameworkServlet '': initialization started :initServletBean
+: FrameworkServlet '': initialization completed in 5 ms :initServletBean
+: &&&&&&&&&&&&&&& GetKokyaku :  :logTestHeader
+: >>>>> サンプルインターセプター::preHandle :preHandle
+: >>>>> サンプルインターセプター::postHandle :postHandle
+: >>>>> サンプルインターセプター::preHandle :afterCompletion
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /kokyaku
+       Parameters = {id=[10], name=[納品先01]}
+          Headers = {}
+
+Handler:
+             Type = bootapp.controller.JutyuController
+           Method = public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.getKokyaku(java.lang.String,java.lang.String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = views/kekka
+             View = null
+        Attribute = syohinMeiValues
+            value = [商品001, 商品002, 商品003, 商品004, 商品005]
+        Attribute = kokyakuList
+            value = [Kokyaku(10)[name=納品先01, email=k01@xxx.com, jutyuKaisu=0], Kokyaku(20)[name=納品先02, email=k02@xxx.com, jutyuKaisu=0], Kokyaku(30)[name=納品先03, email=k03@xxx.com, jutyuKaisu=0], Kokyaku(40)[name=納品先04, email=k04@xxx.com, jutyuKaisu=0]]
+        Attribute = jutyuList
+            value = [Jutyu(100)[2015/09/01, 納品先01, 受注額=600], Jutyu(200)[2015/09/01, 納品先02, 受注額=1100], Jutyu(300)[2015/09/02, 納品先03, 受注額=3500], Jutyu(400)[2015/09/03, 納品先02, 受注額=2300]]
+        Attribute = kekkaList
+            value = [id = 10, name = 納品先01]
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[text/html;charset=UTF-8]}
+     Content type = text/html;charset=UTF-8
+             Body = <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>受注管理 - 受注テスト：結果</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="/os/css/bootstrap_paper.min.css" />
+<link rel="stylesheet" href="/css/app_base.css" />
+<script src="/os/js/jquery.min.js"></script>
+<script src="/os/js/bootstrap.min.js"></script>
+<meta charset="utf-8" />
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/"> <span>受注管理</span> <span>
+            : <small>User</small> 
+        </span>
+        </a>
+      </div>
+      <!-- menu -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              受注管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/jutyu_list">受注一覧</a></li>
+              <li><a href="#" >売上一覧</a></li>
+              <li><a href="/jutyu/meisai/301">明細取得(id=301)</a></li>
+              <li><a href="/jutyu/syohin/100/5">商品取得(単価:100,数量:5)</a></li>
+              <li><a href="/kokyaku?id=10&amp;name=納品先01">顧客取得(id=10,name=納品先01)</a></li>
+              <li><a href="/kokyaku/id:20">顧客取得(id=20)</a></li>
+              <li><a href="/kokyaku/email:k03@xxx">顧客取得(email=k03@xxx)</a></li>
+              <li><a href="/kokyaku/search/name:納品先">顧客取得(name=納品先)</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              顧客管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/customer">GET /customer</a></li>
+              <li><a href="/customer/10">GET /customer/10</a></li>
+              <li><a href="/customer/20">GET /customer/20</a></li>
+            </ul></li>
+          <!-- menu2 SSS -->
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              ユーザー管理 <b class="caret"></b>
+          </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/user_list">ユーザー一覧</a></li>
+            </ul></li>
+          <!-- menu2 EEE -->
+        </ul>
+        <form action="/logout" method="post" class="navbar-form navbar-right">
+          <button type="submit" class="btn btn-default">ログアウト</button>
+        </form>
+      </div>
+    </nav>
+  </div></div>
+
+        <br />
+        <header>
+          <h3></h3>
+        </header>
+
+        <section>
+  
+  　<!-- kekka コンテンツ -->
+    <table class="table table-bordered table-striped">
+      <tbody>
+        <tr>
+          <td>id = 10</td>
+        </tr>
+        <tr>
+          <td>name = 納品先01</td>
+        </tr>
+      </tbody>
+    </table>
+  　<!-- kekka コンテンツ -->
+  
+  </section>
+
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>受注管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+: Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7068e664: startup date [Tue Jun 13 17:31:32 JST 2017]; root of context hierarchy :doClose
+: Closing JPA EntityManagerFactory for persistence unit 'default' :destroy
+[EL Config]: connection: 2017-06-13 17:31:43.351--ServerSession(1549005458)--Connection(884944439)--disconnect
+[EL Info]: connection: 2017-06-13 17:31:43.352--ServerSession(1549005458)--/file:/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootJutyu/bin/_default logout successful

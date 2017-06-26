@@ -1,0 +1,2 @@
+launchctl stop bootApp0
+

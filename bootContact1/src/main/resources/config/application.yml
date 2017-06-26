@@ -1,0 +1,88 @@
+spring:
+  profiles:
+    active: 
+  
+  thymeleaf:
+    cache: false
+    
+### localhost:9010/bootContact
+server:
+ port: 9010
+ contextPath: /bootContact
+
+### logback.xml の ${LOG_FILE}を設定
+logging:
+ file: bootContact
+
+### model scan
+model:
+  scan:
+    package: bootcontact.model
+# message source
+message:
+  source:
+    basename: classpath:messages/messages
+# DB eclipselink
+eclipselink:
+  weaving: false
+  logging:
+    level: config
+
+multipart:
+  maxFileSize: 128KB
+  maxRequestSize: 128KB
+    
+# Login User
+loginUserTosi: tosi
+loginUserYumi: yumi
+
+#-- ItemsProp ---
+items:
+  seibetu: ["男","女"]
+  syumi: ["読書","スポーツ","音楽","ゲーム","その他"]
+  contactSyubetu: ["家族親戚","同僚","仕事","顧客","友人知人","生活","その他"]
+  mailSyubetu: ["*","自宅","携帯","会社","その他"]
+  phoneSyubetu: ["*","自宅","携帯","会社","その他"]
+  jusyoSyubetu: ["*","自宅","会社","その他"]
+  theme: ["_paler","",""]
+ 
+#-- ContactProp: 連絡先定数定義 --------------
+contact:
+  rowsOfPage: 5
+  defaultTheme: _default
+  defaultSyubetu: 家族親戚
+
+---
+spring:
+  profiles: default
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:~/_data/h2/contact;MODE=MySQL
+    username: demo
+    password: pass
+eclipselink:
+  target-database: org.eclipse.persistence.platform.database.H2Platform
+  ddl-generation: drop-and-create-tables
+---
+spring:
+  profiles: devsql3
+  datasource:
+    driverClassName: org.sqlite.JDBC
+    url: jdbc:sqlite:/Users/bri_tcho/_data/sqlite/contact.db
+    username: demo
+    password: pass
+eclipselink:
+  target-database: org.eclipse.persistence.platform.database.MySQLPlatform
+  ddl-generation: drop-and-create-tables
+---
+spring:
+  profiles: devms
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bootTest?verifyServerCertificate=false&useSSL=true&useUnicode=true&characterEncoding=utf8
+#  url: jdbc:mysql://localhost:3306/bootTest?useSSL=false
+    username: demo
+    password: pass
+eclipselink:
+  target-database: org.eclipse.persistence.platform.database.MySQLPlatform
+  ddl-generation: drop-and-create-tables

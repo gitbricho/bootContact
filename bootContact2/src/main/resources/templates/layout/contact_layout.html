@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<!-- 共通部 ＋ CSRF ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="_csrf" th:content="${_csrf.token}"/>
+ <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+<title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE" th:text="#{app.title}">レイアウトタイトル</title>
+<link th:if="${session.curTheme != null}" rel="stylesheet" th:href="@{/os/css/bootstrap__${session.curTheme}__.min.css}" />
+<link th:if="${session.curTheme == null}" rel="stylesheet" th:href="@{/os/css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{/css/app_base.css}" />
+<script th:src="@{/os/js/jquery.min.js}"></script>
+<script th:src="@{/os/js/bootstrap.min.js}"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div th:insert="~{fragment/navi02 :: navbar}">ナビゲーションバー挿入</div>
+
+        <br />
+        <header>
+          <h3 layout:fragment="custom-header">ヘッダー置換</h3>
+        </header>
+
+        <!-- _syubetu_buttons -->
+        <div th:insert="~{layout/ins_tool :: pager_tool}">ページャーと種別選択</div>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- _search_input -->
+            <div th:insert="~{layout/ins_tool :: search_tool}">検索入力</div>
+          </div>
+          <div class="col-md-6">
+            <!-- _form_buttons -->
+            <div th:insert="~{layout/ins_tool :: form_tool}">編集ボタン</div>
+          </div>
+        </div>
+
+        <!-- BBB コンテンツ BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <!-- 連絡先一覧：テーブル -->
+              <!-- テーブル：スクロール -->
+              <h3 th:if="${contactList.size()==0}">該当するデータがありません！</h3>
+              <table th:if="${contactList.size()!=0}" class="table table-hover table-condensed"
+                id="contact-table" th:object="${contact}">
+                <thead>
+                  <tr>
+                    <th width="50px">#</th>
+                    <th>氏名</th>
+                    <th>よみ</th>
+                    <th>性別</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- コントローラから表示された時の選択行の処理 -->
+                  <tr th:each="ct: ${contactList}" th:classappend="*{id}==${ct.id} ? success">
+                    <td width="50px" th:text="${ct.id}">id</td>
+                    <td th:text="${ct.simei}">simei</td>
+                    <td th:text="${ct.yomi}">yomi</td>
+                    <td th:text="${ct.seibetu}">seibetu</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <!-- col-md-6 end -->
+            <div class="col-md-6">
+              <!-- (列2-2) 連絡先詳細 BBBBBBBBBBBBBBBBBBBBBBBBBBB -->
+              <!-- パネルヘッダ -->
+
+              <!-- $$$$$ タブ・ナビゲーション $$$$$ -->
+              <ul class="nav nav-tabs nav-inside-tabs" id="chartTab" hidden="true">
+                <li><a href="#tabDisp" data-toggle="tab" id="tabNaviDisp">表示</a></li>
+                <li><a href="#tabEdit" data-toggle="tab" id="tabNaviEdit">編集</a></li>
+              </ul>
+
+              <!-- %%%%% タブ・ペイン %%%%% -->
+              <div th:if="${contactList.size() > 0}" class="tab-content">
+
+                <!-- (( 表示モード )) -->
+                <div role="tabpanel" class="tab-pane active" id="tabDisp" th:object="${contact}">
+                  <!-- detail_table -->
+                  <div th:insert="~{layout/ins_detail :: contact_detail}">詳細表示テーブル</div>
+                </div>
+
+                <!-- (( 編集モード )) -->
+                <div role="tabpanel" class="tab-pane" id="tabEdit">
+                  <!-- フォーム -->
+                  <div th:insert="~{layout/ins_form :: contact_form}">連絡先フォーム</div>
+                </div>
+
+              </div>
+              <!-- EEE 連絡先詳細 EEEEEEEEEEEEEEEEEEEEEEE -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- EEE コンテンツ EEEEEEEEEEEEEEEEEEEEEEEEEEEE -->
+    </div>
+  </div>
+  
+<script th:src="@{/js/contactForm.js}"></script>
+<script th:if="${contactList.size()>0}" lang="javascript">
+
+var oContact = {
+    "id": [[${contact.id}]],
+    "version": [[${contact.version}]],
+    "simei": "[[${contact.simei}]]",
+    "yomi": "[[${contact.yomi}]]",
+    "seibetu": "[[${contact.seibetu}]]",
+    "seinenGappi": "[[${contact.seinenGappi}]]",
+    "memo": "[[${contact.memo}]]",
+    "picture": "[[${contact.picture}]]",
+    "syumi": "[[${contact.syumi}]]",
+    "syubetu": "[[${contact.syubetu}]]",
+    "kaisya": "[[${contact.kaisya}]]",
+    "syozoku": "[[${contact.syozoku}]]",
+    "yakusyoku": "[[${contact.yakusyoku}]]",
+    "syokusyu": "[[${contact.syokusyu}]]",
+    "user": {
+      "id": [[${contact.user.id}]]
+    }
+};
+</script>
+  
+</body>
+</html>

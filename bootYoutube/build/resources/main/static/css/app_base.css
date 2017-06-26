@@ -1,0 +1,474 @@
+/*********************************
+ * bootstrap の設定を上書きする:
+ * Dark 系の CSS
+ *********************************/
+.contents {
+  margin: 0px 0px 0px 0px;
+}
+.container-fluid {
+  margin: 10px;
+  padding: 3px;
+  font-size: 1.2em;
+}
+.container {
+  margin: 30px;
+  padding: 5px;
+}
+
+/** テーブル */
+.table-container {
+  width: 1100px;
+}
+
+.td-label {
+  width: 120px;
+  text-align: right;
+}
+
+/** フォーム */
+
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%
+ * アプリ専用クラス
+ %%%%%%%%%%%%%%%%%%%%%%%%%%*/
+.app_header {
+  margin: 30px 0px 0px 0px;
+}
+
+.btn_edit {
+  font-size: 14px;
+}
+
+.btn_delete {
+  font-size: 14px;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.sp-w10 {
+    clear: both;
+    height: auto;
+    width: 10px;
+}
+.sp-w20 {
+   clear: both;
+    height: auto;
+    width: 20px;
+}
+.gheader {
+  min-height: 4em;
+}
+.fixtable tr {
+width: 94%;
+display: inline-table;
+table-layout: fixed;
+}
+.fixtable table {
+ height:520px;
+ display: -moz-groupbox;
+}
+.fixtable tbody{
+  overflow-y: scroll;      
+  height: 480px;
+  width: 100%;
+  position: absolute;
+}
+
+/*********************************/
+.aol {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.aol > .form-control {
+    padding-left: 30px;
+}
+
+.aol > .bv {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    color: #ccc;
+}
+
+.ape {
+    margin-left: 0;
+}
+
+.ape .aol {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    .ape {
+        float: right;
+        margin-top: 12px;
+    }
+
+    .ape .aol {
+        width: 180px;
+        margin-bottom: 0;
+    }
+}
+
+.bv:before {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    font-family: "toolkit-entypo";
+    speak: none;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/***** btn *************/
+.ce {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ce:focus,
+.ce:active:focus,
+.ce.active:focus,
+.ce.fd,
+.ce:active.fd,
+.ce.active.fd {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.ce:hover,
+.ce:focus,
+.ce.fd {
+    color: #51586a;
+    text-decoration: none;
+}
+
+.ce:active,
+.ce.active {
+    outline: 0;
+    background-image: none;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.ce.disabled,
+.ce[disabled],
+fieldset[disabled] .ce {
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    box-shadow: none;
+}
+
+a.ce.disabled,
+fieldset[disabled] a.ce {
+    pointer-events: none;
+}
+
+/* GRAY ********************/
+.btnOGray {
+    color: #5c65b3;
+    background-color: transparent;
+    border-color: #5c65b3;
+}
+
+.btnOGray:focus,
+.btnOGray.fd,
+.btnOGray:hover,
+.btnOGray:active,
+.btnOGray.active,
+.open > .ff.btnOGray {
+    color: #ffffff;
+    background-color: #5c65b3;
+    box-shadow: none;
+}
+
+.btnOGray.disabled,
+.btnOGray[disabled],
+fieldset[disabled] .btnOGray,
+.btnOGray.disabled:hover,
+.btnOGray[disabled]:hover,
+fieldset[disabled] .btnOGray:hover,
+.btnOGray.disabled:focus,
+.btnOGray[disabled]:focus,
+fieldset[disabled] .btnOGray:focus,
+.btnOGray.disabled.fd,
+.btnOGray[disabled].fd,
+fieldset[disabled] .btnOGray.fd,
+.btnOGray.disabled:active,
+.btnOGray[disabled]:active,
+fieldset[disabled] .btnOGray:active,
+.btnOGray.disabled.active,
+.btnOGray[disabled].active,
+fieldset[disabled] .btnOGray.active {
+    border-color: #5c65b3;
+}
+
+.btnOGray .fg {
+    color: #ffffff;
+    background-color: #5c65b3;
+}
+
+
+/* BLUE ********************/
+.btnOBlue {
+    /* color: #1997c6; */
+    color: #1997c6;
+    background-color: transparent;
+    border-color: #1997c6;
+}
+
+.btnOBlue:focus,
+.btnOBlue.fd,
+.btnOBlue:hover,
+.btnOBlue:active,
+.btnOBlue.active,
+.open > .ff.btnOBlue {
+    color: #ffffff;
+    background-color: #1997c6;
+    box-shadow: none;
+}
+
+.btnOBlue.disabled,
+.btnOBlue[disabled],
+fieldset[disabled] .btnOBlue,
+.btnOBlue.disabled:hover,
+.btnOBlue[disabled]:hover,
+fieldset[disabled] .btnOBlue:hover,
+.btnOBlue.disabled:focus,
+.btnOBlue[disabled]:focus,
+fieldset[disabled] .btnOBlue:focus,
+.btnOBlue.disabled.fd,
+.btnOBlue[disabled].fd,
+fieldset[disabled] .btnOBlue.fd,
+.btnOBlue.disabled:active,
+.btnOBlue[disabled]:active,
+fieldset[disabled] .btnOBlue:active,
+.btnOBlue.disabled.active,
+.btnOBlue[disabled].active,
+fieldset[disabled] .btnOBlue.active {
+    border-color: #1997c6;
+}
+
+.btnOBlue .fg {
+    color: #ffffff;
+    background-color: #1997c6;
+}
+
+/* GREEN **********************/
+.btnOGreen {
+    /* color: #18b37e; */
+    color: #659857;
+    background-color: transparent;
+    border-color: #659857;
+}
+
+.btnOGreen:focus,
+.btnOGreen.fd,
+.btnOGreen:hover,
+.btnOGreen:active,
+.btnOGreen.active,
+.open > .ff.btnOGreen {
+    color: #ffffff;
+    background-color: #659857;
+    box-shadow: none;
+}
+
+.btnOGreen.disabled,
+.btnOGreen[disabled],
+fieldset[disabled] .btnOGreen,
+.btnOGreen.disabled:hover,
+.btnOGreen[disabled]:hover,
+fieldset[disabled] .btnOGreen:hover,
+.btnOGreen.disabled:focus,
+.btnOGreen[disabled]:focus,
+fieldset[disabled] .btnOGreen:focus,
+.btnOGreen.disabled.fd,
+.btnOGreen[disabled].fd,
+fieldset[disabled] .btnOGreen.fd,
+.btnOGreen.disabled:active,
+.btnOGreen[disabled]:active,
+fieldset[disabled] .btnOGreen:active,
+.btnOGreen.disabled.active,
+.btnOGreen[disabled].active,
+fieldset[disabled] .btnOGreen.active {
+    border-color: #659857;
+}
+
+.btnOGreen .fg {
+    color: #ffffff;
+    background-color: #659857;
+}
+
+/* PARPLE **********************/
+.btnOParple {
+    /* color: #8b6cff; */
+    color: #BB718F;
+    background-color: transparent;
+    border-color: #BB718F;
+}
+
+.btnOParple:focus,
+.btnOParple.fd,
+.btnOParple:hover,
+.btnOParple:active,
+.btnOParple.active,
+.open > .ff.btnOParple {
+    color: #ffffff;
+    background-color: #BB718F;
+    box-shadow: none;
+}
+
+.btnOParple.disabled,
+.btnOParple[disabled],
+fieldset[disabled] .btnOParple,
+.btnOParple.disabled:hover,
+.btnOParple[disabled]:hover,
+fieldset[disabled] .btnOParple:hover,
+.btnOParple.disabled:focus,
+.btnOParple[disabled]:focus,
+fieldset[disabled] .btnOParple:focus,
+.btnOParple.disabled.fd,
+.btnOParple[disabled].fd,
+fieldset[disabled] .btnOParple.fd,
+.btnOParple.disabled:active,
+.btnOParple[disabled]:active,
+fieldset[disabled] .btnOParple:active,
+.btnOParple.disabled.active,
+.btnOParple[disabled].active,
+fieldset[disabled] .btnOParple.active {
+    border-color: #BB718F;
+}
+
+.btnOParple .fg {
+    color: #ffffff;
+    background-color: #BB718F;
+}
+
+/* YELLOW **********************/
+.btnOYellow {
+    /* color: #e1d420; */
+    color: #C6AD56;
+    background-color: transparent;
+    border-color: #C6AD56;
+}
+
+.btnOYellow:focus,
+.btnOYellow.fd,
+.btnOYellow:hover,
+.btnOYellow:active,
+.btnOYellow.active,
+.open > .ff.btnOYellow {
+    color: #ffffff;
+    background-color: #C6AD56;
+    box-shadow: none;
+}
+
+.btnOYellow.disabled,
+.btnOYellow[disabled],
+fieldset[disabled] .btnOYellow,
+.btnOYellow.disabled:hover,
+.btnOYellow[disabled]:hover,
+fieldset[disabled] .btnOYellow:hover,
+.btnOYellow.disabled:focus,
+.btnOYellow[disabled]:focus,
+fieldset[disabled] .btnOYellow:focus,
+.btnOYellow.disabled.fd,
+.btnOYellow[disabled].fd,
+fieldset[disabled] .btnOYellow.fd,
+.btnOYellow.disabled:active,
+.btnOYellow[disabled]:active,
+fieldset[disabled] .btnOYellow:active,
+.btnOYellow.disabled.active,
+.btnOYellow[disabled].active,
+fieldset[disabled] .btnOYellow.active {
+    border-color: #C6AD56;
+}
+
+.btnOYellow .fg {
+    color: #ffffff;
+    background-color: #C6AD56;
+}
+
+/* RED **********************/
+.btnORed {
+    /* color: #e33145; */
+    color: #A52B17;    
+    background-color: transparent;
+    /* border-color: #e33145; */
+    border-color: #A52B17;
+}
+
+.btnORed:focus,
+.btnORed.fd,
+.btnORed:hover,
+.btnORed:active,
+.btnORed.active,
+.open > .ff.btnORed {
+    color: #ffffff;
+    /* background-color: #e33145; */
+    background-color: #A52B17;
+    box-shadow: none;
+}
+
+.btnORed.disabled,
+.btnORed[disabled],
+fieldset[disabled] .btnORed,
+.btnORed.disabled:hover,
+.btnORed[disabled]:hover,
+fieldset[disabled] .btnORed:hover,
+.btnORed.disabled:focus,
+.btnORed[disabled]:focus,
+fieldset[disabled] .btnORed:focus,
+.btnORed.disabled.fd,
+.btnORed[disabled].fd,
+fieldset[disabled] .btnORed.fd,
+.btnORed.disabled:active,
+.btnORed[disabled]:active,
+fieldset[disabled] .btnORed:active,
+.btnORed.disabled.active,
+.btnORed[disabled].active,
+fieldset[disabled] .btnORed.active {
+   /* border-color: #e33145; */
+    border-color: #A52B17;
+}
+
+.btnORed .fg {
+    color: #ffffff;
+   /* background-color: #e33145; */
+    background-color: #A52B17;
+}
+

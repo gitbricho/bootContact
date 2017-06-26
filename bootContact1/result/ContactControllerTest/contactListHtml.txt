@@ -1,0 +1,126 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>連絡先管理 - 連絡先一覧</title>
+  ... 省略：HTMLヘッダ
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        ... 省略：ナビゲーションバーフラグメント
+    </nav>
+  </div></div>
+        <br />
+        <header>
+          <h3>連絡先一覧</h3>
+        </header>
+        <section>
+    <!-- contact_list コンテンツ -->
+    <table>
+      <tbody>
+        <tr>
+          <td> <span
+            style="color: red;">家族親戚</span>
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/同僚">同僚</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/仕事">仕事</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/顧客">顧客</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/友人知人">友人知人</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/生活">生活</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+          <td><a href="/contact/list/その他">その他</a> 
+            <img src="/img/spacer.gif" width="4" height="10" border="0" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pull-right">
+      <a href="/contact/form">連絡先の作成</a>
+    </div>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>氏名</td>
+          <td>よみ</td>
+          <td>性別</td>
+          <td>生年月日</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>56</td>
+          <td><a href="/contact/select/56">山田花子</a></td>
+          <td>やまだはなこ</td>
+          <td>女</td>
+          <td>1980/01/01</td>
+        </tr>
+        <tr>
+          <td>61</td>
+          <td><a href="/contact/select/61">鈴木一郎</a></td>
+          <td>すずきいちろう</td>
+          <td>男</td>
+          <td>1980/01/02</td>
+        </tr>
+        <tr>
+          <td>62</td>
+          <td><a href="/contact/select/62">花山隆</a></td>
+          <td>はなやまたかし</td>
+          <td>男</td>
+          <td>1980/01/03</td>
+        </tr>
+        <tr>
+          <td>63</td>
+          <td><a href="/contact/select/63">家族0000</a></td>
+          <td>かぞく0000</td>
+          <td>男</td>
+          <td>1997/03/01</td>
+        </tr>
+        <tr>
+          <td>64</td>
+          <td><a href="/contact/select/64">親戚0000</a></td>
+          <td>しんせき0000</td>
+          <td>男</td>
+          <td>1997/03/01</td>
+        </tr>
+        <tr>
+          <td>65</td>
+          <td><a href="/contact/select/65">家族0001</a></td>
+          <td>かぞく0001</td>
+          <td>女</td>
+          <td>1997/03/01</td>
+        </tr>
+        <tr>
+          <td>66</td>
+          <td><a href="/contact/select/66">親戚0001</a></td>
+          <td>しんせき0001</td>
+          <td>女</td>
+          <td>1997/03/01</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- contact_list コンテンツ -->
+  </section>
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>連絡先管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>

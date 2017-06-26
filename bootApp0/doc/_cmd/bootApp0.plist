@@ -1,0 +1,17 @@
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+ <key>KeepAlive</key>
+ <true/>
+ <key>Label</key>
+ <string>bootApp0</string>
+ <key>ProgramArguments</key>
+ <array>
+  <string>java</string>
+  <string>-jar</string>
+  <string>/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootApp0/build/libs/bootApp0-0.0.1-SNAPSHOT.jar</string>
+ </array>
+ <key>WorkingDirectory</key>
+ <string>/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootApp0/build/libs</string>
+</dict>
+</plist>

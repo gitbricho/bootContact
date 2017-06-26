@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8" />
+<title>ユーザー一覧</title>
+</head>
+<body>
+  <header>
+    <h3 layout:fragment="custom-header">ユーザー一覧</h3>
+  </header>
+  <section layout:fragment="content">
+
+  　<!--  user_list コンテンツ -->
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>name</td>
+          <td>roles</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:if="${userList.empty}">
+          <td colspan="3">ユーザは未登録</td>
+        </tr>
+        <tr th:each="user : ${userList}">
+          <td th:text="${user.id}">1</td>
+          <td th:text="${user.name}">name</td>
+          <td th:text="${user.roles}">roles</td>
+        </tr>
+      </tbody>
+    </table>
+  　<!--  user_list コンテンツ -->
+
+  </section>
+</body>
+</html>

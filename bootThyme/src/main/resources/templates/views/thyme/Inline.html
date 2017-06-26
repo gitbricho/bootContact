@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8" />
+<title>Thymeleaf Test</title>
+</head>
+<body>
+  <header>
+    <h3 layout:fragment="custom-header">2:Thymeleafインライン</h3>
+  </header>
+  <section layout:fragment="content">
+  
+    <!-- th:text コンテンツ -->
+    <table class="table">
+     <tr><th>インライン構文 <code>[[</code><code>]]</code> によるメッセージ式 #{...} の出力</th><th>結果</th><th>説明</th></tr>
+     <tr><td><code>[[</code>#{home.welcome}<code>]]</code></td>
+      <td id='21'>[[#{home.welcome}]]</td>
+      <td>メッセージ式 (エスケープ)<br/>th:text と同じ</td></tr>
+     <tr><td><code>[(</code>#{home.welcome}<code>)]</code></td>
+      <td id='22'>[(#{home.welcome})]</td>
+      <td>メッセージ式 (エスケープなし) <br/>th:utext と同じ</td></tr>
+     <tr><td><code>[[</code>#{thyme.welcome(${contact.simeiSei},'2017/01/01')}<code>]]</code></td>
+      <td id='23'>[[#{thyme.welcome(${contact.simeiSei},'2017/01/01')}]]</td>
+      <td>メッセージ式（パラメータあり）</td></tr>
+    </table>
+    
+<h4>Javascript との連携</h4>
+次のように、コントローラから Thymeleaf テンプレートへ連絡先インスタンスをJSON形式で渡します。
+<pre>@GetMapping(URL_TH_INLINE)
+public ModelAndView thInline() throws JsonProcessingException {
+    ModelAndView mav = createMavWithContact(VIEW_TH_INLINE);
+    ObjectMapper om = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
+    Contact c = createContact(new User("user1"));
+    mav.addObject(ATTR_CONTACT, c);
+    mav.addObject("contactJson", om.writeValueAsString(c));
+    return mav;
+}</pre>
+Thymeleaf テンプレートではインライン構文を使って次のように oContact 変数に代入します。
+<pre>&lt;script th:inline="javascript"&gt;
+var oContact = <code>[(</code>${contactJson}<code>)]</code>;
+&lt;/script&gt;</pre>
+oContact に代入される contactJson は次のような内容です。
+<pre style="background-color: #eee; color:#220;">var contactJson=[(${contactJson})]</pre>
+<button type="button" id="btnJson" class="btn btn-default">alert で oContact を確認</button>
+<!-- Javascript inline -->
+<script th:inline="javascript">
+var user = /*[[${session.loginUser}]]*/ null;
+var oContact = [(${contactJson})];
+</script>
+<script>
+$(document).ready(function(){
+	$("#btnJson").click(function(){
+		$r1="oContact.simeiSei=" + oContact.simeiSei
+		  + "\noContact.yomiSei=" + oContact.yomiSei
+	    + "\noContact.seibetu=" + oContact.seibetu
+	    + "\noContact.seinenGappi=" + oContact.seinenGappi
+	    + "\noContact.user.name=" + oContact.user.name;
+		alert($r1);
+	});
+});
+</script>
+
+  </section>
+</body>
+</html>

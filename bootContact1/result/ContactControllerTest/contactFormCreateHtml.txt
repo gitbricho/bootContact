@@ -1,0 +1,169 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>連絡先管理 - 連絡先編集</title>
+  ... 省略：HTMLヘッダ
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        ... 省略：ナビゲーションバーフラグメント
+    </nav>
+  </div></div>
+        <br />
+        <header>
+          <h3>連絡先編集</h3>
+        </header>
+        <section>
+  <!--  contact_form コンテンツ -->
+  <div class="row">
+   <div class="col-md-9">
+    <!-- フォーム -->
+    <form role="form" id="contactForm" action="/contact/save" style="padding: 10px;" method="post"><input type="hidden" name="_csrf" value="7223e13e-a41e-410d-9d27-90130ec590ef"/>
+     <input type="hidden" id="id" name="id" value="" /> <input type="hidden" id="version" name="version" value="0" /> <input type="hidden" id="syubetu" name="syubetu" value="" /> <input
+      type="hidden" id="user.id" name="user.id" value="" />
+     <!-- 氏名 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="simei">氏名</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="氏名"
+          maxlength="18" class="form-control" id="simei" name="simei" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- よみ -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="yomi">よみ</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="よみ"
+          maxlength="18" class="form-control" id="yomi" name="yomi" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 敬称 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="keisyo">敬称</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="敬称"
+          maxlength="4" class="form-control" id="keisyo" name="keisyo" value="様" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 性別 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="seibetu">性別</label>
+      <div id="seibetu">&emsp;
+        <label class="radio-inline">
+        <input type="radio" value="男" id="seibetu1" name="seibetu" >男</input>
+        </label><label class="radio-inline">
+        <input type="radio" value="女" id="seibetu2" name="seibetu" >女</input>
+        </label>
+      </div>
+    </div>
+  </div>
+     <!-- 生年月日 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="seinenGappi">生年月日</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="生年月日"
+          maxlength="10" class="form-control" id="seinenGappi" name="seinenGappi" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- メモ -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="memo">メモ</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="メモ"
+          maxlength="50" class="form-control" id="memo" name="memo" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 会社 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="kaisya">会社</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="会社"
+          maxlength="30" class="form-control" id="kaisya" name="kaisya" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 所属 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="syozoku">所属</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="所属"
+          maxlength="30" class="form-control" id="syozoku" name="syozoku" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 役職 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="yakusyoku">役職</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="役職"
+          maxlength="20" class="form-control" id="yakusyoku" name="yakusyoku" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 職種 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="syokusyu">職種</label>
+      <div class="controls col-md-10">
+        <input type="text" placeholder="職種"
+          maxlength="20" class="form-control" id="syokusyu" name="syokusyu" value="" /> 
+      </div>
+    </div>
+  </div>
+     <!-- 趣味 -->
+     <div>
+    <div class="form-group">
+      <label class="control-label col-md-2" for="syumi">趣味</label>
+      <div id="syumi">&emsp;
+        <label class="checkbox-inline">
+        <input type="checkbox" value="読書" id="syumiList1" name="syumiList" >読書</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="スポーツ" id="syumiList2" name="syumiList" >スポーツ</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="音楽" id="syumiList3" name="syumiList" >音楽</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="ゲーム" id="syumiList4" name="syumiList" >ゲーム</input>
+        </label><label class="checkbox-inline">
+        <input type="checkbox" value="その他" id="syumiList5" name="syumiList" >その他</input>
+        </label>
+      </div>
+    </div>
+  </div>
+     <div class="form-actions">
+      <input type="submit" value="保存" />
+     </div>
+    </form>
+    <div class="col-md-3"></div>
+   </div>
+  </div>
+  <hr />
+  <!--  contact_form コンテンツ -->
+ </section>
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>連絡先管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>

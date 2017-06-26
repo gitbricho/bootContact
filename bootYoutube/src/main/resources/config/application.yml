@@ -1,0 +1,76 @@
+spring:
+ profiles:
+  active: 
+
+ thymeleaf:
+  cache: false
+    
+### localhost:9001/bootViewer
+server:
+ port: 9001
+ contextPath: /bootViewer
+
+logging:
+ file: bootApp.log
+
+contents_url: http://localhost:8080/v1/
+
+### model scan
+model:
+ scan:
+  package: bootviewer.model
+  
+# message source
+message:
+ source:
+  basename: classpath:messages/messages
+
+# eclipselink
+eclipselink:
+ weaving: false
+ logging:
+  level: config
+
+multipart:
+ maxFileSize: 128KB
+ maxRequestSize: 128KB
+    
+# Login User
+loginUserTosi: tosi
+loginUserYumi: yumi
+
+---
+spring:
+  profiles: default
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:~/_data/h2/contact;MODE=MySQL
+    username: demo
+    password: pass
+eclipselink:
+  target-database: org.eclipse.persistence.platform.database.H2Platform
+  ddl-generation: drop-and-create-tables
+---
+spring:
+  profiles: devsql3
+  datasource:
+    driverClassName: org.sqlite.JDBC
+    url: jdbc:sqlite:/Users/bri_tcho/_data/sqlite/contact.db
+    username: demo
+    password: pass
+eclipselink:
+  target-database: org.eclipse.persistence.platform.database.MySQLPlatform
+  ddl-generation: drop-and-create-tables
+---
+spring:
+  profiles: devms
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bootTest?verifyServerCertificate=false&useSSL=true&useUnicode=true&characterEncoding=utf8
+#  url: jdbc:mysql://localhost:3306/bootTest?useSSL=false
+    username: demo
+    password: pass
+eclipselink:
+  target-database: org.eclipse.persistence.platform.database.MySQLPlatform
+  ddl-generation: drop-and-create-tables
+

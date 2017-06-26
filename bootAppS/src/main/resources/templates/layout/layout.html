@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE" th:text="#{app.title}">レイアウトタイトル</title>
+<link th:if="${session.curTheme != null}" rel="stylesheet" th:href="@{/os/css/bootstrap__${session.curTheme}__.min.css}" />
+<link th:if="${session.curTheme == null}" rel="stylesheet" th:href="@{/os/css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{/css/app_base.css}" />
+<script th:src="@{/os/js/jquery.min.js}"></script>
+<script th:src="@{/os/js/bootstrap.min.js}"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div th:insert="~{fragment/navi01 :: navbar}">ナビゲーションバー挿入</div>
+
+        <br />
+        <header>
+          <h3 layout:fragment="custom-header">ヘッダー置換</h3>
+        </header>
+
+        <section layout:fragment="content">
+          <p>ページ・コンテンツ置換</p>
+        </section>
+
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span th:text="#{app.footer}">フッター置換</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

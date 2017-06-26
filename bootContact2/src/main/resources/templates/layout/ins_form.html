@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+  <div th:fragment="contact_form">
+    <!-- フォーム -->
+    <form role="form" id="contactForm" th:action="@{/contact/save}" th:object="${contact}"
+      action="#" style="padding: 10px;" method="post">
+      <input type="hidden" th:field="*{id}" /> <input type="hidden" th:field="*{version}" /> <input
+        type="hidden" th:field="*{syubetu}" /> <input type="hidden" th:field="*{user.id}"
+        id="user_id" /> <input type="hidden" th:field="*{user.version}" id="user_version" />
+
+      <div style="overflow: auto; height: 520px;">
+        <!-- ID -->
+        <!-- 
+        <div th:include="fragment/fragField01 :: textFormGroup"
+          th:with="fgLabel='ID', fgId='id', fgLCol='col-md-3',
+                                 fgICol='col-md-9', fgType='text', fgLen='4'"></div>
+        -->
+        <!-- 氏名 -->
+        <div th:include="fragment/fragField01 :: textFormGroup"
+          th:with="fgLabel='氏名', fgId='simei', fgLCol='col-md-3',
+                                 fgICol='col-md-9', fgType='text', fgLen='18'"></div>
+        <!-- よみ -->
+        <div th:include="fragment/fragField01 :: textFormGroup"
+          th:with="fgLabel='よみ', fgId='yomi', fgLCol='col-md-3',
+                                 fgICol='col-md-9', fgType='text', fgLen='18'"></div>
+        <!-- 敬称 -->
+        <div th:include="fragment/fragField01 :: textFormGroup"
+          th:with="fgLabel='敬称', fgId='keisyo', fgLCol='col-md-3',
+                                 fgICol='col-md-9', fgType='text', fgLen='4'"></div>
+        <!-- 性別 -->
+        <div th:include="fragment/fragField01 :: radioFormGroup"
+          th:with="fgLabel='性別', fgId='seibetu', selItems=${seibetuItems},
+                         fgLCol='col-md-3'"></div>
+        <!-- 生年月日 -->
+        <div th:include="fragment/fragField01 :: textFormGroup"
+          th:with="fgLabel='生年月日', fgId='seinenGappi', fgLCol='col-md-3', 
+                                 fgICol='col-md-9', fgType='text', fgLen='10'"></div>
+        <!-- メモ -->
+        <div th:include="fragment/fragField01 :: textFormGroup"
+          th:with="fgLabel='メモ', fgId='memo', fgLCol='col-md-3',
+                                 fgICol='col-md-9', fgType='text', fgLen='50'"></div>
+        <!-- 会社 -->
+        <div th:include="fragment/fragField01 :: textFormGroup"
+          th:with="fgLabel='会社', fgId='kaisya', fgLCol='col-md-3',
+                                 fgICol='col-md-9', fgType='text', fgLen='30'"></div>
+        <!-- 所属 -->
+        <div th:include="fragment/fragField01 :: textFormGroup"
+          th:with="fgLabel='所属', fgId='syozoku', fgLCol='col-md-3',
+                                 fgICol='col-md-9', fgType='text', fgLen='30'"></div>
+        <!-- 役職 -->
+        <div th:include="fragment/fragField01 :: textFormGroup"
+          th:with="fgLabel='役職', fgId='yakusyoku', fgLCol='col-md-3',
+                                 fgICol='col-md-9', fgType='text', fgLen='20'"></div>
+        <!-- 職種 -->
+        <div th:include="fragment/fragField01 :: textFormGroup"
+          th:with="fgLabel='職種', fgId='syokusyu', fgLCol='col-md-3',
+                                 fgICol='col-md-9', fgType='text', fgLen='20'"></div>
+        <!-- 趣味 -->
+        <div th:include="fragment/fragField01 :: checkboxFormGroup"
+          th:with="fgLabel='趣味', fgId='syumi', selItems=${syumiItems}, 
+                                 fgLCol='col-md-3', fgList='syumiList'"></div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

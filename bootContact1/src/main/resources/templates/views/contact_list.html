@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8" />
+<title>連絡先一覧</title>
+</head>
+<body>
+  <header>
+    <h3 layout:fragment="custom-header">連絡先一覧</h3>
+  </header>
+  <section layout:fragment="content">
+
+    <!-- contact_list コンテンツ -->
+    <table>
+      <tbody>
+        <tr>
+          <td th:each="syu : ${contactSyubetuItems}"><a th:if="${syu!=curSyubetu}" href="#"
+            th:href="@{/contact/list/__${syu}__}" th:text="${syu}"> 種別 </a> <span
+            th:if="${syu==curSyubetu}" th:text="${syu}" style="color: red;"></span>
+            <img th:src="@{/img/spacer.gif}" width="4" height="10" border="0" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pull-right">
+      <a href="contact_form.html" th:href="@{/contact/form}">連絡先の作成</a>
+    </div>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>氏名</td>
+          <td>よみ</td>
+          <td>性別</td>
+          <td>生年月日</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:if="${contactList.empty}">
+          <td colspan="5">連絡先は未登録</td>
+        </tr>
+        <tr th:each="contact : ${contactList}">
+          <td>[[${contact.id}]]</td>
+          <td><a href="#" th:href="@{'/contact/select/' + ${contact.id}}">
+            [[${contact.simeiSei + ' ' + contact.SimeiMei}]]</a></td>
+          <td>[[${contact.yomiSei + ' ' + contact.yomiMei}]]</td>
+          <td>[[${contact.seibetu}]]</td>
+          <td>[[${contact.seinenGappi}]]</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- contact_list コンテンツ -->
+
+  </section>
+</body>
+</html>

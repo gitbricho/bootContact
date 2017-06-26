@@ -1,0 +1,53 @@
+##### contactListByKS
+## >>>>> サンプルインターセプター::preHandle :preHandle
+## >>>>> サンプルインターセプター::postHandle :postHandle
+## >>>>> サンプルインターセプター::preHandle :afterCompletion
+## MockHttpServletRequest:
+  HTTP Method = GET
+  Request URI = /contact/list/%E5%AE%B6%E6%97%8F%E8%A6%AA%E6%88%9A
+  Parameters = {}
+  Headers = {}
+## Handler:
+  Type = bootcontact.controller.ContactController
+  Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.showContactList(java.lang.String)
+
+## Resolved Exception:
+  Type = null
+## ModelAndView:
+  View name = views/contact_list
+  View = null
+  Attribute = loginUser
+  value = User(1:1)[tosi,null, ADMIN, 家族知人]
+  errors = []
+  Attribute = curSyubetu
+  value = 家族親戚
+  Attribute = contactSyubetuItems
+  value = [家族親戚, 同僚, 仕事, 顧客, 友人知人, 生活, その他]
+  Attribute = seibetuItems
+  value = [男, 女]
+  Attribute = syumiItems
+  value = [読書, スポーツ, 音楽, ゲーム, その他]
+  Attribute = contactList
+  value = [Contact(90:1)[山田花子, やまだはなこ, 様, 女, 1980/01/01, syumi=, 家族親戚, , , , User(1:1)[tosi,
+    null, ADMIN, 家族知人]], Contact(95:1)[鈴木一郎, すずきいちろう, 様, 男, 1980/01/02, syumi=, 家族親戚,
+     , , , User(1:1)[tosi,null, ADMIN, 家族知人]], Contact(96:1)[花山隆, はなやまたかし, 様, 男, 1980/01/03,
+     syumi=, 家族親戚, , , , User(1:1)[tosi,null, ADMIN, 家族知人]], Contact(97:1)[家族0000, かぞく0000,
+     様, 男, 1997/03/01, syumi=, 家族親戚, , , , User(1:1)[tosi,null, ADMIN, 家族知人]], Contact(98:1)[親戚0000,
+     しんせき0000, 様, 男, 1997/03/01, syumi=, 家族親戚, , , , User(1:1)[tosi,null, ADMIN, 家族知人]],
+     Contact(99:1)[家族0001, かぞく0001, 様, 女, 1997/03/01, syumi=, 家族親戚, , , , User(1:1)[tosi,
+    null, ADMIN, 家族知人]], Contact(100:1)[親戚0001, しんせき0001, 様, 女, 1997/03/01, syumi=,
+     家族親戚, , , , User(1:1)[tosi,null, ADMIN, 家族知人]]]
+
+## FlashMap:
+  Attributes = null
+## MockHttpServletResponse:
+  Status = 200
+  Error message = null
+  Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache,
+     no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY],
+     Content-Type=[text/html;charset=UTF-8]}
+
+  Content type = text/html;charset=UTF-8
+  Body = <!DOCTYPE html>
+  Forwarded URL = null
+  Redirected URL = null

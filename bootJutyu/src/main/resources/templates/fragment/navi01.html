@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+ <!-- layout へ挿入 -->
+ <div th:fragment="navbar">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   <div class="navbar-header">
+    <a class="navbar-brand" th:href="@{/}"> <span th:text="#{app.title}">(title)</span> <span>
+      : <small sec:authentication="name">User</small> <small sec:authorize="hasRole('ROLE_ADMIN')">(管理者)</small>
+    </span>
+    </a>
+   </div>
+   <!-- menu -->
+   <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-left">
+     <!-- menu2 SSS -->
+     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> 受注管理
+       <b class="caret"></b>
+     </a>
+      <ul class="dropdown-menu" role="menu">
+       <li><a href="#" th:href="@{/jutyu_list}">受注一覧</a></li>
+       <li><a href="#">売上一覧</a></li>
+       <li><a href="#" th:href="@{/jutyu/meisai/301}">明細取得(id=301)</a></li>
+       <li><a href="#" th:href="@{/jutyu/syohin/100/5}">商品取得(単価:100,数量:5)</a></li>
+       <li><a href="#" th:href="@{/kokyaku?id=10&name=納品先01}">顧客取得(id=10,name=納品先01)</a></li>
+       <li><a href="#" th:href="@{/kokyaku/20}">顧客取得(id=20)</a></li>
+       <li><a href="#" th:href="@{/kokyaku/search/email:k03@xxx.com}">顧客検索(email=k03@xxx.com)</a></li>
+       <li><a href="#" th:href="@{/kokyaku/search/name:納品先01}">顧客検索(name=納品先01)</a></li>
+       <li><a href="#" th:href="@{/kokyaku/search/emailLike:xxx.com}">顧客検索(emailLike=xxx.com)</a></li>
+       <li><a href="#" th:href="@{/kokyaku/search/nameLike:納品先}">顧客検索(nameLike=納品先)</a></li>
+      </ul></li>
+     <!-- menu2 EEE -->
+     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> 顧客管理
+       <b class="caret"></b>
+     </a>
+      <ul class="dropdown-menu" role="menu">
+       <li><a href="#" th:href="@{/customer}">GET /customer</a></li>
+       <li><a href="#" th:href="@{/customer/10}">GET /customer/10</a></li>
+       <li><a href="#" th:href="@{/customer/20}">GET /customer/20</a></li>
+       <li><a href="#" th:href="@{/customer?size=1}">GET /customer?size=1</a></li>
+       <li><a href="#" th:href="@{/customer?page=1&size=1}">GET /customer?page=1&size=1</a></li>
+       <li><a href="#" th:href="@{/customer?sort=email,desc}">GET /customer?sort=email,desc</a></li>
+      </ul></li>
+     <!-- menu2 SSS -->
+     <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+       ユーザー管理 <b class="caret"></b>
+     </a>
+      <ul class="dropdown-menu" role="menu">
+       <li><a href="#" th:href="@{/user_list}">ユーザー一覧</a></li>
+      </ul></li>
+     <!-- menu2 EEE -->
+    </ul>
+    <form th:action="@{/logout}" method="post" class="navbar-form navbar-right">
+     <button type="submit" class="btn btn-default">ログアウト</button>
+    </form>
+   </div>
+  </nav>
+ </div>
+</body>
+</html>

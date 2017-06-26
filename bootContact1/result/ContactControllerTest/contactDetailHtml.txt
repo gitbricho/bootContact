@@ -1,0 +1,103 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- 共通部 ＋ テーマ別の bootstrap.min.css を持つヘッダ -->
+<head>
+<title>連絡先管理 - 連絡先詳細</title>
+  ... 省略：HTMLヘッダ
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div><div>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        ... 省略：ナビゲーションバーフラグメント
+    </nav>
+  </div></div>
+        <br />
+        <header>
+          <h3>連絡先詳細</h3>
+        </header>
+        <section>
+    <!--  contact_detail コンテンツ -->
+    <div>
+      <table class="table" id="detail-table">
+        <tbody>
+          <!-- ID -->
+          <tr>
+            <td class="td-label">ID:</td>
+            <td id="dId">85</td>
+          </tr>
+          <!-- 氏名 -->
+          <tr>
+            <td class="td-label">氏名:</td>
+            <td id="dSimei">村田健一</td>
+          </tr>
+          <!-- よみ -->
+          <tr>
+            <td class="td-label">よみ:</td>
+            <td id="dYomi">むらたけんいち</td>
+          </tr>
+          <!-- 敬称 -->
+          <tr>
+            <td class="td-label">敬称:</td>
+            <td id="dKeisyo">様</td>
+          </tr>
+          <!-- 性別 -->
+          <tr>
+            <td class="td-label">性別:</td>
+            <td id="dSeibetu">男</td>
+          </tr>
+          <!-- 生年月日 -->
+          <tr>
+            <td class="td-label">生年月日:</td>
+            <td id="dSeinenGappi">1981/02/02</td>
+          </tr>
+          <!-- メモ -->
+          <tr style="display:none;">
+            <td class="td-label">メモ:</td>
+            <td id="dMemo"></td>
+          </tr>
+          <!-- 会社 -->
+          <tr style="display:none;">
+            <td class="td-label">会社:</td>
+            <td id="dKaisy"></td>
+          </tr>
+          <!-- 所属 -->
+          <tr style="display:none;">
+            <td class="td-label">所属:</td>
+            <td id="dSyozoku"></td>
+          </tr>
+          <!-- 役職 -->
+          <tr style="display:none;">
+            <td class="td-label">役職:</td>
+            <td id="dYakusyoku"></td>
+          </tr>
+          <!-- 職種 -->
+          <tr style="display:none;">
+            <td class="td-label">職種:</td>
+            <td id="dSyokusyu"></td>
+          </tr>
+          <!-- 趣味 -->
+          <tr>
+            <td class="td-label">趣味:</td>
+            <td id="dSyumi"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="pull-left">
+      <a href="/contact/delete/85"> 削除 </a> | <a href="/contact/form/85"> 修正 </a> | <a href="/contact/form/ajax/85"> 修正(Ajax) </a>
+    </div>
+    <hr/>
+    <!--  contact_detail コンテンツ -->
+  </section>
+        <footer>
+          <hr/>
+          <p>
+            &copy; <span>連絡先管理 2016</span>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>

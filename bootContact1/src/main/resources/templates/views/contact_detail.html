@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+<meta charset="utf-8" />
+<title>連絡先詳細</title>
+</head>
+<body>
+  <header>
+    <h3 layout:fragment="custom-header">連絡先詳細</h3>
+  </header>
+  <section layout:fragment="content">
+
+    <!--  contact_detail コンテンツ -->
+    <div class="alert alert-success" th:if="${globalMessage}" th:text="${globalMessage}">Some
+      Success message</div>
+
+    <div>
+      <table th:object="${contact}" class="table table-condensed" id="detail-table">
+        <tbody>
+          <!-- ID -->
+          <tr>
+            <td class="td-label">ID:</td>
+            <td >[[*{id}]]</td>
+            <td ></td>
+          </tr>
+          <!-- 氏名,よみ -->
+          <tr>
+            <td class="td-label">氏名:</td>
+            <td width="480">[[*{simeiSei+' '+simeiMei+' ('+yomiSei+' '+yomiMei+')'}]]</td>
+            <td></td>
+          </tr>
+          <!-- 電話 -->
+          <tr th:each="p : *{phones}"
+            th:style="${p.phoneType=='*'} ? 'display:none;' : ''">
+            <td class="td-label">[[${p.phoneType}]]電話:</td>
+            <td th:text="${p.telno}">08011112222</td>
+            <td>
+             <select class="col-md-3">
+              <option value="" >処理選択..</option>
+              <option value="" >メッセージ</option>
+              <option value="" >Skype</option>
+              <option value="" >FaceTime</option>
+             </select>
+            </td>
+          </tr>
+          <!-- メール -->
+          <tr th:each="m : *{mails}"
+            th:style="${m.mailType=='*'} ? 'display:none;' : ''">
+            <td class="td-label">[[${m.mailType}]]メール:</td>
+            <td th:text="${m.mail}">f.bar@xxx.com</td>
+            <td>
+             <select class="col-md-3">
+              <option value="" >処理選択..</option>
+              <option value="" >メッセージ</option>
+              <option value="" >Skype</option>
+              <option value="" >FaceTime</option>
+             </select>
+            </td>
+          </tr>
+          <!-- 住所 -->
+          <tr th:each="a : *{addresses}"
+            th:style="${a.addressType=='*'} ? 'display:none;' : ''">
+            <td class="td-label">[[${a.addressType}]]住所:</td>
+            <td th:utext="${'〒' + a.yubin+' ' + a.todofuken + '<br/>'
+              +a.sikuchoson+a.banchi+a.banchi2}">address</td>
+            <td>
+             <select class="col-md-3">
+              <option value="" >処理選択..</option>
+              <option value="" >マップ</option>
+             </select>
+            </td>
+
+          </tr>
+          <!-- 性別 -->
+          <tr>
+            <td class="td-label">性別:</td>
+            <td th:text="*{seibetu}" id="dSeibetu"></td>
+            <td></td>
+          </tr>
+          <!-- 生年月日 -->
+          <tr>
+            <td class="td-label">生年月日:</td>
+            <td th:text="*{seinenGappi}" id="dSeinenGappi"></td>
+            <td></td>
+          </tr>
+          <!-- メモ -->
+          <tr th:style="*{#strings.isEmpty(memo)} ? 'display:none;' : ''">
+            <td class="td-label">メモ:</td>
+            <td th:text="*{memo}" id="dMemo"></td>
+            <td></td>
+          </tr>
+          <!-- 会社 -->
+          <tr th:style="*{#strings.isEmpty(kaisya)} ? 'display:none;' : ''">
+            <td class="td-label">会社:</td>
+            <td th:text="*{kaisya}" id="dKaisy"></td>
+            <td></td>
+          </tr>
+          <!-- 趣味 -->
+          <tr>
+            <td class="td-label">趣味:</td>
+            <td th:text="*{syumi}" id="dSyumi"></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div th:object="${contact}" class="pull-left">
+      <a href="#" th:href="@{'/contact/delete/' + *{id}}"> 削除 </a> | <a href="#"
+        th:href="@{'/contact/form/' + *{id}}"> 修正 </a>
+    </div>
+    <hr/>
+    <!--  contact_detail コンテンツ -->
+
+  </section>
+</body>
+</html>

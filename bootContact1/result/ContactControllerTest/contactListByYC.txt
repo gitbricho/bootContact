@@ -1,0 +1,47 @@
+##### contactListByYC
+## >>>>> サンプルインターセプター::preHandle :preHandle
+## >>>>> サンプルインターセプター::postHandle :postHandle
+## >>>>> サンプルインターセプター::preHandle :afterCompletion
+## MockHttpServletRequest:
+  HTTP Method = GET
+  Request URI = /contact/list/%E5%8F%8B%E4%BA%BA%E7%9F%A5%E4%BA%BA
+  Parameters = {}
+  Headers = {}
+## Handler:
+  Type = bootcontact.controller.ContactController
+  Method = public org.springframework.web.servlet.ModelAndView bootcontact.controller.ContactController.showContactList(java.lang.String)
+
+## Resolved Exception:
+  Type = null
+## ModelAndView:
+  View name = views/contact_list
+  View = null
+  Attribute = loginUser
+  value = User(1:1)[tosi,null, ADMIN, 家族知人]
+  errors = []
+  Attribute = curSyubetu
+  value = 友人知人
+  Attribute = contactSyubetuItems
+  value = [家族親戚, 同僚, 仕事, 顧客, 友人知人, 生活, その他]
+  Attribute = seibetuItems
+  value = [男, 女]
+  Attribute = syumiItems
+  value = [読書, スポーツ, 音楽, ゲーム, その他]
+  Attribute = contactList
+  value = [Contact(118:1)[森祐一, もりゆういち, 様, 男, 1981/02/01, syumi=, 友人知人, , , , User(1:1)[tosi,
+    null, ADMIN, 家族知人]], Contact(119:1)[村田健一, むらたけんいち, 様, 男, 1981/02/02, syumi=, 友人知人,
+     , , , User(1:1)[tosi,null, ADMIN, 家族知人]]]
+
+## FlashMap:
+  Attributes = null
+## MockHttpServletResponse:
+  Status = 200
+  Error message = null
+  Headers = {X-Content-Type-Options=[nosniff], X-XSS-Protection=[1; mode=block], Cache-Control=[no-cache,
+     no-store, max-age=0, must-revalidate], Pragma=[no-cache], Expires=[0], X-Frame-Options=[DENY],
+     Content-Type=[text/html;charset=UTF-8]}
+
+  Content type = text/html;charset=UTF-8
+  Body = <!DOCTYPE html>
+  Forwarded URL = null
+  Redirected URL = null

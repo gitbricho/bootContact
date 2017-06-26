@@ -1,0 +1,399 @@
+: Neither @ContextConfiguration nor @ContextHierarchy found for test class [bootapp.RestServiceTest], using SpringBootContextLoader :buildDefaultMergedContextConfiguration
+: Could not detect default resource locations for test class [bootapp.RestServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}. :generateDefaultLocations
+: Could not detect default configuration classes for test class [bootapp.RestServiceTest]: RestServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration. :detectDefaultConfigurationClasses
+: Found @SpringBootConfiguration bootapp.App for test class bootapp.RestServiceTest :getOrFindConfigurationClasses
+: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener] :getDefaultTestExecutionListenerClassNames
+: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5223e5ee, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@bef2d72, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@69b2283a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@22a637e7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6fe7aac8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1d119efb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@659a969b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@76908cc0, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@2473d930, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@35047d03, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@49b0b76, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@769f71a9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4c9f8c13] :getTestExecutionListeners
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+: HV000001: Hibernate Validator 5.3.5.Final :<clinit>
+: Starting RestServiceTest on tt-mbp.local with PID 76479 (started by bri_tcho in /Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootJutyu) :logStarting
+: Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE :logStarting
+: No active profile set, falling back to default profiles: default :logStartupProfileInfo
+: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bb4dd34: startup date [Tue Jun 13 17:33:30 JST 2017]; root of context hierarchy :prepareRefresh
+: Overriding bean definition for bean 'userRepository' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] :registerBeanDefinition
+: Overriding bean definition for bean 'meisaiRepo' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] :registerBeanDefinition
+: Overriding bean definition for bean 'jutyuRepo' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] :registerBeanDefinition
+: Overriding bean definition for bean 'kokyakuRepo' with a different definition: replacing [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] :registerBeanDefinition
+: Overriding bean definition for bean 'httpRequestHandlerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration; factoryMethodName=httpRequestHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration; factoryMethodName=httpRequestHandlerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/data/rest/webmvc/config/RepositoryRestMvcConfiguration.class]] :registerBeanDefinition
+: Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]] :registerBeanDefinition
+: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2cdc0c34] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) :postProcessAfterInitialization
+: Tomcat initialized with port(s): 0 (http) :initialize
+: Starting service Tomcat :log
+: Starting Servlet Engine: Apache Tomcat/8.5.14 :log
+: Initializing Spring embedded WebApplicationContext :log
+: Root WebApplicationContext: initialization completed in 2715 ms :prepareEmbeddedWebApplicationContext
+: Mapping filter: 'metricsFilter' to: [/*] :configure
+: Mapping filter: 'characterEncodingFilter' to: [/*] :configure
+: Mapping filter: 'hiddenHttpMethodFilter' to: [/*] :configure
+: Mapping filter: 'httpPutFormContentFilter' to: [/*] :configure
+: Mapping filter: 'requestContextFilter' to: [/*] :configure
+: Mapping filter: 'springSecurityFilterChain' to: [/*] :configure
+: Mapping filter: 'webRequestLoggingFilter' to: [/*] :configure
+: Mapping filter: 'applicationContextIdFilter' to: [/*] :configure
+: Mapping servlet: 'dispatcherServlet' to [/] :onStartup
+: Loaded JDBC driver: org.h2.Driver :setDriverClassName
+: Building JPA container EntityManagerFactory for persistence unit 'default' :createNativeEntityManagerFactory
+[EL Config]: metadata: 2017-06-13 17:33:33.866--ServerSession(1518204977)--The access type for the persistent class [class bootapp.model.AbstractPersistentEntity] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 17:33:33.894--ServerSession(1518204977)--The access type for the persistent class [class bootapp.model.Jutyu] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 17:33:33.903--ServerSession(1518204977)--The target entity (reference) class for the one to many mapping element [field meisaiList] is being defaulted to: class bootapp.model.Meisai.
+[EL Config]: metadata: 2017-06-13 17:33:33.904--ServerSession(1518204977)--The access type for the persistent class [class bootapp.model.Meisai] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 17:33:33.905--ServerSession(1518204977)--The target entity (reference) class for the many to one mapping element [field jutyu] is being defaulted to: class bootapp.model.Jutyu.
+[EL Config]: metadata: 2017-06-13 17:33:33.906--ServerSession(1518204977)--The access type for the persistent class [class bootapp.model.Kokyaku] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 17:33:33.906--ServerSession(1518204977)--The access type for the persistent class [class bootapp.model.User] is set to [FIELD].
+[EL Config]: metadata: 2017-06-13 17:33:33.913--ServerSession(1518204977)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:33:33.915--ServerSession(1518204977)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 17:33:33.916--ServerSession(1518204977)--The alias name for the entity class [class bootapp.model.Jutyu] is being defaulted to: Jutyu.
+[EL Config]: metadata: 2017-06-13 17:33:33.916--ServerSession(1518204977)--The table name for entity [class bootapp.model.Jutyu] is being defaulted to: JUTYU.
+[EL Config]: metadata: 2017-06-13 17:33:33.928--ServerSession(1518204977)--The column name for element [jutyuGaku] is being defaulted to: JUTYUGAKU.
+[EL Config]: metadata: 2017-06-13 17:33:33.928--ServerSession(1518204977)--The column name for element [jutyuBi] is being defaulted to: JUTYUBI.
+[EL Config]: metadata: 2017-06-13 17:33:33.929--ServerSession(1518204977)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:33:33.929--ServerSession(1518204977)--The column name for element [nohinSaki] is being defaulted to: NOHINSAKI.
+[EL Config]: metadata: 2017-06-13 17:33:33.929--ServerSession(1518204977)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 17:33:33.93--ServerSession(1518204977)--The alias name for the entity class [class bootapp.model.Meisai] is being defaulted to: Meisai.
+[EL Config]: metadata: 2017-06-13 17:33:33.93--ServerSession(1518204977)--The table name for entity [class bootapp.model.Meisai] is being defaulted to: MEISAI.
+[EL Config]: metadata: 2017-06-13 17:33:33.93--ServerSession(1518204977)--The column name for element [tanka] is being defaulted to: TANKA.
+[EL Config]: metadata: 2017-06-13 17:33:33.93--ServerSession(1518204977)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:33:33.931--ServerSession(1518204977)--The column name for element [suryo] is being defaulted to: SURYO.
+[EL Config]: metadata: 2017-06-13 17:33:33.931--ServerSession(1518204977)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 17:33:33.931--ServerSession(1518204977)--The column name for element [syohin] is being defaulted to: SYOHIN.
+[EL Config]: metadata: 2017-06-13 17:33:33.931--ServerSession(1518204977)--The alias name for the entity class [class bootapp.model.Kokyaku] is being defaulted to: Kokyaku.
+[EL Config]: metadata: 2017-06-13 17:33:33.932--ServerSession(1518204977)--The table name for entity [class bootapp.model.Kokyaku] is being defaulted to: KOKYAKU.
+[EL Config]: metadata: 2017-06-13 17:33:33.932--ServerSession(1518204977)--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2017-06-13 17:33:33.932--ServerSession(1518204977)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:33:33.933--ServerSession(1518204977)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 17:33:33.933--ServerSession(1518204977)--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2017-06-13 17:33:33.933--ServerSession(1518204977)--The column name for element [jutyuKaisu] is being defaulted to: JUTYUKAISU.
+[EL Config]: metadata: 2017-06-13 17:33:33.933--ServerSession(1518204977)--The alias name for the entity class [class bootapp.model.User] is being defaulted to: User.
+[EL Config]: metadata: 2017-06-13 17:33:33.934--ServerSession(1518204977)--The column name for element [encodePass] is being defaulted to: ENCODEPASS.
+[EL Config]: metadata: 2017-06-13 17:33:33.934--ServerSession(1518204977)--The column name for element [syubetu] is being defaulted to: SYUBETU.
+[EL Config]: metadata: 2017-06-13 17:33:33.935--ServerSession(1518204977)--The column name for element [roles] is being defaulted to: ROLES.
+[EL Config]: metadata: 2017-06-13 17:33:33.935--ServerSession(1518204977)--The column name for element [name] is being defaulted to: NAME.
+[EL Config]: metadata: 2017-06-13 17:33:33.935--ServerSession(1518204977)--The column name for element [theme] is being defaulted to: THEME.
+[EL Config]: metadata: 2017-06-13 17:33:33.935--ServerSession(1518204977)--The column name for element [yomi] is being defaulted to: YOMI.
+[EL Config]: metadata: 2017-06-13 17:33:33.936--ServerSession(1518204977)--The column name for element [id] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:33:33.936--ServerSession(1518204977)--The column name for element [version] is being defaulted to: VERSION.
+[EL Config]: metadata: 2017-06-13 17:33:33.936--ServerSession(1518204977)--The column name for element [simei] is being defaulted to: SIMEI.
+[EL Config]: metadata: 2017-06-13 17:33:33.936--ServerSession(1518204977)--The column name for element [email] is being defaulted to: EMAIL.
+[EL Config]: metadata: 2017-06-13 17:33:33.973--ServerSession(1518204977)--The join table name for the many to many mapping [field meisaiList] is being defaulted to: JUTYU_MEISAI.
+[EL Config]: metadata: 2017-06-13 17:33:33.974--ServerSession(1518204977)--The source primary key column name for the many to many mapping [field meisaiList] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:33:33.975--ServerSession(1518204977)--The source foreign key column name for the many to many mapping [meisaiList] is being defaulted to: Jutyu_ID.
+[EL Config]: metadata: 2017-06-13 17:33:33.975--ServerSession(1518204977)--The target primary key column name for the many to many mapping [field meisaiList] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:33:33.975--ServerSession(1518204977)--The target foreign key column name for the many to many mapping [meisaiList] is being defaulted to: meisaiList_ID.
+[EL Config]: metadata: 2017-06-13 17:33:33.983--ServerSession(1518204977)--The primary key column name for the mapping element [field jutyu] is being defaulted to: ID.
+[EL Config]: metadata: 2017-06-13 17:33:33.984--ServerSession(1518204977)--The foreign key column name for the mapping element [jutyu] is being defaulted to: JUTYU_ID.
+[EL Info]: 2017-06-13 17:33:34.187--ServerSession(1518204977)--EclipseLink, version: Eclipse Persistence Services - 2.6.3.v20160428-59c81c5
+[EL Config]: connection: 2017-06-13 17:33:34.194--ServerSession(1518204977)--Connection(922150177)--connecting(DatabaseLogin(
+	platform=>H2Platform
+	user name=> ""
+	connector=>JNDIConnector datasource name=>null
+))
+[EL Config]: connection: 2017-06-13 17:33:34.377--ServerSession(1518204977)--Connection(940938116)--Connected: jdbc:h2:~/_data/h2/contact
+	User: DEMO
+	Database: H2  Version: 1.4.194 (2017-03-10)
+	Driver: H2 JDBC Driver  Version: 1.4.194 (2017-03-10)
+[EL Config]: connection: 2017-06-13 17:33:34.379--ServerSession(1518204977)--Connection(2047521920)--connecting(DatabaseLogin(
+	platform=>H2Platform
+	user name=> ""
+	connector=>JNDIConnector datasource name=>null
+))
+[EL Config]: connection: 2017-06-13 17:33:34.403--ServerSession(1518204977)--Connection(1327714567)--Connected: jdbc:h2:~/_data/h2/contact
+	User: DEMO
+	Database: H2  Version: 1.4.194 (2017-03-10)
+	Driver: H2 JDBC Driver  Version: 1.4.194 (2017-03-10)
+[EL Info]: connection: 2017-06-13 17:33:34.533--ServerSession(1518204977)--/file:/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootJutyu/bin/_default login successful
+: Initialized JPA EntityManagerFactory for persistence unit 'default' :buildNativeEntityManagerFactory
+: Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bb4dd34: startup date [Tue Jun 13 17:33:30 JST 2017]; root of context hierarchy :initControllerAdviceCache
+: Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice :initControllerAdviceCache
+: Mapped "{[/login],methods=[GET]}" onto public java.lang.String bootapp.controller.HomeController.login() :register
+: Mapped "{[/ || /home],methods=[GET]}" onto public java.lang.String bootapp.controller.HomeController.home(org.springframework.ui.Model) :register
+: Mapped "{[/jutyu_list],methods=[GET]}" onto public java.lang.String bootapp.controller.JutyuController.showJutyuList() :register
+: Mapped "{[/jutyu/meisai/{meisaiId}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.getJutyuMeisai(java.lang.Long) :register
+: Mapped "{[/jutyu/syohin/{tanka}/{kosu}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.getSyohin(int,int) :register
+: Mapped "{[/kokyaku/{key}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.getKokyaku(bootapp.model.Kokyaku) :register
+: Mapped "{[/kokyaku],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.getKokyaku(java.lang.String,java.lang.String) :register
+: Mapped "{[/kokyaku/search/{str}],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView bootapp.controller.JutyuController.searchKokyaku(java.util.List<bootapp.model.Kokyaku>) :register
+: Mapped "{[/user_list],methods=[GET]}" onto public java.lang.String bootapp.controller.UserController.showUserList(org.springframework.ui.Model) :register
+: Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) :register
+: Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) :register
+: Mapped URL path [/error] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController] :registerHandler
+: Mapped URL path [/login] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController] :registerHandler
+: Mapped URL path [/home] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController] :registerHandler
+: Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController] :registerHandler
+: Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] :registerHandler
+: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] :registerHandler
+: Detected @ExceptionHandler methods in repositoryRestExceptionHandler :initExceptionHandlerAdviceCache
+: Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice :initExceptionHandlerAdviceCache
+: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] :registerHandler
+: [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead. :parse
+: Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], [] :<init>
+: Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bab78ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@1fe05fff, org.springframework.security.web.header.HeaderWriterFilter@68c4a860, org.springframework.security.web.csrf.CsrfFilter@6e67a8c0, org.springframework.security.web.authentication.logout.LogoutFilter@18ac4af6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6143b2b1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d06801f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1592e540, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42ffbab6, org.springframework.security.web.session.SessionManagementFilter@93f15f6, org.springframework.security.web.access.ExceptionTranslationFilter@5896b9f5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e28af44] :<init>
+: Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@16d61071, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18692e80, org.springframework.security.web.context.SecurityContextPersistenceFilter@2862271a, org.springframework.security.web.header.HeaderWriterFilter@294ebe11, org.springframework.security.web.authentication.logout.LogoutFilter@6b64429e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5be69f7e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2419fe6f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78fb72cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@779b4f9c, org.springframework.security.web.session.SessionManagementFilter@4e51eda7, org.springframework.security.web.access.ExceptionTranslationFilter@65ad2b42, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6fdc2db6] :<init>
+: Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3639b04, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a8640f7, org.springframework.security.web.header.HeaderWriterFilter@2cacb445, org.springframework.security.web.authentication.logout.LogoutFilter@3c89b864, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3400d6fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ca10069, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45e69324, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cb8580, org.springframework.security.web.session.SessionManagementFilter@1e7cfd49, org.springframework.security.web.access.ExceptionTranslationFilter@1aa59698, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2168def] :<init>
+: Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bb4dd34: startup date [Tue Jun 13 17:33:30 JST 2017]; root of context hierarchy :initControllerAdviceCache
+: Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice :initControllerAdviceCache
+: Mapped "{[/{repository}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/{repository}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResourceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}],methods=[POST],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}/{id}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.optionsForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/{repository}/{id}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.headForItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}/{id}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}/{id}],methods=[PUT],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.putItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}/{id}],methods=[PATCH],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.patchItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.data.rest.webmvc.support.ETag,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException,org.springframework.data.rest.webmvc.ResourceNotFoundException :register
+: Mapped "{[/{repository}/{id}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryEntityController.deleteItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.support.ETag) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException :register
+: Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception :register
+: Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception :register
+: Mapped "{[/{repository}/{id}/{property}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String) throws java.lang.Exception :register
+: Mapped "{[/{repository}/{id}/{property}],methods=[GET],produces=[application/x-spring-data-compact+json || text/uri-list]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.followPropertyReferenceCompact(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws java.lang.Exception :register
+: Mapped "{[/{repository}/{id}/{property}],methods=[PATCH || PUT || POST],consumes=[application/json || application/x-spring-data-compact+json || text/uri-list],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<? extends org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.createPropertyReference(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpMethod,org.springframework.hateoas.Resources<java.lang.Object>,java.io.Serializable,java.lang.String) throws java.lang.Exception :register
+: Mapped "{[/{repository}/{id}/{property}/{propertyId}],methods=[DELETE],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryPropertyReferenceController.deletePropertyReferenceId(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,java.lang.String,java.lang.String) throws java.lang.Exception :register
+: Mapped "{[/{repository}/search],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearches(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/{repository}/search],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearches(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/{repository}/search],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.data.rest.webmvc.RepositorySearchesResource org.springframework.data.rest.webmvc.RepositorySearchController.listSearches(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositorySearchController.executeSearch(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) :register
+: Mapped "{[/{repository}/search/{search}],methods=[GET],produces=[application/x-spring-data-compact+json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.data.rest.webmvc.RepositorySearchController.executeSearchCompact(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.http.HttpHeaders,org.springframework.util.MultiValueMap<java.lang.String, java.lang.Object>,java.lang.String,java.lang.String,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) :register
+: Mapped "{[/{repository}/search/{search}],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.optionsForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String) :register
+: Mapped "{[/{repository}/search/{search}],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> org.springframework.data.rest.webmvc.RepositorySearchController.headForSearch(org.springframework.data.rest.webmvc.RootResourceInformation,java.lang.String) :register
+: Mapped "{[/ || ],methods=[OPTIONS],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.RepositoryController.optionsForRepositories() :register
+: Mapped "{[/ || ],methods=[HEAD],produces=[application/hal+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.data.rest.webmvc.RepositoryController.headForRepositories() :register
+: Mapped "{[/ || ],methods=[GET],produces=[application/hal+json || application/json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RepositoryLinksResource> org.springframework.data.rest.webmvc.RepositoryController.listRepositories() :register
+: Mapped "{[/profile/{repository}],methods=[GET],produces=[application/alps+json || */*]}" onto org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.RootResourceInformation> org.springframework.data.rest.webmvc.alps.AlpsController.descriptor(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/profile/{repository}],methods=[OPTIONS],produces=[application/alps+json]}" onto org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.alps.AlpsController.alpsOptions() :register
+: Mapped "{[/profile],methods=[OPTIONS]}" onto public org.springframework.http.HttpEntity<?> org.springframework.data.rest.webmvc.ProfileController.profileOptions() :register
+: Mapped "{[/profile],methods=[GET]}" onto org.springframework.http.HttpEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.ProfileController.listAllFormsOfMetadata() :register
+: Mapped "{[/profile/{repository}],methods=[GET],produces=[application/schema+json]}" onto public org.springframework.http.HttpEntity<org.springframework.data.rest.webmvc.json.JsonSchema> org.springframework.data.rest.webmvc.RepositorySchemaController.schema(org.springframework.data.rest.webmvc.RootResourceInformation) :register
+: Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException :register
+: Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String) :register
+: Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>) :register
+: Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String) :register
+: Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException :register
+: Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String) :register
+: Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links() :register
+: Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke() :register
+: Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal) :register
+: Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String) :register
+: Initializing ProtocolHandler ["http-nio-auto-1"] :log
+: Starting ProtocolHandler ["http-nio-auto-1"] :log
+: Using a shared selector for servlet write/read :log
+: Tomcat started on port(s): 58131 (http) :start
+Create Test Data
+: Started RestServiceTest in 25.094 seconds (JVM running for 25.993) :logStarted
+: Initializing Spring FrameworkServlet '' :log
+: FrameworkServlet '': initialization started :initServletBean
+: FrameworkServlet '': initialization completed in 17 ms :initServletBean
+: &&&&&&&&&&&&&&& GetCustomers :  :logTestHeader
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /customer
+       Parameters = {}
+          Headers = {}
+
+Handler:
+             Type = org.springframework.data.rest.webmvc.RepositoryEntityController
+           Method = public org.springframework.hateoas.Resources<?> org.springframework.data.rest.webmvc.RepositoryEntityController.getCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.support.DefaultedPageable,org.springframework.data.domain.Sort,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler) throws org.springframework.data.rest.webmvc.ResourceNotFoundException,org.springframework.web.HttpRequestMethodNotSupportedException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {Content-Type=[application/hal+json;charset=UTF-8]}
+     Content type = application/hal+json;charset=UTF-8
+             Body = {
+  "_embedded" : {
+    "customer" : [ {
+      "name" : "納品先01",
+      "email" : "k01@xxx.com",
+      "jutyuKaisu" : 0,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost/customer/10"
+        },
+        "kokyaku" : {
+          "href" : "http://localhost/customer/10"
+        }
+      }
+    }, {
+      "name" : "納品先02",
+      "email" : "k02@xxx.com",
+      "jutyuKaisu" : 0,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost/customer/20"
+        },
+        "kokyaku" : {
+          "href" : "http://localhost/customer/20"
+        }
+      }
+    }, {
+      "name" : "納品先03",
+      "email" : "k03@xxx.com",
+      "jutyuKaisu" : 0,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost/customer/30"
+        },
+        "kokyaku" : {
+          "href" : "http://localhost/customer/30"
+        }
+      }
+    }, {
+      "name" : "納品先04",
+      "email" : "k04@xxx.com",
+      "jutyuKaisu" : 0,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost/customer/40"
+        },
+        "kokyaku" : {
+          "href" : "http://localhost/customer/40"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost/customer{?page,size,sort}",
+      "templated" : true
+    },
+    "profile" : {
+      "href" : "http://localhost/profile/customer"
+    },
+    "search" : {
+      "href" : "http://localhost/customer/search"
+    }
+  },
+  "page" : {
+    "size" : 20,
+    "totalElements" : 4,
+    "totalPages" : 1,
+    "number" : 0
+  }
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+: Initializing Spring FrameworkServlet '' :log
+: FrameworkServlet '': initialization started :initServletBean
+: FrameworkServlet '': initialization completed in 5 ms :initServletBean
+: &&&&&&&&&&&&&&& AddCustomer :  :logTestHeader
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /customer
+       Parameters = {}
+          Headers = {Content-Type=[application/json]}
+
+Handler:
+             Type = org.springframework.data.rest.webmvc.RepositoryEntityController
+           Method = public org.springframework.http.ResponseEntity<org.springframework.hateoas.ResourceSupport> org.springframework.data.rest.webmvc.RepositoryEntityController.postCollectionResource(org.springframework.data.rest.webmvc.RootResourceInformation,org.springframework.data.rest.webmvc.PersistentEntityResource,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,java.lang.String) throws org.springframework.web.HttpRequestMethodNotSupportedException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = {Location=[http://localhost/customer/201]}
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = http://localhost/customer/201
+          Cookies = []
+: >>>>>>>>>>> customerUrl=/customer/201 :testAddCustomer
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /customer/201
+       Parameters = {}
+          Headers = {}
+
+Handler:
+             Type = org.springframework.data.rest.webmvc.RepositoryEntityController
+           Method = public org.springframework.http.ResponseEntity<org.springframework.hateoas.Resource<?>> org.springframework.data.rest.webmvc.RepositoryEntityController.getItemResource(org.springframework.data.rest.webmvc.RootResourceInformation,java.io.Serializable,org.springframework.data.rest.webmvc.PersistentEntityResourceAssembler,org.springframework.http.HttpHeaders) throws org.springframework.web.HttpRequestMethodNotSupportedException
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = {ETag=["1"], Content-Type=[application/hal+json;charset=UTF-8]}
+     Content type = application/hal+json;charset=UTF-8
+             Body = {
+  "name" : "Kokyaku1",
+  "email" : "kokyaku1@xxx.com",
+  "jutyuKaisu" : 0,
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost/customer/201"
+    },
+    "kokyaku" : {
+      "href" : "http://localhost/customer/201"
+    }
+  }
+}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+: >>>>>>>>>>> c=Customer [name=Kokyaku1, email=kokyaku1@xxx.com, jutyuKaisu=0] :testAddCustomer
+: Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bb4dd34: startup date [Tue Jun 13 17:33:30 JST 2017]; root of context hierarchy :doClose
+: Closing JPA EntityManagerFactory for persistence unit 'default' :destroy
+[EL Config]: connection: 2017-06-13 17:33:40.111--ServerSession(1518204977)--Connection(288171678)--disconnect
+[EL Info]: connection: 2017-06-13 17:33:40.112--ServerSession(1518204977)--/file:/Users/bri_tcho/_PRJ/ecprj/bootContact.git/bootJutyu/bin/_default logout successful

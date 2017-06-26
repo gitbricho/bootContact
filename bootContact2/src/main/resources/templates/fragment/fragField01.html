@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <!-- ########################################
+       フォーム・グループ（ボタン付きテキスト）
+        fgLabel : 見出し/プレースフォルダー文字列
+        fgId : input の id
+        fgTYpe : input タイプ 'text','number', ..
+        fgLCol : ラベル列幅 col-md-4, col-md-2, ...
+        fgICol : input列幅 col-md-4, col-md-2, ...
+        fgLen : input の文字数
+        fgTel : 電話ボタン
+        fgZip : 郵便番号参照ボタン
+        fgSearch : 検索ボタン
+        fgRoute : ルート案内ボタン
+        fgMail : メール送信ボタン
+       ######################################## -->
+  <div th:fragment="textFormGroup">
+    <div class="form-group">
+      <label class="control-label" th:classappend="${fgLCol}" th:for="${fgId}" th:text="${fgLabel}">ボタン付きテキスト</label>
+      <div class="controls" th:classappend="${fgICol}">
+        <input th:type="${fgType}" th:field="*{__${fgId}__}" th:placeholder="${fgLabel}"
+          th:errorclass="fieldError" th:maxlength="${fgLen}" class="form-control" /> <span
+          th:if="${#fields.hasErrors('__${fgId}__')}" th:errors="*{__${fgId}__}">不正な入力</span>
+      </div>
+      <a th:if="${fgTel}" href="#" class="btn btn-danger btn-sm col-md-1" onclick="callPhone(this)"
+        th:id="${fgId}">電話</a> <a th:if="${fgSearch}" href="#"
+        class="btn btn-success btn-sm col-md-1" target="_blank" th:name="${fgId}" th:id="btnSearch">検索</a>
+      <a th:if="${fgRoute}" href="#" th:href="@{/gTransit}" class="btn btn-success btn-sm col-md-1"
+        th:name="${fgId}" th:id="btnTransit">ルート</a>
+      <button th:if="${fgZip}" type="button" class="btn btn-success btn-sm col-md-1" id="btnZip">参照</button>
+    </div>
+  </div>
+
+  <!-- ########################################
+       フォーム・グループ（セレクト）
+        fgLabel : 見出し/プレースフォルダー文字列
+        fgId : input の id
+        fgLCol : ラベル列幅 col-md-4, col-md-2, ...
+        fgICol : input列幅 col-md-4, col-md-2, ...
+        selItems : 選択項目のリスト
+       ######################################## -->
+  <div th:fragment="selectFormGroup">
+    <div class="form-group">
+      <label class="control-label" th:classappend="${fgLCol}" th:for="${fgId}" th:text="${fgLabel}">セレクト</label>
+      <div th:classappend="${fgICol}">
+        <select th:field="*{__${fgId}__}" class="form-control">
+          <option th:each="item : ${selItems}"
+            th:selected="*{__${fgId}__}==item"
+            th:value="${item}"
+            th:text="${item}">hoge</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- ########################################
+       フォーム・グループ（ラジオ）
+        fgLabel : 見出し/プレースフォルダー文字列
+        fgId : input の id
+        fgLCol : ラベル列幅 col-md-4, col-md-2, ...
+        fgICol : input列幅 col-md-4, col-md-2, ...
+        selItems : 選択項目のリスト
+       ######################################## -->
+  <div th:fragment="radioFormGroup">
+    <div class="form-group">
+      <label class="control-label" th:classappend="${fgLCol}" th:for="${fgId}" th:text="${fgLabel}">ラジオボタン</label>
+      <div th:classappend="${fgICol}" th:id="${fgId}">&emsp;
+        <label th:each="item : ${selItems}" class="radio-inline">
+        <input type="radio" th:field="*{__${fgId}__}" th:value="${item}" th:text="${item}" />
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ########################################
+       フォーム・グループ（チェックボックス）
+        fgLabel : 見出し/プレースフォルダー文字列
+        fgId : input の 親の div のid
+        fgList : input の id
+        fgLCol : ラベル列幅 col-md-4, col-md-2, ...
+        fgICol : input列幅 col-md-4, col-md-2, ...
+        selItems : 選択項目のリスト
+       ######################################## -->
+  <div th:fragment="checkboxFormGroup">
+    <div class="form-group">
+      <label class="control-label" th:classappend="${fgLCol}" th:for="${fgId}" th:text="${fgLabel}">チェックボックス</label>
+      <div th:classappend="${fgICol}" th:id="${fgId}">&emsp;
+        <label th:each="item : ${selItems}" class="checkbox-inline">
+        <input type="checkbox" th:field="*{__${fgList}__}" th:value="${item}" th:text="${item}" />
+        </label>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
